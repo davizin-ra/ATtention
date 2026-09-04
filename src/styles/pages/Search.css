@@ -1,0 +1,128 @@
+.top-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0px;
+}
+
+.top-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.top-text h1 {
+  width: 70%;
+  font-size: 300%;
+}
+
+.top-text p {
+  width: 60%;
+}
+
+.top-bg {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  background: rgb(201, 242, 255);
+  top: 0;
+  z-index: -1;
+  background-image: url(../../../assets/images/Search/topimg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  opacity: 70%;
+}
+
+.search-box {
+  margin-top: 50px;
+  padding: 15px 20px;
+  width: 40%;
+  background: white;
+  display: flex;
+  gap: 10px;
+  height: 80px;
+  box-shadow: 2px 2px 8px rgb(194, 194, 194);
+}
+
+.search-box input {
+  border: #999 1px solid;
+  flex: auto;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+
+.search-box button {
+  padding: 10px 50px;
+  background-color: var(--azul-escuro);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgb(194, 194, 194);
+  cursor: pointer;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-section h1 {
+  margin-bottom: 50px;
+}
+
+.cards-container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  height: 500px;
+}
+
+.cards-container .card {
+  box-shadow: 1px 1px 5px rgb(194, 194, 194);
+  padding: 15px;
+  border-radius: 15px;
+  height: 400px;
+  width: 300px;
+
+  .img {
+    background-color: green;
+    width: 100%;
+    height: 40%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 150%;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 110%;
+  }
+
+  p {
+    font-size: 80%;
+    height: 20%;
+  }
+
+  .card-area {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+
+    p {
+      padding: 6px 15px;
+      background-color: rgb(212, 234, 255);
+      border-radius: 50px;
+      height: fit-content;
+      color: var(--azul-escuro);
+      cursor: pointer;
+    }
+  }
+}
