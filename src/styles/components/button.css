@@ -1,0 +1,21 @@
+.btn-1 {
+  padding: 10px 50px;
+  background-color: var(--azul-escuro);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgb(194, 194, 194);
+  cursor: pointer;
+  font-size: 120%;
+  border: 2px solid var(--azul-escuro);
+}
+
+.btn-2 {
+  padding: 10px 50px;
+  background-color: white;
+  color: var(--azul-escuro);
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgb(194, 194, 194);
+  cursor: pointer;
+  font-size: 120%;
+  border: 2px solid var(--azul-escuro);
+}
