@@ -54,15 +54,6 @@
   border-radius: 10px;
 }
 
-.search-box button {
-  padding: 10px 50px;
-  background-color: var(--azul-escuro);
-  color: white;
-  border-radius: 10px;
-  box-shadow: 2px 2px 8px rgb(194, 194, 194);
-  cursor: pointer;
-}
-
 .cards-section {
   display: flex;
   flex-direction: column;
