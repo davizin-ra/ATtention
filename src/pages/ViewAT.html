@@ -11,15 +11,14 @@
     <main>
       <section class="user-section">
         <div class="profile">
-          <div class="banner"></div>
+          <div class="banner" id="banner"></div>
           <div class="info-principal">
-            <img src="../../assets/images/Boneco.png" alt="" />
-            <h1>Nome</h1>
-            <p>Acompanhante Terapêutica</p>
+            <img id="img" src="../../assets/images/Boneco.png" alt="" />
+            <h1 id="nome"></h1>
+            <p id="area"></p>
 
             <div class="if2">
-              <p>Região: São Paulo - SP</p>
-              <p>3 anos de experiência</p>
+              <p id="regiao"></p>
             </div>
 
             <div class="btns">
@@ -30,19 +29,19 @@
         </div>
         <div class="stats">
           <div>
-            <h3>+ 120</h3>
+            <h3 id="atendimentos"></h3>
             <p>Atentimentos</p>
           </div>
           <div>
-            <h3>4.5</h3>
+            <h3 id="avaliacao"></h3>
             <p>Avaliação</p>
           </div>
           <div>
-            <h3>38</h3>
+            <h3 id="familias"></h3>
             <p>Famílias</p>
           </div>
           <div>
-            <h3>3</h3>
+            <h3 id="anosAT"></h3>
             <p>Anos de AT</p>
           </div>
         </div>
@@ -50,68 +49,40 @@
       <section class="info-section">
         <div>
           <h1>Sobre</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            consequuntur, deserunt adipisci cupiditate consequatur placeat sint
-            maxime autem necessitatibus porro, ex iusto nemo optio possimus
-            sequi exercitationem? Quia, dolorum odit.
-          </p>
+          <p id="sobre"></p>
         </div>
 
         <div>
           <h1>Formação</h1>
-          <div class="form">
-            <p>Psicologia</p>
-            <p class="desc">Universidade de São Paulo (USP) — 2020</p>
-          </div>
-          <div class="form">
-            <p>Educação Física</p>
-            <p class="desc">Universidade de São Paulo (USP) — 2026</p>
-          </div>
+          <div id="formacao-container"></div>
         </div>
         <div>
           <h1>Capacitações</h1>
-          <div class="cap">
-            <p>Curso de Análise do Comportamento Aplicada (ABA) - 40h - 2022</p>
-          </div>
-          <div class="cap">
-            <p>
-              Workshop de Comunicação Aumentativa e Alternativa (CAA) - 2022
-            </p>
-          </div>
-          <div class="cap">
-            <p>Formação em Inclusão Escolar para Pessoas com TEA - 2023</p>
-          </div>
+          <div id="capacitacoes-container"></div>
         </div>
         <div>
           <h1>Modalidades de atuação</h1>
-          <div class="ltt">
-            <p>Domiciliar</p>
-            <p>Escolar</p>
-            <p>Online</p>
-          </div>
+          <div class="ltt" id="modalidades"></div>
         </div>
         <div>
           <h1>Áreas de atuação</h1>
-          <div class="ltt">
-            <p>TEA</p>
-            <p>Inclusão escolar</p>
-            <p>Habilidades sociais</p>
-          </div>
+          <div class="ltt" id="atuacao"></div>
         </div>
         <div>
           <h1>Disponibilidade</h1>
           <div class="disp">
-            <p>Seg</p>
-            <p>Ter</p>
-            <p>Qua</p>
-            <p>Qui</p>
-            <p>Sex</p>
-            <p>Sab</p>
-            <p>Dom</p>
+            <p data = "Seg">Seg</p>
+            <p data = "Ter">Ter</p>
+            <p data = "Qua">Qua</p>
+            <p data =" Qui">Qui</p>
+            <p data = "Sex">Sex</p>
+            <p data = "Sab">Sab</p>
+            <p data = "Dom">Dom</p>
           </div>
         </div>
       </section>
     </main>
+
+    <script src="../scripts/ViewAT.js"></script>
   </body>
 </html>

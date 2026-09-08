@@ -1,6 +1,7 @@
 main {
   display: flex;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .user-section {
@@ -19,6 +20,14 @@ main {
   div:first-child {
     margin-top: 0%;
   }
+
+  #formacao-container,
+  #capacitacoes-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
   div {
     background-color: white;
     margin: 1%;
@@ -66,11 +75,15 @@ main {
 
     .disp {
       p {
-        background-color: green;
+        background-color: rgb(255, 66, 66);
         color: white;
         box-shadow: 2px 2px 8px rgb(194, 194, 194);
         padding: 5px;
         border-radius: 10px;
+      }
+
+      .disponivel {
+        background-color: rgb(97, 255, 97);
       }
     }
   }
@@ -95,6 +108,8 @@ main {
     height: 30%;
     width: 100%;
     left: 0;
+    background-size: cover;
+    background-position: center;
   }
   .info-principal {
     img {
@@ -105,6 +120,10 @@ main {
       margin-top: 50px;
       border: white solid 10px;
       border-radius: 10px;
+
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      object-position: center;
     }
 
     h1 {
@@ -116,12 +135,14 @@ main {
       text-align: left;
       margin: 5%;
       color: #555;
+      padding-left: 4%;
     }
 
     .btns {
       display: flex;
       flex-direction: column;
       padding: 8%;
+      padding-top: 3%;
       gap: 15px;
     }
   }
@@ -147,8 +168,8 @@ main {
     flex-direction: column;
     padding-left: 10px;
 
-    h3{
-        color: var(--azul-escuro);
+    h3 {
+      color: var(--azul-escuro);
     }
   }
 }
