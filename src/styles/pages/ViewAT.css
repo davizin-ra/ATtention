@@ -66,8 +66,8 @@ main {
 
     .disp {
       p {
-        border: 2px solid red;
-        background-color: #fbb;
+        background-color: green;
+        color: white;
         box-shadow: 2px 2px 8px rgb(194, 194, 194);
         padding: 5px;
         border-radius: 10px;
