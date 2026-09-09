@@ -2,17 +2,12 @@ const container = document.querySelector('#login-container');
 const switchButton = document.querySelector('.alternar');
 
 if (container && switchButton) {
-    const switchIcon = switchButton.querySelector('.seta');
     const switchText = switchButton.querySelector('.texto-alternar');
 
     switchButton.addEventListener('click', () => {
         const psychologistMode = container.classList.toggle('modo-psicologo');
 
         if (psychologistMode) {
-            if (switchIcon) {
-                switchIcon.textContent = '←';
-            }
-
             if (switchText) {
                 switchText.textContent = 'Fazer login como responsável';
             }
@@ -22,10 +17,6 @@ if (container && switchButton) {
                 'Voltar para entrar como responsável'
             );
         } else {
-            if (switchIcon) {
-                switchIcon.textContent = '→';
-            }
-
             if (switchText) {
                 switchText.textContent = 'Fazer login como psicólogo';
             }
@@ -37,3 +28,25 @@ if (container && switchButton) {
         }
     });
 }
+
+
+// AQUI É PRA QUANDO A PESSOA CLICAR NO BOTÃO "ENTRAR" NA PÁGINA DE LOGIN, ELA VÁ DIRETO PARA A PÁGINA DE RESPONSÁVEL OU PARA A PÁGINA DE PSICÓLOGO
+
+const formularioResponsavel = document.querySelector("#form-responsavel");
+const formularioPsicologo = document.querySelector("#form-psicologo");
+
+formularioResponsavel.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (formularioResponsavel.checkValidity()) {
+        window.location.href = "cadastre-se.html";
+    }
+});
+
+formularioPsicologo.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (formularioPsicologo.checkValidity()) {
+        window.location.href = "cadastre-se.html";
+    }
+});

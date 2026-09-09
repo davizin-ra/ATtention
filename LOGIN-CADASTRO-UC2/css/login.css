@@ -137,9 +137,7 @@ body {
     justify-content: center;
     opacity: 0;
     pointer-events: none;
-    transition:
-        opacity 0.45s ease,
-        transform 0.7s cubic-bezier(.2, .8, .2, 1);
+    transition: opacity 0.45s ease, transform 0.7s cubic-bezier(.2, .8, .2, 1);
 }
 
 
@@ -194,26 +192,21 @@ body {
     color: var(--azul-escuro);
     background: white;
     font: inherit;
-    transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .responsavel-form .input:focus {
     border-color: var(--rosa-escuro);
-    box-shadow:
-        0 0 0 3px rgba(185, 0, 97, 0.15);
+    box-shadow: 0 0 0 3px rgba(185, 0, 97, 0.15);
 }
 
-.responsavel-form .esqueceu-senha,
-.cadastrar-link a {
+.responsavel-form .esqueceu-senha, .cadastrar-link a {
     color: var(--azul-escuro);
     font-size: 15px;
     text-decoration: none;
 }
 
-.responsavel-form .esqueceu-senha:hover,
-.cadastrar-link a:hover {
+.responsavel-form .esqueceu-senha:hover, .cadastrar-link a:hover {
     text-decoration: underline;
 }
 
@@ -254,12 +247,11 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-    gap: 10px;
+    gap: 5px;
     color: white;
     font-size: 15px;
     text-align: center;
 }
-
 
 
 /* PARTE DO PSICÓLOGO */
@@ -367,12 +359,11 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-    gap: 10px;
+    gap: 5px;
     color: var(--rosa-escuro);
     font-size: 15px;
     text-align: center;
 }
-
 
 
 /* PAINEL DA FOTO */
@@ -389,9 +380,6 @@ body {
     pointer-events: none;
     transition: left 0.7s cubic-bezier(.2, .8, .2, 1);
 }
-
-
-/* IMAGEM */
 
 .painel img {
     width: 100%;
@@ -411,15 +399,14 @@ body {
     position: absolute;
     z-index: 3;
     top: 8%;
-    left: 0;
-    width: 280px;
+    width: 290px;
     height: 58px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    border-radius: 25px;
-    padding: 0 10px;
+    gap: 8px;
+    border-radius: 20px;
+    padding: 0 8px;
     color: var(--azul-escuro);
     background: white;
     font-family: "Poppins", sans-serif;
@@ -437,39 +424,22 @@ body {
     transition: transform 0.7s cubic-bezier(.2, .8, .2, 1);
 }
 
+.modo-psicologo .painel .alternar .seta {
+    transform: rotate(180deg);
+}
 
-/* ============================= */
+
+
 /* MODO PSICÓLOGO */
-/* ============================= */
 
 .modo-psicologo .painel {
     left: 0;
 }
 
-/* Muda o lado do botão */
+/* MUDA O LADO DO BOTÃO */
 
 .modo-psicologo .painel .alternar {
     left: 100%;
-}
-
-/* Vira somente a seta */
-
-.modo-psicologo .painel .alternar .seta {
-    transform: rotate(180deg);
-}
-
-/* Troca o texto */
-
-.modo-psicologo .painel .alternar .texto-alternar::after {
-    content: "Fazer login como responsável";
-}
-
-.modo-psicologo .painel .alternar .texto-alternar {
-    font-size: 0;
-}
-
-.modo-psicologo .painel .alternar .texto-alternar::after {
-    font-size: 14px;
 }
 
 .alternar:hover {
@@ -478,9 +448,9 @@ body {
     transition: 0.3s all;
 }
 
-/* ============================= */
+
 /* ANIMAÇÃO DOS FORMULÁRIOS */
-/* ============================= */
+
 
 .modo-psicologo .responsavel-form {
     opacity: 0;
@@ -512,76 +482,4 @@ body {
     pointer-events: auto;
 
     transform: translateX(0);
-}
-
-
-/* ============================= */
-/* RESPONSIVIDADE */
-/* ============================= */
-
-@media (max-width: 760px) {
-
-    body {
-        padding: 18px 12px;
-    }
-
-    .login-container {
-        height: 900px;
-        min-height: 900px;
-    }
-
-    .login-form {
-        top: 42%;
-        left: 0;
-
-        width: 100%;
-        height: 58%;
-
-        padding: 42px 10%;
-
-        transform: none;
-
-        transition: opacity 0.45s ease;
-    }
-
-    .psicologo-form {
-        right: auto;
-    }
-
-    .painel {
-        left: 0;
-
-        width: 100%;
-        height: 42%;
-
-        top: 0;
-
-        border-radius: 28px 28px 0 0;
-
-        transition:
-            left 0.65s cubic-bezier(.2, .8, .2, 1);
-    }
-
-    /* BOTÃO NO MOBILE */
-
-    .alternar {
-        top: 100%;
-        left: 50%;
-    }
-
-    .alternar::after {
-        margin-top: 85px;
-    }
-
-    .modo-psicologo .painel {
-        left: 0;
-    }
-
-    .modo-psicologo .painel .alternar {
-        left: 50%;
-    }
-
-    .modo-psicologo .painel .alternar::before {
-        transform: rotate(180deg);
-    }
 }
