@@ -1,0 +1,419 @@
+/* texto com padrão */
+
+h1 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1;
+    color: #2449A4;
+}
+
+h2 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #2449A4;
+}
+
+h3 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.15;
+    color: #2449A4;
+}
+
+h4 {
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.2;
+    color: #2449A4;
+}
+
+p {
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1;
+    color: #000000;
+}
+
+main {
+    width: 88%;
+    max-width: 1180px;
+    margin: auto;
+}
+
+/* inicio: texto e foto */
+
+.inicio {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.texto-inicio {
+    width: 500px;
+}
+
+.imagem-inicio {
+    width: 430px;
+    height: 285px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* barra de pesquisa */
+
+.pesquisa {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 32px;
+}
+
+.barra-pesquisa {
+    width: 100%;
+    height: 58px;
+    box-sizing: border-box;
+    border: 2px solid #b5c4dc;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    background: white;
+}
+
+.barra-pesquisa:focus-within {
+    border-color: #2449A4;
+}
+
+.icone {
+    color: #2449A4;
+    margin-right: 10px;
+}
+
+.barra-pesquisa input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: #333;
+    background: transparent;
+    font-size: 16px;
+}
+
+.barra-pesquisa button {
+    border: none;
+    background: none;
+    color: #777;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#mensagemPesquisa {
+    margin: 8px 0 0;
+    color: #666;
+}
+
+/* conteúdos */
+
+.titulo-conteudos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+/* setas */
+
+.setas {
+    display: flex;
+    gap: 10px;
+}
+
+.setas button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #2449A4;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.setas button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* carrossel de artigos */
+
+.carrossel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cards {
+    display: flex;
+    gap: 12px;
+    transition: transform .4s ease;
+}
+
+.card {
+    flex: 0 0 calc((100% - 24px) / 3);
+    box-sizing: border-box;
+    border: 1px solid #8fa8d3;
+    border-radius: 17px;
+    overflow: hidden;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.card.escondido {
+    display: none;
+}
+
+.card > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.card-conteudo {
+    min-height: 225px;
+    padding: 18px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card h3 {
+    margin: 0 0 12px;
+}
+
+.card p {
+    margin: 0;
+}
+
+.botao-card {
+    width: 75px;
+    margin: auto auto 0;
+    border: none;
+    background: #2449A4;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* destaque */
+
+.destaque {
+    max-width: 970px;
+    margin: 25px auto 65px;
+    padding: 30px 55px;
+    box-sizing: border-box;
+    background: #e765a8;
+    color: white;
+    text-align: center;
+    border-radius: 27px;
+}
+
+.titulo-destaque {
+    margin: 75px 0 0;
+    color: #ff0090;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Momo Trust Display", sans-serif;
+
+}
+
+.destaque h2 {
+    color: rgb(0, 0, 0);
+}
+
+.destaque p {
+    color: white;
+}
+
+.destaque h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.destaque p {
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.botao-principal {
+    border: none;
+    background: #2449A4;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* vídeo */
+
+.videos {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.videos h1 {
+    margin-bottom: 24px;
+}
+
+.videos-container {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.video-card {
+    flex: 0 0 calc((100% - 24px) / 3);
+    box-sizing: border-box;
+    border: 1px solid #8fa8d3;
+    border-radius: 17px;
+    overflow: hidden;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-card.escondido {
+    display: none;
+}
+
+/* imagem */
+
+.video {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* botão de play */
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #B90061;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+/* conteúdo do vídeo */
+
+.video-conteudo {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.video-conteudo h3 {
+    margin: 0 0 12px;
+}
+
+.video-conteudo p {
+    margin: 0;
+}
+
+/* fontes confiáveis */
+
+.fontes {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.fonte h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.fontes h1 {
+    
+    margin-bottom: 15px;
+}
+
+
+.lista-fontes {
+    width: 100%;
+}
+
+.fonte {
+    width: 100%;
+    min-height: 100px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d5dce8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 18px 0;
+}
+
+.fonte:first-child {
+    border-top: 1px solid #d5dce8;
+}
+
+.fonte h3 {
+    margin: 0 0 8px;
+}
+
+.fonte p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.fonte a {
+    color: #B90061;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.fonte a:hover {
+    color: #B90061;
+}
