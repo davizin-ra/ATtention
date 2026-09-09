@@ -1,0 +1,25 @@
+@media (max-width: 860px) {
+  .filters {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .input-search {
+    min-width: 0;
+
+    button {
+      padding: 0 24px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .top-section {
+    padding-top: 42px;
+  }
+  .selects {
+    grid-template-columns: 1fr;
+  }
+  .cards-section {
+    padding-top: 32px;
+  }
+}

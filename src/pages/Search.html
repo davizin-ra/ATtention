@@ -7,48 +7,63 @@
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/pages/Search.css" />
   </head>
+
   <body>
     <main>
-      <section class="top-section">
-        <div class="top-text">
-          <h1>Encontre os melhores profissionais</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            cumque officia nostrum optio laborum totam modi odit necessitatibus!
-            Quasi ipsam perspiciatis nemo provident voluptatum distinctio
-            ratione cumque possimus enim. Ab!
-          </p>
-        </div>
-        <div class="top-bg"></div>
+      <section class="top-section" aria-labelledby="titulo-busca">
         <div class="search-box">
-          <input type="text" placeholder="Pesquise" />
-          <button class="btn-1">Pesquisar</button>
+          <div class="top-texto">
+            <span>Profissionais ATtention</span>
+            <h1 id="titulo-busca">Encontre o apoio que você procura</h1>
+          </div>
+
+          <div class="filters">
+            <div class="selects">
+              <label>
+                <span>Serviço</span>
+                <select id="select-servico">
+                  <option value="">Todos os serviços</option>
+                </select>
+              </label>
+              <label>
+                <span>Localização</span>
+                <select id="select-loc">
+                  <option value="">Todas as regiões</option>
+                </select>
+              </label>
+              <label>
+                <span>Organizar por</span>
+                <select id="ordenacao">
+                  <option value="avaliacao">Melhor avaliação</option>
+                  <option value="anosAt">Mais experiência</option>
+                  <option value="atendimentos">Mais atendimentos</option>
+                  <option value="nomeAz">Nome (A-Z)</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="input-search">
+              <input
+                id="campo-busca"
+                type="search"
+                placeholder="Pesquisar por nome, serviço ou região"
+              />
+              <button class="btn-1" type="button">Pesquisar</button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="cards-section">
-
-        <div id="cards-container">
-          <!-- <div class="card">
-            <div
-              style="background-image: url(../../assets/images/Boneco.png)"
-              class="banner"
-            >
-              <div
-                style="background-image: url(../../assets/images/Boneco.png)"
-                class="img"
-              ></div>
-            </div>
-            <h1>Nome</h1>
-            <h2>localização</h2>
-            <p>descricao</p>
-            <div class="card-area">
-              <p>TEA</p>
-              <p>Inclusão escolar</p>
-              <p>TEA</p>
-              <p>Inclusão escolar</p>
-            </div>
-          </div> -->
+        <div class="text-pesquisa">
+          <p>Profissionais disponíveis</p>
+          <strong id="qtd-pesquisa"></strong>
         </div>
+
+        <div id="cards-container"></div>
+
+        <p id="prof-vazio">
+          Nenhum profissional encontrado. Tente ajustar os filtros.
+        </p>
       </section>
     </main>
 
