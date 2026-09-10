@@ -1,133 +1,275 @@
-/* texto com padrão */
+/* configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    color: #2449A4;
+    font-family: "Momo Trust Sans", sans-serif;
+}
+
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* textos com padrão */
 
 h1 {
     font-family: "Momo Trust Display", sans-serif;
-    font-size: 60px;
-    font-weight: 600;
+    font-size: 52px;
+    font-weight: 400;
     line-height: 1;
     color: #2449A4;
 }
 
 h2 {
     font-family: "Momo Trust Display", sans-serif;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 400;
+    line-height: 1.1;
     color: #2449A4;
 }
 
 h3 {
     font-family: "Momo Trust Display", sans-serif;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.15;
     color: #2449A4;
 }
 
 h4 {
     font-family: "Momo Trust Sans", sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
-    text-align: justify;
+    line-height: 1.2;
+    color: #2449A4;
+}
+
+h5 {
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 1.2;
     color: #2449A4;
 }
 
 p {
     font-family: "Momo Trust Sans", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    text-align: justify;
-    line-height: 1;
+    line-height: 1.2;
     color: #000000;
 }
 
-main {
-    width: 88%;
+/* início */
+
+.section-inicio {
+    min-height: 430px;
+    background: #2449A4;
+    color: white;
+    position: relative;
+    padding: 48px 6% 105px;
+    overflow: hidden;
+}
+
+.section-inicio::after {
+    content: "";
+    position: absolute;
+    left: -5%;
+    right: -5%;
+    bottom: -92px;
+    height: 145px;
+    background: white;
+    border-radius: 50% 50% 0 0;
+}
+
+.inicio-conteudo {
     max-width: 1180px;
     margin: auto;
-}
-
-/* inicio: texto e foto */
-
-.inicio {
-    min-height: 350px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 80px;
+    justify-content: space-between;
+    gap: 60px;
 }
 
-.texto-inicio {
+.inicio-texto {
+    width: 50%;
+}
+
+.section-inicio h1 {
+    color: white;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.section-inicio p {
+    color: white;
+    max-width: 570px;
+    text-align: justify;
+}
+
+/* imagem do início */
+
+.inicio-conteudo img {
     width: 500px;
-}
-
-.imagem-inicio {
-    width: 430px;
-    height: 285px;
+    height: 300px;
     object-fit: cover;
     border-radius: 12px;
 }
 
-/* barra de pesquisa */
+/* botões */
 
-.pesquisa {
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 32px;
+.section-button {
+    position: relative;
+    z-index: 2;
+    width: 88%;
+    max-width: 1180px;
+    margin: -35px auto 55px;
 }
 
-.barra-pesquisa {
-    width: 100%;
-    height: 58px;
-    box-sizing: border-box;
-    border: 2px solid #b5c4dc;
-    border-radius: 13px;
+.filtros {
     display: flex;
-    align-items: center;
-    padding: 0 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filtro {
+    border: 1px solid #2449A4;
     background: white;
-}
-
-.barra-pesquisa:focus-within {
-    border-color: #2449A4;
-}
-
-.icone {
     color: #2449A4;
-    margin-right: 10px;
-}
-
-.barra-pesquisa input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    color: #333;
-    background: transparent;
-    font-size: 16px;
-}
-
-.barra-pesquisa button {
-    border: none;
-    background: none;
-    color: #777;
+    border-radius: 20px;
+    padding: 7px 16px;
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     cursor: pointer;
+}
+
+.filtro:hover, .filtro.ativo {
+    background: #2449A4;
+    color: white;
+}
+
+/* tamanho e alinhamento das sections */
+
+.section-destaque, .section-conteudos, .section-videos, .section-fontes {
+    width: 88%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* destaque */
+
+.section-destaque {
+    margin-bottom: 70px;
+}
+
+.section-destaque > h5 {
+    color: #E33629;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.destaque-card {
+    background: #E33629;
+    border-radius: 28px;
+    padding: 30px 70px 38px;
+    color: white;
+    text-align: center;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.tags span {
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 15px;
+    padding: 5px 18px;
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.destaque-card h2 {
+    color: white;
+    max-width: 850px;
+    margin: auto auto 18px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.destaque-card h3 {
+    color: white;
+    max-width: 850px;
+    margin: auto auto 18px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.destaque-card p {
+    color: white;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    text-align: center;
     font-size: 16px;
 }
 
-#mensagemPesquisa {
-    margin: 8px 0 0;
-    color: #666;
+
+/* botões dos conteúdos */
+
+.botao {
+    display: inline-block;
+    background: #2449A4;
+    color: white;
+    border-radius: 8px;
+    padding: 7px 16px;
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
 }
+
+.botao:hover {
+    opacity: 0.88;
+}
+
 
 /* conteúdos */
 
-.titulo-conteudos {
+.section-conteudos {
+    margin-bottom: 75px;
+}
+
+.titulo-secao {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
+
+.titulo-secao h2,
+.section-videos h2,
+.section-fontes h2 {
+    color: #2449A4;
+    font-size: 36px;
+    font-weight: 400;
+}
+
 
 /* setas */
 
@@ -137,22 +279,23 @@ main {
 }
 
 .setas button {
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
     border: none;
     border-radius: 50%;
     background: #2449A4;
     color: white;
+    font-size: 22px;
     cursor: pointer;
-    font-size: 16px;
 }
 
 .setas button:disabled {
-    opacity: 0.5;
+    background: #b8c1ce;
     cursor: not-allowed;
 }
 
-/* carrossel de artigos */
+
+/* carrossel */
 
 .carrossel {
     width: 100%;
@@ -161,15 +304,18 @@ main {
 
 .cards {
     display: flex;
-    gap: 12px;
-    transition: transform .4s ease;
+    gap: 18px;
+    transition: transform 0.35s ease;
 }
 
+
+/* cards */
+
 .card {
-    flex: 0 0 calc((100% - 24px) / 3);
-    box-sizing: border-box;
-    border: 1px solid #8fa8d3;
-    border-radius: 17px;
+    flex: 0 0 calc((100% - 36px) / 3);
+    height: 400px;
+    border: 1px solid #9bb0d7;
+    border-radius: 10px;
     overflow: hidden;
     background: white;
     display: flex;
@@ -188,130 +334,66 @@ main {
 }
 
 .card-conteudo {
-    min-height: 225px;
-    padding: 18px;
-    box-sizing: border-box;
+    height: 240px;
+    padding: 17px;
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 .card h3 {
-    margin: 0 0 12px;
+    color: #2449A4;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 12px;
 }
 
 .card p {
-    margin: 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: justify;
 }
 
-.botao-card {
-    width: 75px;
+.card .botao {
+    width: 80px;
+    text-align: center;
     margin: auto auto 0;
-    border: none;
-    background: #2449A4;
-    color: white;
     padding: 6px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 20px;
-    text-decoration: none;
-    text-align: center;
-    flex-shrink: 0;
 }
 
-/* destaque */
+/* vídeos */
 
-.destaque {
-    max-width: 970px;
-    margin: 25px auto 65px;
-    padding: 30px 55px;
-    box-sizing: border-box;
-    background: #e765a8;
-    color: white;
-    text-align: center;
-    border-radius: 27px;
+.section-videos {
+    margin-bottom: 75px;
 }
 
-.titulo-destaque {
-    margin: 75px 0 0;
-    color: #ff0090;
-    font-size: 24px;
-    text-align: center;
-    font-weight: 600;
-    font-family: "Momo Trust Display", sans-serif;
-
-}
-
-.destaque h2 {
-    color: rgb(0, 0, 0);
-}
-
-.destaque p {
-    color: white;
-}
-
-.destaque h2 {
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-size: 36px;
-}
-
-.destaque p {
+.section-videos h2 {
     margin-bottom: 25px;
-    font-weight: 500;
-    font-size: 20px;
-    text-align: center;
-}
-
-.botao-principal {
-    border: none;
-    background: #2449A4;
-    color: white;
-    padding: 12px 22px;
-    border-radius: 8px;
-    font-size: 20px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-/* vídeo */
-
-.videos {
-    width: 100%;
-    margin-bottom: 80px;
-}
-
-.videos h1 {
-    margin-bottom: 24px;
 }
 
 .videos-container {
     display: flex;
-    gap: 12px;
-    width: 100%;
-    align-items: stretch;
+    gap: 18px;
 }
 
 .video-card {
-    flex: 0 0 calc((100% - 24px) / 3);
-    box-sizing: border-box;
-    border: 1px solid #8fa8d3;
-    border-radius: 17px;
+    flex: 1;
+    height: 320px;
+    border: 1px solid #9bb0d7;
+    border-radius: 10px;
     overflow: hidden;
     background: white;
     display: flex;
     flex-direction: column;
 }
 
-.video-card.escondido {
-    display: none;
+.video-card > a {
+    text-decoration: none;
 }
 
-/* imagem */
-
 .video {
-    width: 100%;
-    height: 200px;
+    height: 190px;
     position: relative;
     flex-shrink: 0;
 }
@@ -323,97 +405,90 @@ main {
     display: block;
 }
 
-/* botão de play */
-
 .play {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background: #B90061;
+    background: #E33629;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 23px;
 }
 
-/* conteúdo do vídeo */
-
 .video-conteudo {
-    padding: 20px;
-    box-sizing: border-box;
+    height: 110px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 .video-conteudo h3 {
-    margin: 0 0 12px;
+    color: #2449A4;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 8px;
 }
 
 .video-conteudo p {
-    margin: 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.2;
 }
 
-/* fontes confiáveis */
+/* fontes confiaveis */
 
-.fontes {
-    width: 100%;
-    margin-bottom: 80px;
+.section-fontes h2 {
+    margin-bottom: 22px;
 }
 
-.fonte h3 {
-    margin: 0 0 8px;
-    font-size: 20px;
+.texto-fontes {
+    color: #000000;
+    max-width: 850px;
+    margin-bottom: 28px;
+    font-size: 18px;
 }
-
-.fontes h1 {
-    
-    margin-bottom: 15px;
-}
-
 
 .lista-fontes {
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
 }
 
 .fonte {
-    width: 100%;
-    min-height: 100px;
-    box-sizing: border-box;
-    border-bottom: 1px solid #d5dce8;
+    height: 180px;
+    border: 1px solid #9bb0d7;
+    border-radius: 10px;
+    padding: 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    padding: 18px 0;
-}
-
-.fonte:first-child {
-    border-top: 1px solid #d5dce8;
+    flex-direction: column;
+    text-align: center;
 }
 
 .fonte h3 {
-    margin: 0 0 8px;
+    color: #2449A4;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 12px;
 }
 
 .fonte p {
-    margin: 0;
+    color: #000000;
     font-size: 16px;
+    line-height: 1.2;
 }
 
-.fonte a {
-    color: #B90061;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
-    white-space: nowrap;
+.fonte .botao {
+    margin: auto auto 0;
+    padding: 6px 14px;
+    font-size: 15px;
 }
 
-.fonte a:hover {
-    color: #B90061;
-}
+
