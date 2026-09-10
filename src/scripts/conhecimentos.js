@@ -1,151 +1,88 @@
-// barra de pesquisa
-
-const campoPesquisa = document.getElementById("campoPesquisa");
-const limparPesquisa = document.getElementById("limparPesquisa");
-const mensagemPesquisa = document.getElementById("mensagemPesquisa");
-
-// fazer pesquisa
-
-campoPesquisa.addEventListener("input", function() {
-
-    const texto = campoPesquisa.value.toLowerCase().trim();
-    const todosCards = document.querySelectorAll(".card");
-
-    let encontrados = 0;
-
-    todosCards.forEach(function(card) {
-
-        const palavras = card.dataset.pesquisa.toLowerCase();
-
-        if (palavras.includes(texto)) {
-
-            card.classList.remove("escondido");
-            encontrados++;
-
-        } else {
-
-            card.classList.add("escondido");
-
-        }
-
-    });
-
-    posicao = 0;  // Volta para o primeiro card
-
-// Mostra o resultado da pesquisa
-
-    if (texto === "") {
-        mensagemPesquisa.textContent = "";
-
-    } else {
-        mensagemPesquisa.textContent =
-            encontrados + " conteúdo(s) encontrado(s).";
-    }
-
-    atualizarCarrossel();
-
-});
-
-// Limpar pesquisa
-
-limparPesquisa.addEventListener("click", function() {
-
-    campoPesquisa.value = "";
-    campoPesquisa.dispatchEvent(new Event("input"));
-    campoPesquisa.focus();
-
-});
-
-//carrossel
-
+const filtros = document.querySelectorAll(".filtro");
 const cards = document.getElementById("cards");
+const todosCards = document.querySelectorAll(".card");
+const destaque = document.getElementById("destaque");
 const botaoVoltar = document.getElementById("voltar");
 const botaoAvancar = document.getElementById("avancar");
 
 let posicao = 0;
 
-// Botão avançar
+// filtra os conteúdos pelos botões
+filtros.forEach(function(filtro) {
+    filtro.addEventListener("click", function() {
+        const categoria = filtro.dataset.filtro;
 
+        filtros.forEach(function(botao) {
+            botao.classList.remove("ativo");
+        });
+
+        filtro.classList.add("ativo");
+        posicao = 0;
+
+        todosCards.forEach(function(card) {
+            if (categoria === "todos" || card.dataset.categorias.includes(categoria)) {
+                card.classList.remove("escondido");
+            } else {
+                card.classList.add("escondido");
+            }
+        });
+
+        // o destaque aparece apenas em todos
+        if (categoria === "todos") {
+            destaque.style.display = "block";
+        } else {
+            destaque.style.display = "none";
+        }
+
+        atualizarCarrossel();
+    });
+});
+
+// avança os cards
 botaoAvancar.addEventListener("click", function() {
+    const visiveis = document.querySelectorAll(".card:not(.escondido)").length;
 
-    const quantidadeCards =
-        document.querySelectorAll(".card:not(.escondido)").length;
-
-    if (posicao < quantidadeCards - 3) {
-
+    if (posicao < visiveis - 3) {
         posicao++;
-
         atualizarCarrossel();
-
     }
-
 });
 
-// Botão voltar
-
+// volta os cards
 botaoVoltar.addEventListener("click", function() {
-
     if (posicao > 0) {
-
         posicao--;
-
         atualizarCarrossel();
-
     }
-
 });
 
-// Atualizar a posição do carrossel
-
+// atualiza a posição do carrossel
 function atualizarCarrossel() {
-
-    const card =
-        document.querySelector(".card:not(.escondido)");
+    const card = document.querySelector(".card:not(.escondido)");
 
     if (!card) {
         return;
     }
 
     const largura = card.offsetWidth;
+    const gap = 18;
 
-    cards.style.transform =
-        "translateX(-" + posicao * (largura + 12) + "px)";
+    cards.style.transform = "translateX(-" + posicao * (largura + gap) + "px)";
 
     atualizarBotoes();
-
 }
 
-// Atualizar os botões
-
+// ativa ou desativa as setas
 function atualizarBotoes() {
+    const visiveis = document.querySelectorAll(".card:not(.escondido)").length;
 
-    const quantidadeCards =
-        document.querySelectorAll(".card:not(.escondido)").length;
-
-
-    if (posicao === 0) {
-        botaoVoltar.disabled = true;
-
-    } else {
-        botaoVoltar.disabled = false;
-
-    }
-
-    if (posicao >= quantidadeCards - 3) {
-        botaoAvancar.disabled = true;
-
-    } else {
-        botaoAvancar.disabled = false;
-
-    }
-
+    botaoVoltar.disabled = posicao === 0;
+    botaoAvancar.disabled = visiveis <= 3 || posicao >= visiveis - 3;
 }
-
-// Atualizar quando a tela mudar de tamanho
 
 window.addEventListener("resize", function() {
+    posicao = 0;
     atualizarCarrossel();
-
 });
 
-atualizarCarrossel(); // Atualiza o carrossel quando a página é carregada
+atualizarCarrossel();
