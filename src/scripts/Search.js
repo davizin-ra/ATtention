@@ -35,7 +35,7 @@ function filtrar() {
   const busca = campoBusca.value.toLowerCase().trim();
 
   return perfis.filter((p) => {
-      const texto = [p.nome, p.area, p.regiao, ...p.atuacao].join(" ").toLowerCase();
+      const texto = [p.nome, p.area, p.regiao, p.atuacao].join(" ").toLowerCase();
 
       return (
         (!selectServ.value || p.area === selectServ.value) &&
