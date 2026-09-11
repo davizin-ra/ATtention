@@ -1,7 +1,7 @@
 main {
   display: flex;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 
 .user-section {
@@ -32,7 +32,6 @@ main {
     background-color: white;
     margin: 1%;
     padding: 2%;
-    border: 1px solid var(--azul-escuro);
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgb(194, 194, 194);
 
@@ -61,25 +60,29 @@ main {
     }
 
     .cap {
-      color: #555;
+      color: #000000;
+      margin-bottom: 1%;
     }
 
     .ltt {
       p {
-        border: 2px solid var(--rosa-escuro);
-        box-shadow: 2px 2px 8px rgb(194, 194, 194);
-        padding: 5px;
-        border-radius: 10px;
+        margin: 0;
+        padding: 10px 15px;
+        border-radius: 100px;
+        background: #FFFC79;
+        color: #000000;
+        font-size: 0.72rem;
       }
     }
 
     .disp {
+      margin: 0;
       p {
-        background-color: rgb(255, 66, 66);
+        background-color: rgb(255, 100, 100);
         color: white;
         box-shadow: 2px 2px 8px rgb(194, 194, 194);
         padding: 5px;
-        border-radius: 10px;
+        border-radius: 0;
       }
 
       .disponivel {
@@ -96,7 +99,6 @@ main {
   flex-direction: column;
   text-align: center;
   padding: 2%;
-  border: 1px solid var(--azul-escuro);
   border-radius: 10px;
   box-shadow: 2px 2px 8px rgb(194, 194, 194);
 
@@ -119,7 +121,7 @@ main {
       z-index: 2;
       margin-top: 50px;
       border: white solid 10px;
-      border-radius: 10px;
+      border-radius: 50%;
 
       aspect-ratio: 1 / 1;
       object-fit: cover;
@@ -153,7 +155,6 @@ main {
   position: relative;
   background-color: #fff;
   padding: 7%;
-  border: 1px solid var(--azul-escuro);
   border-radius: 10px;
   box-shadow: 2px 2px 8px rgb(194, 194, 194);
   display: grid;
