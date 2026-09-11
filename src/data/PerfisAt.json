@@ -29,12 +29,7 @@
         "Mediação de Conflitos"
       ],
       "modalidades": ["Presencial", "Online"],
-      "atuacao": [
-        "Família",
-        "Social",
-        "Orientação",
-        "Mediação"
-      ],
+      "atuacao": ["Família", "Social", "Orientação", "Mediação"],
       "disponibilidade": ["Seg", "Ter", "Quar", "Qui", "Sex"]
     },
     {
@@ -66,12 +61,7 @@
         "Escuta Qualificada"
       ],
       "modalidades": ["Presencial", "Online"],
-      "atuacao": [
-        "Família",
-        "Ansiedade",
-        "Emoções",
-        "Orientação"
-      ],
+      "atuacao": ["Família", "Ansiedade", "Emoções", "Orientação"],
       "disponibilidade": ["Seg", "Ter", "Qui", "Sex"]
     },
     {
@@ -99,12 +89,7 @@
         "Políticas de Assistência Social"
       ],
       "modalidades": ["Presencial"],
-      "atuacao": [
-        "Família",
-        "SUAS",
-        "Direitos",
-        "Orientação"
-      ],
+      "atuacao": ["Família", "SUAS", "Direitos", "Orientação"],
       "disponibilidade": ["Seg", "Quar", "Sex", "Sáb"]
     },
     {
@@ -136,12 +121,7 @@
         "Desenvolvimento Infantil"
       ],
       "modalidades": ["Presencial", "Online"],
-      "atuacao": [
-        "TEA",
-        "TDAH",
-        "Inclusão escolar",
-        "Reforço"
-      ],
+      "atuacao": ["TEA", "TDAH", "Inclusão escolar", "Reforço"],
       "disponibilidade": ["Ter", "Quar", "Qui", "Sáb"]
     },
     {
@@ -174,12 +154,7 @@
         "Alfabetização"
       ],
       "modalidades": ["Presencial", "Online"],
-      "atuacao": [
-        "TDAH",
-        "TEA",
-        "Aprendizagem",
-        "Alfabetização"
-      ],
+      "atuacao": ["TDAH", "TEA", "Aprendizagem", "Alfabetização"],
       "disponibilidade": ["Seg", "Ter", "Quar", "Qui"]
     },
     {
@@ -207,12 +182,7 @@
         "Gestão de Projetos Sociais"
       ],
       "modalidades": ["Presencial", "Online"],
-      "atuacao": [
-        "CRAS",
-        "CREAS",
-        "Família",
-        "Vulnerabilidade"
-      ],
+      "atuacao": ["CRAS", "CREAS", "Família", "Vulnerabilidade"],
       "disponibilidade": ["Seg", "Ter", "Quar", "Qui", "Sex", "Sáb"]
     },
     {
@@ -244,12 +214,7 @@
         "Mediação Familiar"
       ],
       "modalidades": ["Online", "Presencial"],
-      "atuacao": [
-        "Família",
-        "Emoções",
-        "Relacionamentos",
-        "Saúde mental"
-      ],
+      "atuacao": ["Família", "Emoções", "Relacionamentos", "Saúde mental"],
       "disponibilidade": ["Seg", "Ter", "Qui", "Sex", "Sáb"]
     },
     {
@@ -280,12 +245,7 @@
         "Juventude e Cidadania"
       ],
       "modalidades": ["Presencial", "Online"],
-      "atuacao": [
-        "Juventude",
-        "Projetos",
-        "Cidadania",
-        "Escola"
-      ],
+      "atuacao": ["Juventude", "Projetos", "Cidadania", "Escola"],
       "disponibilidade": ["Seg", "Quar", "Qui", "Sáb"]
     },
     {
@@ -313,12 +273,7 @@
         "Autonomia Funcional"
       ],
       "modalidades": ["Presencial"],
-      "atuacao": [
-        "TEA",
-        "Inclusão",
-        "Autonomia",
-        "Desenvolvimento"
-      ],
+      "atuacao": ["TEA", "Inclusão", "Autonomia", "Desenvolvimento"],
       "disponibilidade": ["Ter", "Quar", "Qui", "Sex"]
     },
     {
@@ -346,12 +301,7 @@
         "Proteção Social Básica"
       ],
       "modalidades": ["Presencial", "Online"],
-      "atuacao": [
-        "SUAS",
-        "Direitos",
-        "Comunidade",
-        "Família"
-      ],
+      "atuacao": ["SUAS", "Direitos", "Comunidade", "Família"],
       "disponibilidade": ["Seg", "Ter", "Quar", "Sex"]
     },
     {
@@ -383,12 +333,7 @@
         "Avaliação Psicológica"
       ],
       "modalidades": ["Online", "Presencial"],
-      "atuacao": [
-        "TDAH",
-        "TEA",
-        "Avaliação",
-        "Família"
-      ],
+      "atuacao": ["TDAH", "TEA", "Avaliação", "Família"],
       "disponibilidade": ["Seg", "Ter", "Quar", "Qui"]
     },
     {
@@ -420,12 +365,7 @@
         "Tecnologias Educacionais"
       ],
       "modalidades": ["Online", "Presencial"],
-      "atuacao": [
-        "Inclusão escolar",
-        "TDAH",
-        "TEA",
-        "Orientação"
-      ],
+      "atuacao": ["Inclusão escolar", "TDAH", "TEA", "Orientação"],
       "disponibilidade": ["Seg", "Quar", "Qui", "Sex"]
     },
     {
@@ -453,12 +393,7 @@
         "Direitos Humanos"
       ],
       "modalidades": ["Presencial", "Online"],
-      "atuacao": [
-        "Família",
-        "Inclusão",
-        "Projetos",
-        "Direitos"
-      ],
+      "atuacao": ["Família", "Inclusão", "Projetos", "Direitos"],
       "disponibilidade": ["Ter", "Quar", "Qui", "Sáb"]
     },
     {
@@ -490,12 +425,7 @@
         "Educação Inclusiva"
       ],
       "modalidades": ["Presencial", "Online"],
-      "atuacao": [
-        "TDAH",
-        "TEA",
-        "Aprendizagem",
-        "Inclusão"
-      ],
+      "atuacao": ["TDAH", "TEA", "Aprendizagem", "Inclusão"],
       "disponibilidade": ["Seg", "Ter", "Qui", "Sex"]
     },
     {
@@ -527,12 +457,7 @@
         "Desenvolvimento Motor"
       ],
       "modalidades": ["Presencial"],
-      "atuacao": [
-        "Reabilitação",
-        "Inclusão",
-        "Autonomia",
-        "Motor"
-      ],
+      "atuacao": ["Reabilitação", "Inclusão", "Autonomia", "Motor"],
       "disponibilidade": ["Seg", "Quar", "Sex", "Sáb"]
     },
     {
@@ -564,12 +489,7 @@
         "Gestão de Pessoas"
       ],
       "modalidades": ["Presencial", "Online"],
-      "atuacao": [
-        "SUAS",
-        "Projetos",
-        "Família",
-        "Gestão"
-      ],
+      "atuacao": ["SUAS", "Projetos", "Família", "Gestão"],
       "disponibilidade": ["Seg", "Ter", "Quar", "Qui", "Sex"]
     },
     {
@@ -601,12 +521,7 @@
         "Saúde Mental"
       ],
       "modalidades": ["Online", "Presencial"],
-      "atuacao": [
-        "Adolescentes",
-        "Família",
-        "Emoções",
-        "Orientação"
-      ],
+      "atuacao": ["Adolescentes", "Família", "Emoções", "Orientação"],
       "disponibilidade": ["Ter", "Quar", "Qui", "Sex", "Sáb"]
     },
     {
@@ -633,12 +548,7 @@
         "Educação Inclusiva"
       ],
       "modalidades": ["Online", "Presencial"],
-      "atuacao": [
-        "Reforço",
-        "Escola",
-        "Inclusão",
-        "Orientação"
-      ],
+      "atuacao": ["Reforço", "Escola", "Inclusão", "Orientação"],
       "disponibilidade": ["Seg", "Ter", "Quar", "Sáb"]
     },
     {
@@ -670,12 +580,7 @@
         "Atendimento Familiar"
       ],
       "modalidades": ["Presencial", "Online"],
-      "atuacao": [
-        "Inclusão",
-        "Família",
-        "Gestão",
-        "Proteção"
-      ],
+      "atuacao": ["Inclusão", "Família", "Gestão", "Proteção"],
       "disponibilidade": ["Seg", "Ter", "Qui", "Sex"]
     },
     {
@@ -712,12 +617,930 @@
         "Orientação Familiar"
       ],
       "modalidades": ["Presencial", "Online"],
-      "atuacao": [
-        "Família",
-        "Emoções",
-        "Saúde mental",
-        "Terapia"
+      "atuacao": ["Família", "Emoções", "Saúde mental", "Terapia"],
+      "disponibilidade": ["Seg", "Ter", "Quar", "Qui", "Sex", "Sáb"]
+    },
+    {
+      "id": 21,
+      "nome": "Carolina Mendes",
+      "area": "Psicologia",
+      "regiao": "São Paulo - SP",
+      "banner": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 615,
+      "avaliacao": 4.9,
+      "familias": 205,
+      "anosAt": 7,
+      "sobre": "Psicóloga com atuação voltada ao acompanhamento emocional, orientação familiar e desenvolvimento de estratégias para uma rotina mais equilibrada.",
+      "formacao": [
+        {
+          "titulo": "Psicologia",
+          "desc": "Universidade Presbiteriana Mackenzie — 2019"
+        },
+        {
+          "titulo": "Psicologia Clínica",
+          "desc": "PUC-SP — 2021"
+        }
       ],
+      "capacitacoes": [
+        "Saúde Mental",
+        "Orientação Familiar",
+        "Inteligência Emocional",
+        "Psicologia do Desenvolvimento"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["Família", "Ansiedade", "Emoções", "Orientação"],
+      "disponibilidade": ["Seg", "Ter", "Quar", "Qui", "Sex"]
+    },
+    {
+      "id": 22,
+      "nome": "André Luiz Ferreira",
+      "area": "Educação",
+      "regiao": "Santo André - SP",
+      "banner": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 380,
+      "avaliacao": 4.7,
+      "familias": 125,
+      "anosAt": 5,
+      "sobre": "Educador com experiência em acompanhamento pedagógico, orientação de estudantes e desenvolvimento de estratégias de aprendizagem.",
+      "formacao": [
+        {
+          "titulo": "Pedagogia",
+          "desc": "Universidade Metodista de São Paulo — 2020"
+        },
+        {
+          "titulo": "Gestão Educacional",
+          "desc": "Centro Universitário Senac — 2022"
+        }
+      ],
+      "capacitacoes": [
+        "Metodologias Ativas",
+        "Educação Inclusiva",
+        "Tecnologias Educacionais",
+        "Orientação Educacional"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["TEA", "TDAH", "Inclusão escolar", "Reforço"],
+      "disponibilidade": ["Seg", "Quar", "Qui", "Sáb"]
+    },
+    {
+      "id": 23,
+      "nome": "Mariana Alves",
+      "area": "Serviço Social",
+      "regiao": "Diadema - SP",
+      "banner": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 455,
+      "avaliacao": 4.8,
+      "familias": 160,
+      "anosAt": 6,
+      "sobre": "Assistente social dedicada ao acompanhamento de famílias, orientação sobre direitos e acesso às políticas públicas.",
+      "formacao": [
+        {
+          "titulo": "Serviço Social",
+          "desc": "Universidade Federal do ABC (UFABC) — 2019"
+        }
+      ],
+      "capacitacoes": [
+        "SUAS",
+        "Direitos Sociais",
+        "Proteção Social",
+        "Atendimento Familiar"
+      ],
+      "modalidades": ["Presencial"],
+      "atuacao": ["Família", "SUAS", "Direitos", "Orientação"],
+      "disponibilidade": ["Seg", "Ter", "Qui", "Sex"]
+    },
+    {
+      "id": 24,
+      "nome": "Felipe Rocha",
+      "area": "Terapia Ocupacional",
+      "regiao": "Mauá - SP",
+      "banner": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 340,
+      "avaliacao": 4.8,
+      "familias": 115,
+      "anosAt": 5,
+      "sobre": "Terapeuta ocupacional com foco no desenvolvimento da autonomia, participação social e habilidades funcionais.",
+      "formacao": [
+        {
+          "titulo": "Terapia Ocupacional",
+          "desc": "Universidade Federal de São Carlos — 2020"
+        }
+      ],
+      "capacitacoes": [
+        "Tecnologia Assistiva",
+        "Desenvolvimento Infantil",
+        "Autonomia Funcional",
+        "Inclusão Social"
+      ],
+      "modalidades": ["Presencial"],
+      "atuacao": ["TEA", "Inclusão", "Autonomia", "Desenvolvimento"],
+      "disponibilidade": ["Ter", "Quar", "Qui", "Sex"]
+    },
+    {
+      "id": 25,
+      "nome": "Isabela Martins",
+      "area": "Psicopedagogia",
+      "regiao": "São Bernardo do Campo - SP",
+      "banner": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 590,
+      "avaliacao": 4.9,
+      "familias": 195,
+      "anosAt": 8,
+      "sobre": "Psicopedagoga especializada em dificuldades de aprendizagem, alfabetização e acompanhamento do desenvolvimento escolar.",
+      "formacao": [
+        {
+          "titulo": "Pedagogia",
+          "desc": "Universidade de São Paulo (USP) — 2017"
+        },
+        {
+          "titulo": "Psicopedagogia",
+          "desc": "PUC-SP — 2019"
+        }
+      ],
+      "capacitacoes": [
+        "Dificuldades de Aprendizagem",
+        "TDAH",
+        "Alfabetização",
+        "Educação Especial"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["TDAH", "TEA", "Aprendizagem", "Alfabetização"],
+      "disponibilidade": ["Seg", "Ter", "Quar", "Qui"]
+    },
+    {
+      "id": 26,
+      "nome": "Ricardo Mendes",
+      "area": "Assistência Social",
+      "regiao": "Osasco - SP",
+      "banner": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 735,
+      "avaliacao": 4.8,
+      "familias": 250,
+      "anosAt": 9,
+      "sobre": "Profissional com experiência em proteção social, acompanhamento familiar e gestão de projetos voltados à comunidade.",
+      "formacao": [
+        {
+          "titulo": "Serviço Social",
+          "desc": "Universidade Federal de São Paulo (UNIFESP) — 2015"
+        }
+      ],
+      "capacitacoes": [
+        "SUAS",
+        "CRAS e CREAS",
+        "Gestão Social",
+        "Proteção Social"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["CRAS", "CREAS", "Família", "Vulnerabilidade"],
+      "disponibilidade": ["Seg", "Ter", "Quar", "Qui", "Sex"]
+    },
+    {
+      "id": 27,
+      "nome": "Beatriz Almeida",
+      "area": "Psicologia",
+      "regiao": "Guarulhos - SP",
+      "banner": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 680,
+      "avaliacao": 5.0,
+      "familias": 225,
+      "anosAt": 8,
+      "sobre": "Psicóloga com atuação em saúde emocional, relacionamentos e orientação de famílias e adolescentes.",
+      "formacao": [
+        {
+          "titulo": "Psicologia",
+          "desc": "Universidade Guarulhos — 2017"
+        },
+        {
+          "titulo": "Psicologia Familiar",
+          "desc": "PUC-SP — 2019"
+        }
+      ],
+      "capacitacoes": [
+        "Saúde Mental",
+        "Terapia Familiar",
+        "Adolescência",
+        "Mediação de Conflitos"
+      ],
+      "modalidades": ["Online", "Presencial"],
+      "atuacao": ["Família", "Emoções", "Relacionamentos", "Saúde mental"],
+      "disponibilidade": ["Seg", "Ter", "Qui", "Sex", "Sáb"]
+    },
+    {
+      "id": 28,
+      "nome": "Gabriel Santos",
+      "area": "Educação",
+      "regiao": "Mogi das Cruzes - SP",
+      "banner": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 425,
+      "avaliacao": 4.7,
+      "familias": 145,
+      "anosAt": 6,
+      "sobre": "Educador dedicado ao acompanhamento escolar, inclusão e desenvolvimento de estratégias personalizadas de aprendizagem.",
+      "formacao": [
+        {
+          "titulo": "Pedagogia",
+          "desc": "Universidade de Mogi das Cruzes — 2019"
+        },
+        {
+          "titulo": "Educação Inclusiva",
+          "desc": "Universidade Cruzeiro do Sul — 2021"
+        }
+      ],
+      "capacitacoes": [
+        "Educação Inclusiva",
+        "Metodologias Ativas",
+        "Reforço Escolar",
+        "Tecnologias Educacionais"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["Juventude", "Projetos", "Cidadania", "Escola"],
+      "disponibilidade": ["Seg", "Quar", "Qui", "Sáb"]
+    },
+    {
+      "id": 29,
+      "nome": "Natália Ferreira",
+      "area": "Assistência Social",
+      "regiao": "Suzano - SP",
+      "banner": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 470,
+      "avaliacao": 4.9,
+      "familias": 170,
+      "anosAt": 6,
+      "sobre": "Assistente social com experiência em acompanhamento de famílias e desenvolvimento de ações de proteção social.",
+      "formacao": [
+        {
+          "titulo": "Serviço Social",
+          "desc": "Universidade Nove de Julho — 2019"
+        }
+      ],
+      "capacitacoes": [
+        "Proteção Social",
+        "Atendimento Familiar",
+        "Projetos Sociais",
+        "Direitos Humanos"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["Família", "Inclusão", "Projetos", "Direitos"],
+      "disponibilidade": ["Ter", "Quar", "Qui", "Sáb"]
+    },
+    {
+      "id": 30,
+      "nome": "Vinícius Costa",
+      "area": "Serviço Social",
+      "regiao": "Ribeirão Pires - SP",
+      "banner": "https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 520,
+      "avaliacao": 4.8,
+      "familias": 180,
+      "anosAt": 7,
+      "sobre": "Assistente social com atuação comunitária e experiência no encaminhamento de famílias para serviços públicos.",
+      "formacao": [
+        {
+          "titulo": "Serviço Social",
+          "desc": "Universidade Metodista de São Paulo — 2018"
+        }
+      ],
+      "capacitacoes": [
+        "SUAS",
+        "Direitos Sociais",
+        "Proteção Social Básica",
+        "Trabalho Comunitário"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["SUAS", "Direitos", "Comunidade", "Família"],
+      "disponibilidade": ["Seg", "Ter", "Quar", "Sex"]
+    },
+    {
+      "id": 31,
+      "nome": "Aline Barbosa",
+      "area": "Psicopedagogia",
+      "regiao": "São Paulo - SP",
+      "banner": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 640,
+      "avaliacao": 4.9,
+      "familias": 215,
+      "anosAt": 8,
+      "sobre": "Psicopedagoga especializada em aprendizagem, alfabetização e acompanhamento individualizado de crianças.",
+      "formacao": [
+        {
+          "titulo": "Pedagogia",
+          "desc": "Universidade de São Paulo (USP) — 2016"
+        },
+        {
+          "titulo": "Psicopedagogia",
+          "desc": "PUC-SP — 2018"
+        }
+      ],
+      "capacitacoes": [
+        "Psicopedagogia Clínica",
+        "Alfabetização",
+        "TDAH",
+        "Educação Inclusiva"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["TDAH", "TEA", "Aprendizagem", "Alfabetização"],
+      "disponibilidade": ["Seg", "Ter", "Quar", "Qui"]
+    },
+    {
+      "id": 32,
+      "nome": "Marcelo Henrique",
+      "area": "Terapia Ocupacional",
+      "regiao": "Santo André - SP",
+      "banner": "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 365,
+      "avaliacao": 4.8,
+      "familias": 125,
+      "anosAt": 6,
+      "sobre": "Terapeuta ocupacional com foco em autonomia, desenvolvimento motor e participação nas atividades do cotidiano.",
+      "formacao": [
+        {
+          "titulo": "Terapia Ocupacional",
+          "desc": "Universidade Federal de São Paulo (UNIFESP) — 2019"
+        },
+        {
+          "titulo": "Reabilitação Funcional",
+          "desc": "Faculdade de Medicina do ABC — 2021"
+        }
+      ],
+      "capacitacoes": [
+        "Reabilitação",
+        "Tecnologia Assistiva",
+        "Desenvolvimento Motor",
+        "Autonomia"
+      ],
+      "modalidades": ["Presencial"],
+      "atuacao": ["Reabilitação", "Inclusão", "Autonomia", "Motor"],
+      "disponibilidade": ["Seg", "Quar", "Sex", "Sáb"]
+    },
+    {
+      "id": 33,
+      "nome": "Sabrina Oliveira",
+      "area": "Psicologia",
+      "regiao": "Mauá - SP",
+      "banner": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 555,
+      "avaliacao": 4.9,
+      "familias": 185,
+      "anosAt": 7,
+      "sobre": "Psicóloga com atendimento voltado ao equilíbrio emocional, relações familiares e desenvolvimento pessoal.",
+      "formacao": [
+        {
+          "titulo": "Psicologia",
+          "desc": "Universidade Metodista de São Paulo — 2019"
+        },
+        {
+          "titulo": "Psicologia Clínica",
+          "desc": "Instituto Sedes Sapientiae — 2021"
+        }
+      ],
+      "capacitacoes": [
+        "Saúde Mental",
+        "Psicologia Familiar",
+        "Inteligência Emocional",
+        "Escuta Qualificada"
+      ],
+      "modalidades": ["Online", "Presencial"],
+      "atuacao": ["Família", "Ansiedade", "Emoções", "Relacionamentos"],
+      "disponibilidade": ["Seg", "Ter", "Qui", "Sex"]
+    },
+    {
+      "id": 34,
+      "nome": "Daniel Souza",
+      "area": "Educação",
+      "regiao": "São Caetano do Sul - SP",
+      "banner": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 450,
+      "avaliacao": 4.8,
+      "familias": 150,
+      "anosAt": 6,
+      "sobre": "Educador com experiência em orientação acadêmica, acompanhamento de estudantes e práticas de educação inclusiva.",
+      "formacao": [
+        {
+          "titulo": "Pedagogia",
+          "desc": "Universidade Municipal de São Caetano do Sul — 2019"
+        },
+        {
+          "titulo": "Orientação Educacional",
+          "desc": "Centro Universitário Senac — 2021"
+        }
+      ],
+      "capacitacoes": [
+        "Orientação Educacional",
+        "Educação Inclusiva",
+        "Gestão de Conflitos",
+        "Metodologias de Ensino"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["Inclusão escolar", "TDAH", "TEA", "Orientação"],
+      "disponibilidade": ["Seg", "Quar", "Qui", "Sex"]
+    },
+    {
+      "id": 35,
+      "nome": "Renan Martins",
+      "area": "Serviço Social",
+      "regiao": "São Paulo - SP",
+      "banner": "https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 610,
+      "avaliacao": 4.9,
+      "familias": 210,
+      "anosAt": 8,
+      "sobre": "Assistente social com experiência em políticas públicas, projetos comunitários e acompanhamento de famílias.",
+      "formacao": [
+        {
+          "titulo": "Serviço Social",
+          "desc": "PUC-SP — 2016"
+        },
+        {
+          "titulo": "Gestão de Projetos Sociais",
+          "desc": "Fundação Getulio Vargas (FGV) — 2019"
+        }
+      ],
+      "capacitacoes": [
+        "Políticas Públicas",
+        "SUAS",
+        "Gestão Social",
+        "Projetos Comunitários"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["SUAS", "Projetos", "Família", "Gestão"],
+      "disponibilidade": ["Seg", "Ter", "Quar", "Qui", "Sex"]
+    },
+    {
+      "id": 36,
+      "nome": "Letícia Ramos",
+      "area": "Assistência Social",
+      "regiao": "Santo André - SP",
+      "banner": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 490,
+      "avaliacao": 4.8,
+      "familias": 175,
+      "anosAt": 7,
+      "sobre": "Profissional dedicada ao atendimento familiar e ao fortalecimento de vínculos por meio de ações de proteção social.",
+      "formacao": [
+        {
+          "titulo": "Serviço Social",
+          "desc": "Universidade Metodista de São Paulo — 2018"
+        }
+      ],
+      "capacitacoes": [
+        "Proteção Social",
+        "Atendimento Familiar",
+        "SUAS",
+        "Direitos Humanos"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["Família", "Social", "Orientação", "Proteção"],
+      "disponibilidade": ["Ter", "Quar", "Qui", "Sáb"]
+    },
+    {
+      "id": 37,
+      "nome": "Henrique Carvalho",
+      "area": "Psicologia",
+      "regiao": "Diadema - SP",
+      "banner": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 705,
+      "avaliacao": 4.9,
+      "familias": 235,
+      "anosAt": 9,
+      "sobre": "Psicólogo com atuação em acompanhamento emocional, orientação de adolescentes e desenvolvimento de habilidades sociais.",
+      "formacao": [
+        {
+          "titulo": "Psicologia",
+          "desc": "Universidade Federal de São Paulo (UNIFESP) — 2016"
+        },
+        {
+          "titulo": "Psicologia do Desenvolvimento",
+          "desc": "PUC-SP — 2018"
+        }
+      ],
+      "capacitacoes": [
+        "Saúde Mental",
+        "Adolescência",
+        "Orientação Familiar",
+        "Habilidades Sociais"
+      ],
+      "modalidades": ["Online", "Presencial"],
+      "atuacao": ["Adolescentes", "Família", "Emoções", "Orientação"],
+      "disponibilidade": ["Seg", "Ter", "Qui", "Sex", "Sáb"]
+    },
+    {
+      "id": 38,
+      "nome": "Cláudia Fernandes",
+      "area": "Psicopedagogia",
+      "regiao": "Guarulhos - SP",
+      "banner": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 575,
+      "avaliacao": 4.8,
+      "familias": 190,
+      "anosAt": 7,
+      "sobre": "Psicopedagoga dedicada à avaliação e acompanhamento de dificuldades de aprendizagem em crianças e adolescentes.",
+      "formacao": [
+        {
+          "titulo": "Pedagogia",
+          "desc": "Universidade Guarulhos — 2018"
+        },
+        {
+          "titulo": "Psicopedagogia",
+          "desc": "PUC-Campinas — 2020"
+        }
+      ],
+      "capacitacoes": [
+        "Psicopedagogia Clínica",
+        "Avaliação da Aprendizagem",
+        "TDAH",
+        "Educação Inclusiva"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["TDAH", "TEA", "Aprendizagem", "Inclusão"],
+      "disponibilidade": ["Seg", "Ter", "Qui", "Sex"]
+    },
+    {
+      "id": 39,
+      "nome": "Paulo Henrique",
+      "area": "Terapia Ocupacional",
+      "regiao": "Osasco - SP",
+      "banner": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 395,
+      "avaliacao": 4.7,
+      "familias": 135,
+      "anosAt": 6,
+      "sobre": "Terapeuta ocupacional com experiência em reabilitação, autonomia e adaptação de atividades para diferentes necessidades.",
+      "formacao": [
+        {
+          "titulo": "Terapia Ocupacional",
+          "desc": "Universidade Federal de São Paulo (UNIFESP) — 2018"
+        }
+      ],
+      "capacitacoes": [
+        "Reabilitação",
+        "Tecnologia Assistiva",
+        "Autonomia Funcional",
+        "Inclusão"
+      ],
+      "modalidades": ["Presencial"],
+      "atuacao": ["Reabilitação", "Inclusão", "Autonomia", "Desenvolvimento"],
+      "disponibilidade": ["Seg", "Quar", "Sex", "Sáb"]
+    },
+    {
+      "id": 40,
+      "nome": "Camila Ribeiro",
+      "area": "Educação",
+      "regiao": "Mauá - SP",
+      "banner": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 430,
+      "avaliacao": 4.9,
+      "familias": 145,
+      "anosAt": 5,
+      "sobre": "Educadora com foco em inclusão escolar, acompanhamento pedagógico e desenvolvimento de estratégias de aprendizagem.",
+      "formacao": [
+        {
+          "titulo": "Pedagogia",
+          "desc": "Universidade Cruzeiro do Sul — 2020"
+        },
+        {
+          "titulo": "Educação Inclusiva",
+          "desc": "Universidade Presbiteriana Mackenzie — 2022"
+        }
+      ],
+      "capacitacoes": [
+        "Educação Inclusiva",
+        "TDAH",
+        "TEA",
+        "Metodologias Ativas"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["TEA", "TDAH", "Inclusão escolar", "Reforço"],
+      "disponibilidade": ["Seg", "Ter", "Quar", "Qui"]
+    },
+    {
+      "id": 41,
+      "nome": "Rodrigo Alves",
+      "area": "Assistência Social",
+      "regiao": "São Bernardo do Campo - SP",
+      "banner": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 720,
+      "avaliacao": 4.8,
+      "familias": 245,
+      "anosAt": 10,
+      "sobre": "Profissional com ampla experiência em assistência social, proteção de famílias e encaminhamento para serviços públicos.",
+      "formacao": [
+        {
+          "titulo": "Serviço Social",
+          "desc": "Universidade Federal do ABC (UFABC) — 2015"
+        }
+      ],
+      "capacitacoes": [
+        "SUAS",
+        "CRAS e CREAS",
+        "Proteção Social",
+        "Gestão de Projetos"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["CRAS", "CREAS", "Família", "Vulnerabilidade"],
+      "disponibilidade": ["Seg", "Ter", "Quar", "Qui", "Sex", "Sáb"]
+    },
+    {
+      "id": 42,
+      "nome": "Juliana Martins",
+      "area": "Psicologia",
+      "regiao": "Suzano - SP",
+      "banner": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 625,
+      "avaliacao": 5.0,
+      "familias": 215,
+      "anosAt": 8,
+      "sobre": "Psicóloga com experiência em saúde emocional, relacionamentos e acompanhamento de jovens e famílias.",
+      "formacao": [
+        {
+          "titulo": "Psicologia",
+          "desc": "Universidade Metodista de São Paulo — 2017"
+        },
+        {
+          "titulo": "Psicologia Familiar",
+          "desc": "PUC-SP — 2019"
+        }
+      ],
+      "capacitacoes": [
+        "Terapia Familiar",
+        "Saúde Mental",
+        "Inteligência Emocional",
+        "Orientação Familiar"
+      ],
+      "modalidades": ["Online", "Presencial"],
+      "atuacao": ["Adolescentes", "Família", "Emoções", "Relacionamentos"],
+      "disponibilidade": ["Seg", "Ter", "Qui", "Sex", "Sáb"]
+    },
+    {
+      "id": 43,
+      "nome": "Eduardo Lima",
+      "area": "Serviço Social",
+      "regiao": "Mogi das Cruzes - SP",
+      "banner": "https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 540,
+      "avaliacao": 4.7,
+      "familias": 185,
+      "anosAt": 7,
+      "sobre": "Assistente social com atuação em políticas públicas, atendimento comunitário e fortalecimento de vínculos familiares.",
+      "formacao": [
+        {
+          "titulo": "Serviço Social",
+          "desc": "Universidade de Mogi das Cruzes — 2018"
+        }
+      ],
+      "capacitacoes": [
+        "Políticas Públicas",
+        "SUAS",
+        "Direitos Sociais",
+        "Proteção Social"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["SUAS", "Direitos", "Comunidade", "Família"],
+      "disponibilidade": ["Seg", "Ter", "Quar", "Sex"]
+    },
+    {
+      "id": 44,
+      "nome": "Priscila Gomes",
+      "area": "Psicopedagogia",
+      "regiao": "São Caetano do Sul - SP",
+      "banner": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 610,
+      "avaliacao": 4.9,
+      "familias": 205,
+      "anosAt": 8,
+      "sobre": "Psicopedagoga com experiência em avaliação, intervenção e acompanhamento de processos de aprendizagem.",
+      "formacao": [
+        {
+          "titulo": "Pedagogia",
+          "desc": "Universidade Municipal de São Caetano do Sul — 2017"
+        },
+        {
+          "titulo": "Psicopedagogia",
+          "desc": "PUC-SP — 2019"
+        }
+      ],
+      "capacitacoes": [
+        "Dificuldades de Aprendizagem",
+        "Alfabetização",
+        "TDAH",
+        "Avaliação Psicopedagógica"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["TDAH", "TEA", "Aprendizagem", "Alfabetização"],
+      "disponibilidade": ["Seg", "Ter", "Qui", "Sex"]
+    },
+    {
+      "id": 45,
+      "nome": "Fábio Rodrigues",
+      "area": "Terapia Ocupacional",
+      "regiao": "Diadema - SP",
+      "banner": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 375,
+      "avaliacao": 4.8,
+      "familias": 120,
+      "anosAt": 6,
+      "sobre": "Terapeuta ocupacional especializado em reabilitação, desenvolvimento motor e promoção da autonomia.",
+      "formacao": [
+        {
+          "titulo": "Terapia Ocupacional",
+          "desc": "Universidade Federal de São Paulo (UNIFESP) — 2019"
+        },
+        {
+          "titulo": "Reabilitação",
+          "desc": "Faculdade de Medicina do ABC — 2021"
+        }
+      ],
+      "capacitacoes": [
+        "Reabilitação",
+        "Desenvolvimento Motor",
+        "Tecnologia Assistiva",
+        "Autonomia"
+      ],
+      "modalidades": ["Presencial"],
+      "atuacao": ["Reabilitação", "Inclusão", "Autonomia", "Motor"],
+      "disponibilidade": ["Ter", "Quar", "Sex", "Sáb"]
+    },
+    {
+      "id": 46,
+      "nome": "Vanessa Cristina",
+      "area": "Educação",
+      "regiao": "Osasco - SP",
+      "banner": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 460,
+      "avaliacao": 4.8,
+      "familias": 155,
+      "anosAt": 6,
+      "sobre": "Educadora com experiência em acompanhamento escolar, inclusão e orientação de estudantes e famílias.",
+      "formacao": [
+        {
+          "titulo": "Pedagogia",
+          "desc": "Universidade Anhanguera — 2019"
+        },
+        {
+          "titulo": "Educação Especial",
+          "desc": "Universidade Cruzeiro do Sul — 2021"
+        }
+      ],
+      "capacitacoes": [
+        "Educação Inclusiva",
+        "Reforço Escolar",
+        "Metodologias de Ensino",
+        "Orientação Educacional"
+      ],
+      "modalidades": ["Online", "Presencial"],
+      "atuacao": ["Reforço", "Escola", "Inclusão", "Orientação"],
+      "disponibilidade": ["Seg", "Ter", "Quar", "Sáb"]
+    },
+    {
+      "id": 47,
+      "nome": "Leonardo Moreira",
+      "area": "Psicologia",
+      "regiao": "Ribeirão Pires - SP",
+      "banner": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 585,
+      "avaliacao": 4.9,
+      "familias": 195,
+      "anosAt": 7,
+      "sobre": "Psicólogo dedicado ao acompanhamento emocional, orientação familiar e desenvolvimento de habilidades para adolescentes.",
+      "formacao": [
+        {
+          "titulo": "Psicologia",
+          "desc": "Universidade Presbiteriana Mackenzie — 2018"
+        },
+        {
+          "titulo": "Psicologia do Desenvolvimento",
+          "desc": "PUC-SP — 2020"
+        }
+      ],
+      "capacitacoes": [
+        "Saúde Mental",
+        "Adolescência",
+        "Orientação Familiar",
+        "Inteligência Emocional"
+      ],
+      "modalidades": ["Online", "Presencial"],
+      "atuacao": ["Adolescentes", "Família", "Emoções", "Orientação"],
+      "disponibilidade": ["Seg", "Ter", "Qui", "Sex"]
+    },
+    {
+      "id": 48,
+      "nome": "Márcia Helena",
+      "area": "Assistência Social",
+      "regiao": "Mogi das Cruzes - SP",
+      "banner": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 505,
+      "avaliacao": 4.9,
+      "familias": 180,
+      "anosAt": 7,
+      "sobre": "Assistente social com atuação em proteção social, atendimento familiar e desenvolvimento de projetos comunitários.",
+      "formacao": [
+        {
+          "titulo": "Serviço Social",
+          "desc": "Universidade de Mogi das Cruzes — 2018"
+        },
+        {
+          "titulo": "Gestão Pública",
+          "desc": "Fundação Getulio Vargas (FGV) — 2021"
+        }
+      ],
+      "capacitacoes": [
+        "Proteção Social",
+        "Gestão Pública",
+        "Projetos Sociais",
+        "Atendimento Familiar"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["Inclusão", "Família", "Gestão", "Proteção"],
+      "disponibilidade": ["Seg", "Ter", "Qui", "Sex"]
+    },
+    {
+      "id": 49,
+      "nome": "Davi Ramos",
+      "area": "Psicologia",
+      "regiao": "Ribeirão Pires - SP",
+      "banner": "https://www.proa.org.br/wp-content/uploads/2025/11/Fav-Icon-Site.png",
+      "img": "https://media.licdn.com/dms/image/v2/D4D03AQF0BnbbLrjHdw/profile-displayphoto-scale_400_400/B4DZ7YWnhkIsAk-/0/1781746269741?e=1790812800&v=beta&t=4oskzcmtMoyNKPL1f-j5Vte8j7A4lHald5h56r655us",
+      "atendimentos": 635,
+      "avaliacao": 1.8,
+      "familias": 220,
+      "anosAt": 2,
+      "sobre": "XP me contrata.",
+      "formacao": [
+        {
+          "titulo": "Instituto PROA",
+          "desc": "Desenvolvedor JAVA — 2026"
+        }
+      ],
+      "capacitacoes": [
+        "Claramente não sou um Psicólogo",
+        "Java na veia"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["Dev", "PROA", "JAVA", "UC2"],
+      "disponibilidade": ["Sab", "Dom"]
+    },
+    {
+      "id": 50,
+      "nome": "Débora Fernandes",
+      "area": "Psicologia",
+      "regiao": "São Caetano do Sul - SP",
+      "banner": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80",
+      "img": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      "atendimentos": 745,
+      "avaliacao": 5.0,
+      "familias": 250,
+      "anosAt": 9,
+      "sobre": "Psicóloga com ampla experiência em saúde mental, acompanhamento familiar e desenvolvimento emocional.",
+      "formacao": [
+        {
+          "titulo": "Psicologia",
+          "desc": "Universidade de São Paulo (USP) — 2015"
+        },
+        {
+          "titulo": "Psicologia Clínica",
+          "desc": "Instituto Sedes Sapientiae — 2017"
+        },
+        {
+          "titulo": "Terapia Familiar",
+          "desc": "PUC-SP — 2019"
+        }
+      ],
+      "capacitacoes": [
+        "Terapia Familiar",
+        "Psicologia Clínica",
+        "Saúde Mental",
+        "Mediação de Conflitos",
+        "Orientação Familiar"
+      ],
+      "modalidades": ["Presencial", "Online"],
+      "atuacao": ["Família", "Emoções", "Saúde mental", "Terapia"],
       "disponibilidade": ["Seg", "Ter", "Quar", "Qui", "Sex", "Sáb"]
     }
   ]
