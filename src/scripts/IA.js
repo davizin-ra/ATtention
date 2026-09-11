@@ -2,7 +2,9 @@ const areaMensagens = document.querySelector(".area-mensagens");
 const formulario = document.querySelector(".formulario-chat");
 const campoMensagem = document.querySelector(".campo-mensagem");
 
-const GEMINI_API_KEY = window.ATTENTION_GEMINI_API_KEY || "";
+// const GEMINI_API_KEY = window.ATTENTION_GEMINI_API_KEY || "";
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+
 const GEMINI_MODEL = "gemini-3.5-flash-lite";
 let perfis = [];
 let historico = [];
