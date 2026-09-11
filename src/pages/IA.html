@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assistente virtual da ATtention para dúvidas sobre TEA e indicação de profissionais."
+    />
+    <title>Assistente ATtention</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <main class="pagina-ia">
+      <section class="chat" aria-labelledby="titulo-chat">
+        <header class="cabecalho-chat">
+          <a
+            class="marca"
+            href="../../index.html"
+            aria-label="Voltar para a página inicial da ATtention"
+            >ATtention</a
+          >
+        </header>
+        <div class="area-mensagens" aria-live="polite">
+          <div class="linha-mensagem linha-mensagem-ia">
+            <div class="avatar-ia" aria-hidden="true">Pecinha</div>
+            <p class="balao balao-ia">
+              Olá! Sou o pecinha
+            </p>
+          </div>
+        </div>
+        <form class="formulario-chat">
+          <label class="sr-only" for="campo-mensagem"
+            >Digite sua mensagem</label
+          >
+          <input
+            id="campo-mensagem"
+            class="campo-mensagem"
+            type="text"
+            placeholder="Ex.: Preciso de apoio para inclusão escolar"
+            autocomplete="off"
+          />
+          <button
+            class="botao-enviar"
+            type="submit"
+            aria-label="Enviar mensagem"
+          >
+            Enviar <span aria-hidden="true">↑</span>
+          </button>
+        </form>
+      </section>
+    </main>
+    <script src="../scripts/IA-config.js"></script>
+    <script src="../scripts/IA.js"></script>
+  </body>
+</html>
