@@ -3,55 +3,69 @@ const formulario = document.querySelector(".formulario-chat");
 const campoMensagem = document.querySelector(".campo-mensagem");
 
 const GEMINI_API_KEY = window.ATTENTION_GEMINI_API_KEY || "";
-
 const GEMINI_MODEL = "gemini-3.5-flash-lite";
+
 let perfis = [];
 let historico = [];
 
-function criarBalaoUsuario(texto) {
-  const linha = document.createElement("div");
-  linha.className = "linha-mensagem linha-mensagem-usuario";
-  const balao = document.createElement("p");
-  balao.className = "balao balao-usuario";
-  balao.textContent = texto;
-  linha.appendChild(balao);
-  return linha;
+function criarBalaoUsuario(msg) {
+  return `
+    <div class="linha-mensagem linha-mensagem-usuario">
+      <p class="balao balao-usuario">${msg}</p>
+    </div>
+  `;
 }
 
-function criarBalaoIA(texto) {
-  const linha = document.createElement("div");
-  linha.className = "linha-mensagem linha-mensagem-ia";
-  linha.innerHTML = '<div class="avatar-ia" aria-hidden="true">Pecinha</div>';
-  const balao = document.createElement("p");
-  balao.className = "balao balao-ia";
-  balao.textContent = texto;
-  linha.appendChild(balao);
-  return linha;
+function criarBalaoIA(msg) {
+  return `
+    <div class="linha-mensagem linha-mensagem-ia">
+      <div class="avatar-ia"></div>
+      <p class="balao balao-ia">${msg}</p>
+    </div>
+  `;
 }
 
-function criarCardProfissional(perfil, mensagem) {
-  const linha = document.createElement("div");
-  linha.className = "linha-mensagem linha-mensagem-ia";
-  linha.innerHTML = '<div class="avatar-ia" aria-hidden="true">AT</div>';
-  const conteudo = document.createElement("div");
-  conteudo.className = "recomendacao";
-  const introducao = document.createElement("p");
-  introducao.className = "texto-recomendacao";
-  introducao.textContent = mensagem;
-  const card = document.createElement("a");
-  card.className = "card-profissional";
-  card.href = `ViewAT.html?id=${perfil.id}`;
-  card.setAttribute("aria-label", `Ver o perfil de ${perfil.nome}`);
-  card.innerHTML = `<img src="${perfil.img}" alt="Foto de ${perfil.nome}"><span class="dados-profissional"><strong>${perfil.nome}</strong><span>${perfil.area}</span><small>${perfil.regiao} · ★ ${perfil.avaliacao.toFixed(1)}</small></span><span class="seta-card" aria-hidden="true">→</span>`;
-  conteudo.append(introducao, card);
-  linha.appendChild(conteudo);
-  return linha;
+function criarCardProfissional(perfil, msg) {
+  return `
+    <div class="linha-mensagem linha-mensagem-ia">
+      <div class="avatar-ia"></div>
+
+      <div class="recomendacao">
+        <p class="texto-recomendacao">${msg}</p>
+
+        <a 
+          class="card-profissional"
+          href="ViewAT.html?id=${perfil.id}"
+        >
+          <img 
+            src="${perfil.img}" 
+            alt="Foto de ${perfil.nome}"
+          >
+
+          <span class="dados-profissional">
+            <strong>${perfil.nome}</strong>
+            <span>${perfil.area}</span>
+            <small>
+              ${perfil.regiao} · ★ ${perfil.avaliacao.toFixed(1)}
+            </small>
+          </span>
+        </a>
+      </div>
+    </div>
+  `;
 }
 
 function mostrarCarregando() {
-  const linha = criarBalaoIA("Pensando...");
-  linha.id = "indicador-carregando";
-  areaMensagens.appendChild(linha);
+  areaMensagens.innerHTML += `
+    <div 
+      id="indicador-carregando"
+      class="linha-mensagem linha-mensagem-ia"
+    >
+      <div class="avatar-ia"></div>
+      <p class="balao balao-ia">...</p>
+    </div>
+  `;
+
   areaMensagens.scrollTop = areaMensagens.scrollHeight;
 }
 
@@ -60,37 +74,88 @@ function limparJson(texto) {
 }
 
 function instrucaoDoSistema() {
-  return `Você é a assistente virtual da ATtention. Responda sempre em português, de modo acolhedor, claro e conciso.
+  return `
+Você é o "pecinha", assistente virtual da ATtention.
+Responda sempre em português, de forma acolhedora, clara e concisa.
 
-Seu escopo é exclusivamente TEA (autismo), neurodesenvolvimento, inclusão, acessibilidade, acompanhamento terapêutico, escola, famílias e áreas profissionais relacionadas. Para qualquer assunto fora desse escopo, diga educadamente que só pode ajudar nesses temas. Não dê diagnósticos, prescrições ou certezas clínicas; quando necessário, incentive uma avaliação profissional.
+Seu escopo é exclusivamente:
+- TEA (autismo)
+- neurodesenvolvimento
+- inclusão
+- acessibilidade
+- acompanhamento terapêutico
+- escola
+- famílias
+- áreas profissionais relacionadas
 
-Você recebeu a base de profissionais da ATtention abaixo. Quando o usuário pedir indicação, recomendação ou ajuda para encontrar um profissional, escolha APENAS um perfil realmente presente nesta base e responda com o id exato dele. Avalie área, atuação, capacitações e região. Quando a pessoa estiver apenas fazendo uma pergunta informativa, não recomende um profissional.
+Para assuntos fora desse escopo, diga educadamente que só pode ajudar nesses temas.
 
-Retorne SOMENTE JSON válido, sem markdown. O campo "tipo" deve ser "mensagem" ou "recomendacao". Exemplo:
-{"tipo":"mensagem","mensagem":"texto curto para o usuário","perfilId":null}
+Não dê diagnósticos, prescrições ou certezas clínicas.
 
+Você recebeu a base de profissionais da ATtention abaixo.
+
+Quando o usuário pedir indicação de profissional:
+- escolha APENAS um profissional presente na base;
+- analise área, atuação, capacitações e região;
+- retorne o id exato do profissional.
+
+Quando o usuário fizer apenas uma pergunta informativa, não recomende profissional.
+Retorne SOMENTE JSON válido.
+
+O campo "tipo" deve ser:
+- "mensagem"
+- "recomendacao"
+
+Exemplo:
+{
+  "tipo": "mensagem",
+  "mensagem": "texto curto para o usuário",
+  "perfilId": null
+}
 Base de profissionais:
-${JSON.stringify(perfis)}`;
+
+${JSON.stringify(perfis)}
+`;
 }
 
 async function perguntarAoGemini(mensagem) {
-  if (!GEMINI_API_KEY)
+  if (!GEMINI_API_KEY) {
     throw new Error(
-      "Configure a chave da API Gemini no arquivo src/scripts/IA-config.js antes de usar o chat.",
+      "A IA está indisponível no momento",
     );
-  if (!perfis.length)
-    throw new Error(
-      "A base de profissionais ainda está carregando. Tente novamente em instantes.",
-    );
+  }
+
+  if (!perfis.length) {
+    throw new Error("A base de profissionais ainda está carregando");
+  }
 
   const resposta = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`,
     {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({
-        systemInstruction: { parts: [{ text: instrucaoDoSistema() }] },
-        contents: [...historico, { role: "user", parts: [{ text: mensagem }] }],
+        systemInstruction: {
+          parts: [
+            {
+              text: instrucaoDoSistema(),
+            },
+          ],
+        },
+        contents: [
+          ...historico,
+
+          {
+            role: "user",
+            parts: [
+              {
+                text: mensagem,
+              },
+            ],
+          },
+        ],
         generationConfig: {
           temperature: 0.35,
           responseMimeType: "application/json",
@@ -98,27 +163,38 @@ async function perguntarAoGemini(mensagem) {
       }),
     },
   );
+
   const dados = await resposta.json();
-  if (!resposta.ok)
-    throw new Error(dados.error?.message || "Não foi possível consultar a IA.");
+
+  if (!resposta.ok) {
+    throw new Error(dados.error?.message || "Erro na requisição");
+  }
 
   const texto = dados.candidates?.[0]?.content?.parts
     ?.filter((parte) => parte.text)
     .map((parte) => parte.text)
     .join("");
-  if (!texto) throw new Error("A IA não retornou uma resposta.");
+
+  if (!texto) {
+    throw new Error("Erro, não houve retorno");
+  }
+
   try {
+    console.log(texto)
     return JSON.parse(limparJson(texto));
   } catch {
-    throw new Error("A IA retornou um formato inesperado. Tente novamente.");
+    throw new Error("Erro no retorno");
   }
 }
 
-async function enviarMensagem(evento) {
-  evento.preventDefault();
+async function enviarMensagem(e) {
+  e.preventDefault();
+
   const mensagem = campoMensagem.value.trim();
+
   if (!mensagem) return;
-  areaMensagens.appendChild(criarBalaoUsuario(mensagem));
+
+  areaMensagens.innerHTML += criarBalaoUsuario(mensagem);
   campoMensagem.value = "";
   campoMensagem.disabled = true;
   formulario.querySelector("button").disabled = true;
@@ -126,28 +202,44 @@ async function enviarMensagem(evento) {
 
   try {
     const resposta = await perguntarAoGemini(mensagem);
-    const textoResposta =
-      resposta.mensagem || "Posso ajudar com dúvidas sobre TEA e inclusão.";
-    const perfil = Number.isInteger(resposta.perfilId)
-      ? perfis.find((item) => item.id === resposta.perfilId)
-      : null;
-    if (resposta.tipo === "recomendacao" && perfil)
-      areaMensagens.appendChild(criarCardProfissional(perfil, textoResposta));
-    else areaMensagens.appendChild(criarBalaoIA(textoResposta));
-    historico = [
-      ...historico,
-      { role: "user", parts: [{ text: mensagem }] },
-      { role: "model", parts: [{ text: textoResposta }] },
-    ];
-  } catch (erro) {
-    areaMensagens.appendChild(
-      criarBalaoIA(`Não consegui responder agora. ${erro.message}`),
+    const textoResposta = resposta.mensagem || "Posso ajudar com dúvidas sobre TEA e inclusão";
+
+    const perfil = Number(resposta.perfilId) ? perfis.find((item) => item.id === resposta.perfilId) : null;
+
+    if (resposta.tipo === "recomendacao" && perfil) {
+      areaMensagens.innerHTML += criarCardProfissional(perfil, textoResposta);
+    } else {
+      areaMensagens.innerHTML += criarBalaoIA(textoResposta);
+    }
+
+    historico.push(
+      {
+        role: "user",
+        parts: [
+          {
+            text: mensagem,
+          },
+        ],
+      },
+      {
+        role: "model",
+        parts: [
+          {
+            text: textoResposta,
+          },
+        ],
+      },
     );
+  } catch (erro) {
+    areaMensagens.innerHTML += criarBalaoIA(`Erro. ${erro.message}`);
   } finally {
+
     document.getElementById("indicador-carregando")?.remove();
     campoMensagem.disabled = false;
     formulario.querySelector("button").disabled = false;
+
     areaMensagens.scrollTop = areaMensagens.scrollHeight;
+
     campoMensagem.focus();
   }
 }
@@ -155,12 +247,14 @@ async function enviarMensagem(evento) {
 formulario.addEventListener("submit", enviarMensagem);
 
 fetch("../data/PerfisAt.json")
-  .then((resposta) => (resposta.ok ? resposta.json() : Promise.reject()))
+  .then((resposta) => resposta.json())
+
   .then((dados) => {
     perfis = dados.perfis;
   })
-  .catch(() =>
-    areaMensagens.appendChild(
-      criarBalaoIA("Não foi possível carregar a base de profissionais agora."),
-    ),
-  );
+
+  .catch(() => {
+    areaMensagens.innerHTML += criarBalaoIA(
+      "Não foi possível carregar a base de profissionais agora.",
+    );
+  });
