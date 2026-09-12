@@ -189,7 +189,7 @@ async function perguntarAoGemini(mensagem, historico = []) {
   }
 }
 
-app.post("/chat", async (req, res) => {
+app.post("/api/chat", async (req, res) => {
   try {
     const { mensagem, historico = [] } = req.body;
 
@@ -231,6 +231,8 @@ app.post("/chat", async (req, res) => {
 
 module.exports = app;
 
-app.listen(PORT, () => {
-  console.log(`API rodando em http://localhost:${PORT}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`API rodando em http://localhost:${PORT}`);
+  });
+}
