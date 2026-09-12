@@ -16,7 +16,6 @@ const GEMINI_MODEL = "gemini-3.5-flash-lite";
 const dados = require("../src/data/PerfisAt.json");
 const perfis = dados.perfis;
 
-
 function instrucaoDoSistema() {
   return `
 Você é o "pecinha", assistente virtual da ATtention.
@@ -113,7 +112,6 @@ async function perguntarAoGemini(mensagem, historico = []) {
       },
 
       body: JSON.stringify({
-
         systemInstruction: {
           parts: [
             {
@@ -145,16 +143,10 @@ async function perguntarAoGemini(mensagem, historico = []) {
 
   const dados = await resposta.json();
 
-  console.log(
-    "Resposta Gemini:",
-    JSON.stringify(dados, null, 2),
-  );
+  console.log("Resposta Gemini:", JSON.stringify(dados, null, 2));
 
   if (!resposta.ok) {
-    throw new Error(
-      dados.error?.message ||
-        "Erro na API do Gemini.",
-    );
+    throw new Error(dados.error?.message || "Erro na API do Gemini.");
   }
 
   if (dados.promptFeedback?.blockReason) {
@@ -166,44 +158,24 @@ async function perguntarAoGemini(mensagem, historico = []) {
   const candidato = dados.candidates?.[0];
 
   if (!candidato) {
-    throw new Error(
-      "O Gemini não retornou nenhum candidato.",
-    );
+    throw new Error("O Gemini não retornou nenhum candidato.");
   }
 
-
-  if (
-    candidato.finishReason &&
-    candidato.finishReason !== "STOP"
-  ) {
+  if (candidato.finishReason && candidato.finishReason !== "STOP") {
     throw new Error(
       `O Gemini encerrou a resposta com: ${candidato.finishReason}`,
     );
   }
 
   const texto = candidato.content?.parts
-    ?.filter(
-      (parte) =>
-        typeof parte.text === "string",
-    )
-    .map(
-      (parte) => parte.text,
-    )
+    ?.filter((parte) => typeof parte.text === "string")
+    .map((parte) => parte.text)
     .join("");
 
   if (!texto) {
-    console.error(
-      "Resposta sem texto:",
-      JSON.stringify(
-        candidato,
-        null,
-        2,
-      ),
-    );
+    console.error("Resposta sem texto:", JSON.stringify(candidato, null, 2));
 
-    throw new Error(
-      "O Gemini não retornou texto.",
-    );
+    throw new Error("O Gemini não retornou texto.");
   }
 
   try {
@@ -211,89 +183,54 @@ async function perguntarAoGemini(mensagem, historico = []) {
 
     return JSON.parse(jsonLimpo);
   } catch (erro) {
-    console.error(
-      "JSON recebido do Gemini:",
-      texto,
-    );
+    console.error("JSON recebido do Gemini:", texto);
 
-    throw new Error(
-      "O Gemini retornou um JSON inválido.",
-    );
+    throw new Error("O Gemini retornou um JSON inválido.");
   }
 }
 
 app.post("/chat", async (req, res) => {
   try {
-    const {
-      mensagem,
-      historico = [],
-    } = req.body;
+    const { mensagem, historico = [] } = req.body;
 
-    if (
-      !mensagem ||
-      typeof mensagem !== "string"
-    ) {
+    if (!mensagem || typeof mensagem !== "string") {
       return res.status(400).json({
         erro: "Mensagem inválida.",
       });
     }
 
-    const resposta =
-      await perguntarAoGemini(
-        mensagem,
-        historico,
-      );
+    const resposta = await perguntarAoGemini(mensagem, historico);
 
-    if (
-      !resposta.tipo ||
-      !resposta.mensagem
-    ) {
+    if (!resposta.tipo || !resposta.mensagem) {
       return res.status(500).json({
-        erro:
-          "A IA retornou um formato inválido.",
+        erro: "A IA retornou um formato inválido.",
       });
     }
 
-    if (
-      resposta.tipo === "recomendacao" &&
-      resposta.perfilId != null
-    ) {
-      const perfilExiste =
-        perfis.some(
-          (perfil) =>
-            Number(perfil.id) ===
-            Number(
-              resposta.perfilId,
-            ),
-        );
+    if (resposta.tipo === "recomendacao" && resposta.perfilId != null) {
+      const perfilExiste = perfis.some(
+        (perfil) => Number(perfil.id) === Number(resposta.perfilId),
+      );
 
       if (!perfilExiste) {
         return res.status(500).json({
-          erro:
-            "A IA retornou um profissional que não existe na base.",
+          erro: "A IA retornou um profissional que não existe na base.",
         });
       }
     }
 
     res.json(resposta);
-
   } catch (erro) {
-
-    console.error(
-      "Erro em /api/chat:",
-      erro,
-    );
+    console.error("Erro em /api/chat:", erro);
 
     res.status(500).json({
-      erro:
-        erro.message ||
-        "Erro interno da API.",
+      erro: erro.message || "Erro interno da API.",
     });
   }
 });
 
+module.exports = app;
+
 app.listen(PORT, () => {
-  console.log(
-    `API rodando em http://localhost:${PORT}`,
-  );
+  console.log(`API rodando em http://localhost:${PORT}`);
 });
