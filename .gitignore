@@ -1,1 +1,2 @@
-src/scripts/IA-config.js
+node_modules
+.env
