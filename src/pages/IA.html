@@ -9,44 +9,28 @@
     />
     <title>Assistente ATtention</title>
     <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/pages/IA.css" />
   </head>
   <body>
     <main class="pagina-ia">
-      <section class="chat" aria-labelledby="titulo-chat">
-        <header class="cabecalho-chat">
-          <a
-            class="marca"
-            href="../../index.html"
-            aria-label="Voltar para a página inicial da ATtention"
-            >ATtention</a
-          >
-        </header>
-        <div class="area-mensagens" aria-live="polite">
+      <section class="chat">
+        <div class="area-mensagens">
           <div class="linha-mensagem linha-mensagem-ia">
-            <div class="avatar-ia" aria-hidden="true">Pecinha</div>
+            <div class="avatar-ia"></div>
             <p class="balao balao-ia">
-              Olá! Sou o pecinha
+              Olá! Sou o pecinha, vou te ajudar nessa jornada
             </p>
           </div>
         </div>
         <form class="formulario-chat">
-          <label class="sr-only" for="campo-mensagem"
-            >Digite sua mensagem</label
-          >
           <input
             id="campo-mensagem"
             class="campo-mensagem"
             type="text"
-            placeholder="Ex.: Preciso de apoio para inclusão escolar"
+            placeholder="Preciso de apoio para inclusão escolar"
             autocomplete="off"
           />
-          <button
-            class="botao-enviar"
-            type="submit"
-            aria-label="Enviar mensagem"
-          >
-            Enviar <span aria-hidden="true">↑</span>
-          </button>
+          <button class="botao-enviar" type="submit">Enviar</button>
         </form>
       </section>
     </main>
