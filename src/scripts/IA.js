@@ -2,8 +2,7 @@ const areaMensagens = document.querySelector(".area-mensagens");
 const formulario = document.querySelector(".formulario-chat");
 const campoMensagem = document.querySelector(".campo-mensagem");
 
-const GEMINI_API_KEY = window.ATTENTION_GEMINI_API_KEY || "";
-const GEMINI_MODEL = "gemini-3.5-flash-lite";
+const API_URL = "https://attentionweb.vercel.app/api/chat";
 
 let perfis = [];
 let historico = [];
@@ -33,18 +32,20 @@ function criarCardProfissional(perfil, msg) {
       <div class="recomendacao">
         <p class="texto-recomendacao">${msg}</p>
 
-        <a 
+        <a
           class="card-profissional"
           href="ViewAT.html?id=${perfil.id}"
         >
-          <img 
-            src="${perfil.img}" 
+          <img
+            src="${perfil.img}"
             alt="Foto de ${perfil.nome}"
           >
 
           <span class="dados-profissional">
             <strong>${perfil.nome}</strong>
+
             <span>${perfil.area}</span>
+
             <small>
               ${perfil.regiao} · ★ ${perfil.avaliacao.toFixed(1)}
             </small>
@@ -57,7 +58,7 @@ function criarCardProfissional(perfil, msg) {
 
 function mostrarCarregando() {
   areaMensagens.innerHTML += `
-    <div 
+    <div
       id="indicador-carregando"
       class="linha-mensagem linha-mensagem-ia"
     >
@@ -69,122 +70,27 @@ function mostrarCarregando() {
   areaMensagens.scrollTop = areaMensagens.scrollHeight;
 }
 
-function limparJson(texto) {
-  return texto.replace(/^```json\s*|\s*```$/gi, "").trim();
-}
-
-function instrucaoDoSistema() {
-  return `
-Você é o "pecinha", assistente virtual da ATtention.
-Responda sempre em português, de forma acolhedora, clara e concisa.
-
-Seu escopo é exclusivamente:
-- TEA (autismo)
-- neurodesenvolvimento
-- inclusão
-- acessibilidade
-- acompanhamento terapêutico
-- escola
-- famílias
-- áreas profissionais relacionadas
-
-Para assuntos fora desse escopo, diga educadamente que só pode ajudar nesses temas.
-
-Não dê diagnósticos, prescrições ou certezas clínicas.
-
-Você recebeu a base de profissionais da ATtention abaixo.
-
-Quando o usuário pedir indicação de profissional:
-- escolha APENAS um profissional presente na base;
-- analise área, atuação, capacitações e região;
-- retorne o id exato do profissional.
-
-Quando o usuário fizer apenas uma pergunta informativa, não recomende profissional.
-Retorne SOMENTE JSON válido.
-
-O campo "tipo" deve ser:
-- "mensagem"
-- "recomendacao"
-
-Exemplo:
-{
-  "tipo": "mensagem",
-  "mensagem": "texto curto para o usuário",
-  "perfilId": null
-}
-Base de profissionais:
-
-${JSON.stringify(perfis)}
-`;
-}
-
 async function perguntarAoGemini(mensagem) {
-  if (!GEMINI_API_KEY) {
-    throw new Error(
-      "A IA está indisponível no momento",
-    );
-  }
+  const resposta = await fetch(API_URL, {
+    method: "POST",
 
-  if (!perfis.length) {
-    throw new Error("A base de profissionais ainda está carregando");
-  }
-
-  const resposta = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        systemInstruction: {
-          parts: [
-            {
-              text: instrucaoDoSistema(),
-            },
-          ],
-        },
-        contents: [
-          ...historico,
-
-          {
-            role: "user",
-            parts: [
-              {
-                text: mensagem,
-              },
-            ],
-          },
-        ],
-        generationConfig: {
-          temperature: 0.35,
-          responseMimeType: "application/json",
-        },
-      }),
+    headers: {
+      "Content-Type": "application/json",
     },
-  );
+
+    body: JSON.stringify({
+      mensagem,
+      historico,
+    }),
+  });
 
   const dados = await resposta.json();
 
   if (!resposta.ok) {
-    throw new Error(dados.error?.message || "Erro na requisição");
+    throw new Error(dados.erro || "Erro na req frontend");
   }
 
-  const texto = dados.candidates?.[0]?.content?.parts
-    ?.filter((parte) => parte.text)
-    .map((parte) => parte.text)
-    .join("");
-
-  if (!texto) {
-    throw new Error("Erro, não houve retorno");
-  }
-
-  try {
-    console.log(texto)
-    return JSON.parse(limparJson(texto));
-  } catch {
-    throw new Error("Erro no retorno");
-  }
+  return dados;
 }
 
 async function enviarMensagem(e) {
@@ -195,16 +101,22 @@ async function enviarMensagem(e) {
   if (!mensagem) return;
 
   areaMensagens.innerHTML += criarBalaoUsuario(mensagem);
+
   campoMensagem.value = "";
   campoMensagem.disabled = true;
   formulario.querySelector("button").disabled = true;
+
   mostrarCarregando();
 
   try {
     const resposta = await perguntarAoGemini(mensagem);
-    const textoResposta = resposta.mensagem || "Posso ajudar com dúvidas sobre TEA e inclusão";
 
-    const perfil = Number(resposta.perfilId) ? perfis.find((item) => item.id === resposta.perfilId) : null;
+    const textoResposta =
+      resposta.mensagem || "Posso ajudar com dúvidas sobre TEA e inclusão";
+
+    const perfil = Number(resposta.perfilId)
+      ? perfis.find((item) => item.id === Number(resposta.perfilId))
+      : null;
 
     if (resposta.tipo === "recomendacao" && perfil) {
       areaMensagens.innerHTML += criarCardProfissional(perfil, textoResposta);
@@ -221,6 +133,7 @@ async function enviarMensagem(e) {
           },
         ],
       },
+
       {
         role: "model",
         parts: [
@@ -233,9 +146,10 @@ async function enviarMensagem(e) {
   } catch (erro) {
     areaMensagens.innerHTML += criarBalaoIA(`Erro. ${erro.message}`);
   } finally {
-
     document.getElementById("indicador-carregando")?.remove();
+
     campoMensagem.disabled = false;
+
     formulario.querySelector("button").disabled = false;
 
     areaMensagens.scrollTop = areaMensagens.scrollHeight;
