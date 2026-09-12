@@ -174,3 +174,97 @@ main {
     }
   }
 }
+
+@media (max-width: 860px) {
+  main {
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px 4%;
+  }
+
+  .user-section {
+    width: 32%;
+    min-width: 0;
+    height: auto;
+    margin-right: 0;
+    padding-top: 0;
+  }
+
+  .info-section {
+    width: 68%;
+    min-width: 0;
+    padding-top: 0;
+  }
+
+  .profile .info-principal img {
+    width: 70%;
+  }
+
+  .profile .info-principal .btns {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .profile .info-principal .btns button {
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 1rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  main {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .user-section,
+  .info-section {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .profile {
+    padding: 16px;
+  }
+
+  .profile .banner {
+    height: 34%;
+  }
+
+  .profile .info-principal img {
+    width: min(180px, 55%);
+    margin-top: 32px;
+  }
+
+  .profile .info-principal .btns {
+    gap: 10px;
+  }
+
+  .info-section > div {
+    margin: 0 0 12px;
+    padding: 16px;
+  }
+
+  .info-section .ltt {
+    flex-wrap: wrap;
+  }
+
+  .info-section .disp {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 4px;
+  }
+
+  .info-section .disp p {
+    padding: 5px 2px;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+}
