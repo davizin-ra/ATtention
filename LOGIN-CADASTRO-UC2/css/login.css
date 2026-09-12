@@ -100,6 +100,7 @@ body {
     font-size: 20px;
     font-family: "Momo Trust Display";
     cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
 #header .btn-login button:hover {
@@ -162,7 +163,7 @@ body {
     text-transform: uppercase;
 }
 
-.responsavel-form h1 {
+.responsavel-form h2 {
     margin-bottom: 20px;
     color: var(--azul-escuro);
     font-size: 32px;
@@ -274,7 +275,7 @@ body {
     text-transform: uppercase;
 }
 
-.psicologo-form h1 {
+.psicologo-form h2 {
     margin-bottom: 20px;
     color: var(--azul-escuro);
     font-size: 35px;

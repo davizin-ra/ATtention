@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro-responsavel.css">
+    <title>Cadastro Responsável | Attention</title>
+</head>
+
+<body>
+    <!-- INICIO - HEADER (MENU DO SITE) -->
+    <header id="header">
+        <div class="logo">
+            <img src="assets/images/img-logo.png" alt="img-logo">
+            <a href="#">Attention</a>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre nós</a>
+
+            <a class="btn-login" href="#"><button>Fazer Login</button></a>
+        </nav>
+    </header>
+    <!-- FIM - HEADER (MENU DO SITE) -->
+
+
+    <!-- INICIO - MAIN (CADASTRAR-SE) -->
+    <main class="container" id="container">
+        <section id="section-esquerda">
+            <img src="assets/images/professora2.png" alt="professora">
+        </section>
+
+        <section id="section-direita">
+            <div class="textos">
+                <h2>Cadastro de <span>Aluno</span></h2>
+                <p>Crie seu perfil para ter o melhores Psicólogos disponíveis para você.</p>
+            </div>
+
+            <div class="area-dados-responsavel">
+
+                <!-- DADOS DOS RESPONSÁVEIS -->
+                <h3>Dados Pessoais do responsável</h3>
+
+                <form class="formulario">
+
+                    <div class="campo">
+                        <label>
+                            Nome completo <br>
+                            <input type="text" name="text" placeholder="Seu nome completo" required>
+                        </label>
+
+                        <label>
+                            Nome social (opcional) <br>
+                            <input type="text" name="text" placeholder="Como prefere ser chamado" required>
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label>
+                            Data de nascimento <br>
+                            <input type="date" name="Data" required>
+                        </label>
+
+                        <label>
+                            Telefone <br>
+                            <input type="tel" maxlength="11" name="telefone" placeholder="(00) 00000-0000" required>
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label>
+                            CPF <br>
+                            <input type="text" name="documento" maxlength="11" placeholder="Digite o número do CPF" required>
+                        </label>
+
+                        <label>
+                            Grau de parentesco <br>
+                            <input type="text" name="grau-parentesco" placeholder="Pai, Mãe, Tia, Tio ..." required>
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cep">CEP: <br>
+                            <input type="text" id="cep" placeholder="Digite seu CEP">
+                        </label>
+                        
+                        <label for="rua">Rua: <br>
+                            <input type="text" id="rua" placeholder="Rua">
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label for="bairro">Bairro: <br>
+                            <input type="text" id="bairro" placeholder="Bairro">
+                        </label>
+
+                        <label for="cidade">Cidade: <br>
+                            <input type="text" id="cidade" placeholder="Cidade">
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label for="estado">Estado: <br>
+                            <input type="text" id="estado" placeholder="Estado">
+                        </label>
+                    </div>
+
+                </form>
+                <!-- FIM - DADOS DOS RESPONSÁVEIS -->
+
+
+
+                <!-- DADOS DOS ALUNOS -->
+                <h3 class="titulo-h3">Dados Pessoais do aluno</h3>
+
+                <form class="formulario2">
+
+                    <div class="campo">
+                        <label>
+                            Nome completo <br>
+                            <input type="text" name="text" placeholder="Seu nome completo" required>
+                        </label>
+
+                        <label>
+                            Nome social (opcional) <br>
+                            <input type="text" name="text" placeholder="Como prefere ser chamado" required>
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label>
+                            Data de nascimento <br>
+                            <input type="date" name="Data" required>
+                        </label>
+
+                        <label>
+                            CPF <br>
+                            <input type="text" name="documento" maxlength="11" placeholder="Digite o número do CPF" required>
+                        </label>
+                    </div>
+
+                </form>
+                <!-- FIM - DADOS DOS ALUNO -->
+
+                <div class="container-btn">
+                <a href="cadastre-se.html"><button>Voltar</button></a>
+
+                <a href="cadastro-responsavel2.html"><button>Seguinte</button></a>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/cadastro-responsavel.js"></script>
+</body>
+
+</html>
