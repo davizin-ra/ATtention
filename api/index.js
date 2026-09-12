@@ -222,7 +222,7 @@ async function perguntarAoGemini(mensagem, historico = []) {
   }
 }
 
-app.post("/api/chat", async (req, res) => {
+app.post("/chat", async (req, res) => {
   try {
     const {
       mensagem,
