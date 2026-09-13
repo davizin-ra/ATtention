@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do AT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display:wght@400&family=Momo+Trust+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/pages/HomeAT.css">
+</head>
+
+<body>
+
+    <main>
+
+<!-- inicio -->
+
+        <section class="section-inicio">
+
+            <div class="inicio-conteudo">
+
+                <div class="inicio-texto">
+                    <h1>Olá, Ana!</h1>
+                    <p>Veja seus atendimentos e acompanhe seus pacientes.</p>
+                </div>
+
+                <div class="inicio-usuario">
+                    <div class="inicio-foto"></div>
+                    <button class="inicio-botao-sair">Sair</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="container-principal">
+
+<!-- informações -->
+
+            <section class="section-informacoes">
+
+                <div class="informacoes-card">
+                    <h3>4</h3>
+                    <h5>Pacientes ativos</h5>
+                </div>
+
+                <div class="informacoes-card">
+                    <h3>3</h3>
+                    <h5>Sessões agendadas</h5>
+                </div>
+
+                <div class="informacoes-card">
+                    <h3>2</h3>
+                    <h5>Novos pedidos</h5>
+                </div>
+
+                <div class="informacoes-card">
+                    <h3>14h</h3>
+                    <h5>Horas trabalhadas</h5>
+                </div>
+
+            </section>
+
+<!-- agenda e pacientes -->
+
+            <div class="container-duplo">
+
+<!-- agenda -->
+
+                <div class="coluna-agenda">
+
+                    <section class="section-agenda">
+
+                        <h3>Agenda de hoje</h3>
+
+                        <div class="agenda-lista">
+
+<!-- atendimento 1 -->
+
+                            <div class="agenda-item">
+
+                                <div class="agenda-info">
+                                    <h5 class="agenda-horario">09h00</h5>
+
+                                    <div class="agenda-detalhes">
+                                        <h4>Isabela Rocha</h4>
+                                        <span class="tag tag-escolar">Escolar</span>
+                                    </div>
+                                </div>
+
+                                <span class="tag tag-verde">Confirmada</span>
+
+                            </div>
+
+<!-- atendimento 2 -->
+
+                            <div class="agenda-item">
+
+                                <div class="agenda-info">
+                                    <h5 class="agenda-horario">14h00</h5>
+
+                                    <div class="agenda-detalhes">
+                                        <h4>Lucas Silva</h4>
+                                        <span class="tag tag-escolar">Escolar</span>
+                                    </div>
+                                </div>
+
+                                <span class="tag tag-verde">Confirmada</span>
+
+                            </div>
+
+<!-- atendimento 3 -->
+
+                            <div class="agenda-item">
+
+                                <div class="agenda-info">
+                                    <h5 class="agenda-horario">18h00</h5>
+
+                                    <div class="agenda-detalhes">
+                                        <p>Horário livre</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+<!-- atendimento 4 -->
+
+                            <div class="agenda-item">
+
+                                <div class="agenda-info">
+                                    <h5 class="agenda-horario">19h00</h5>
+
+                                    <div class="agenda-detalhes">
+                                        <h4>Pedro Alves</h4>
+                                        <span class="tag tag-verde">Online</span>
+                                    </div>
+                                </div>
+
+                                <span class="tag tag-amarela">Pendente</span>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+<!-- agendar sessão -->
+
+                    <div class="agendar-sessao">
+
+                        <h3>Agendar sessão</h3>
+
+                        <label for="dataSessao">Data da sessão</label>
+                        <input type="date" id="dataSessao">
+
+                        <label for="pacienteSessao">Paciente</label>
+
+                        <select id="pacienteSessao">
+
+                            <option value="">Selecione o paciente</option>
+                            <option value="Lucas Silva">Lucas Silva</option>
+                            <option value="Isabela Rocha">Isabela Rocha</option>
+                            <option value="Pedro Alves">Pedro Alves</option>
+                            <option value="Kauan Mendes">Kauan Mendes</option>
+
+                        </select>
+
+                        <label for="horarioSessao">Horário</label>
+                        <input type="time" id="horarioSessao">
+
+                        <button class="botao-agendar" id="botaoAgendar">
+                            Agendar sessão
+                        </button>
+
+                        <div id="sessoesAgendadas"></div>
+
+                    </div>
+
+                </div>
+
+<!-- pacientes -->
+
+                <section class="section-pacientes">
+
+                    <h3>Pacientes ativos</h3>
+
+                    <div class="pacientes-grid">
+
+<!-- paciente 1 -->
+
+                        <div class="pacientes-card">
+                            <h4>Lucas Silva</h4>
+                            <h5>8 anos</h5>
+
+                            <div class="pacientes-tags">
+                                <span class="tag tag-azul">Inclusão escolar</span>
+                                <span class="tag tag-azul">TEA nível 1</span>
+                                <span class="tag tag-escolar">Escolar</span>
+                            </div>
+                        </div>
+
+<!-- paciente 2 -->
+
+                        <div class="pacientes-card">
+                            <h4>Isabela Rocha</h4>
+                            <h5>12 anos</h5>
+
+                            <div class="pacientes-tags">
+                                <span class="tag tag-azul">Comunicação</span>
+                                <span class="tag tag-azul">TEA nível 2</span>
+                                <span class="tag tag-escolar">Escolar</span>
+                            </div>
+                        </div>
+
+<!-- paciente 3 -->
+
+                        <div class="pacientes-card">
+                            <h4>Pedro Alves</h4>
+                            <h5>9 anos</h5>
+
+                            <div class="pacientes-tags">
+                                <span class="tag tag-azul">Autonomia</span>
+                                <span class="tag tag-azul">TEA nível 1</span>
+                                <span class="tag tag-verde">Online</span>
+                            </div>
+                        </div>
+
+<!-- paciente 4 -->
+
+                        <div class="pacientes-card">
+                            <h4>Kauan Mendes</h4>
+                            <h5>6 anos</h5>
+
+                            <div class="pacientes-tags">
+                                <span class="tag tag-azul">Comunicação</span>
+                                <span class="tag tag-azul">TEA nível 1</span>
+                                <span class="tag tag-verde">Online</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+<button class="botao-cadastrar-paciente" id="botaoCadastrarPaciente">
+    Cadastrar novo paciente
+</button>
+
+<div class="cadastro-paciente" id="cadastroPaciente">
+
+    <h4>Cadastrar novo paciente</h4>
+
+    <label for="nomePaciente">Nome do paciente</label>
+    <input type="text" id="nomePaciente" placeholder="Digite o nome">
+
+    <label for="idadePaciente">Idade</label>
+    <input type="number" id="idadePaciente" placeholder="Digite a idade">
+
+    <label for="responsavelPaciente">Nome do responsável</label>
+    <input type="text" id="responsavelPaciente" placeholder="Digite o nome do responsável">
+
+    <label for="emailPaciente">E-mail do responsável</label>
+    <input type="email" id="emailPaciente" placeholder="Digite o e-mail">
+
+    <label for="telefonePaciente">Telefone</label>
+    <input type="tel" id="telefonePaciente" placeholder="Digite o telefone">
+
+    <label for="observacoesPaciente">Observações</label>
+    <textarea id="observacoesPaciente" placeholder="Digite alguma observação"></textarea>
+
+    <button class="botao-salvar-paciente" id="botaoSalvarPaciente">
+        Salvar paciente
+    </button>
+
+</div>
+
+                </section>
+
+            </div>
+
+<!-- solicitações -->
+
+            <section class="section-solicitacoes">
+
+                <h3>Solicitações pendentes</h3>
+
+                <div class="solicitacoes-grid">
+
+<!-- solicitação 1 -->
+
+                    <div class="solicitacoes-card">
+
+                        <h1>Família Souza</h1>
+
+                        <p>Interesse em Acompanhante terapêutico escolar diário para menina de 10 anos com dificuldade em inclusão escolar, na região Norte de São Paulo, no período da manhã.</p>
+
+                        <div class="solicitacoes-botoes">
+                            <button class="botao-vermelho">Entrar em contato</button>
+                            <button class="botao-branco">Enviar recusa</button>
+                        </div>
+
+                    </div>
+
+<!-- solicitação 2 -->
+
+                    <div class="solicitacoes-card">
+
+                        <h1>Família Almeida</h1>
+
+                        <p>Interesse em Acompanhante terapêutico online 1 vez na semana para menino de 12 anos com dificuldade em autonomia, no período da noite.</p>
+
+                        <div class="solicitacoes-botoes">
+                            <button class="botao-vermelho">Entrar em contato</button>
+                            <button class="botao-branco">Enviar recusa</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="../scripts/HomeAT.js"></script>
+    <script src="https://cdn.userway.org/widget.js" data-account="y2KIm9pPv2"></script>
+
+
+</body>
+
+</html>
