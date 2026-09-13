@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro-responsavel2.css">
+    <title>Cadastro Responsável | Attention</title>
+</head>
+
+<body>
+    <!-- INICIO - HEADER (MENU DO SITE) -->
+    <header id="header">
+        <div class="logo">
+            <img src="assets/images/img-logo.png" alt="img-logo">
+            <a href="#">Attention</a>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre nós</a>
+
+            <a class="btn-login" href="#"><button>Fazer Login</button></a>
+        </nav>
+    </header>
+    <!-- FIM - HEADER (MENU DO SITE) -->
+
+
+    <!-- INICIO - MAIN (CADASTRAR-SE) -->
+    <main class="container" id="container">
+        <section id="section-esquerda">
+            <img src="assets/images/professora2.png" alt="professora">
+        </section>
+
+        <section id="section-direita">
+            <div class="textos">
+                <h2>Cadastro de <span>Aluno</span></h2>
+                <p>Crie seu perfil para ter o melhores Psicólogos disponíveis para você.</p>
+            </div>
+
+            <div class="area-dados-responsavel">
+
+                <h3>Informações de acessibilidade</h3>
+
+                <form class="formulario3">
+
+                    <div class="campo">
+                        <label for="tea">Qual o grau de TEA do seu filho? <br>
+                            <select id="tea" name="tea" required>
+                                <option value=""></option>
+                                <option value="nivel-1">Nível 1 — necessidade de suporte</option>
+                                <option value="nivel-2">Nível 2 — necessidade de suporte substancial</option>
+                                <option value="nivel-3">Nível 3 — necessidade de suporte muito substancial</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="campo2">
+                        <label>
+                            Recursos de acessibilidade que você utiliza
+                        </label>
+
+                        <span>
+                            <input type="checkbox" name="tamanho-texto" value="pequeno">
+                            Tamanho do texto
+
+                            <input class="input-flex" type="checkbox" name="tamanho-texto" value="pequeno">
+                            Contraste
+                        </span>
+
+                        <span>
+                            <input type="checkbox" name="tamanho-texto" value="pequeno">
+                            Leitura em voz alta
+
+                            <input class="input-flex2" type="checkbox" name="tamanho-texto" value="pequeno">
+                            espaçamento da fonte
+                        </span>
+                        
+                    </div>
+
+                </form>
+
+                <div class="container-btn">
+                    <a href="cadastro-responsavel.html"><button>Voltar</button></a>
+
+                    <a href="#"><button>Seguinte</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

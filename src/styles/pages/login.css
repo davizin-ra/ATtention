@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --rosa: #e96eae;
+    --rosa-escuro: #b90061;
+    --azul-escuro: #0c1d46;
+    --branco: #fff8fb;
+    --sombra: 0 24px 65px rgba(74, 12, 48, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    color: var(--azul-escuro);
+    background: #f8d6e7;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+
+/* INICIO HEADER */
+
+#header {
+    width: 100%;
+    height: 125px;
+    padding: 11px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #2449a4;
+    background-color: white;
+}
+
+#header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 315px;
+    font-size: 46px;
+}
+
+#header .logo a {
+    text-decoration: none;
+    color: #2449a4;
+}
+
+#header .logo img {
+    width: 83px;
+    height: 83px;
+}
+
+#header .nav-menu {
+    width: 512px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+    gap: 50px;
+}
+
+#header .nav-menu a {
+    position: relative;
+    text-decoration: none;
+    color: #2449a4;
+    font-size: 20px;
+}
+
+#header .nav-menu a:not(.btn-login)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background: #2449a4;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+#header .nav-menu a:not(.btn-login):hover::after {
+    transform: scaleX(1);
+}
+
+#header .btn-login button {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    border: 0;
+    border-radius: 20px;
+    background: #2449a4;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Momo Trust Display";
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#header .btn-login button:hover {
+    background: #e96eae;
+    transition: 0.3s all;
+}
+
+/* FIM HEADER */
+
+
+
+
+/* INICIO FORMULÁRIO */
+
+
+.login-container {
+    position: relative;
+    width: min(1250px, 100%);
+    min-height: 730px;
+    overflow: hidden;
+    border-radius: 28px;
+    background: var(--rosa);
+    box-shadow: var(--sombra);
+    margin: 80px auto;
+}
+
+.login-form {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 690px;
+    padding: 58px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.45s ease, transform 0.7s cubic-bezier(.2, .8, .2, 1);
+}
+
+
+
+/* PARTE DO RESPONSÁVEL */
+
+.responsavel-form {
+    height: auto;
+    left: 0;
+    padding: 150px 8%;
+    color: white;
+    background: var(--rosa);
+    transform: translateX(-8%);
+}
+
+.responsavel-form .paragrafo {
+    margin-bottom: 8px;
+    color: var(--rosa-escuro);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.responsavel-form h2 {
+    margin-bottom: 20px;
+    color: var(--azul-escuro);
+    font-size: 32px;
+}
+
+.responsavel-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.responsavel-form .label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 16px;
+}
+
+.responsavel-form .input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    outline: none;
+    color: var(--azul-escuro);
+    background: white;
+    font: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.responsavel-form .input:focus {
+    border-color: var(--rosa-escuro);
+    box-shadow: 0 0 0 3px rgba(185, 0, 97, 0.15);
+}
+
+.responsavel-form .esqueceu-senha, .cadastrar-link a {
+    color: var(--azul-escuro);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.responsavel-form .esqueceu-senha:hover, .cadastrar-link a:hover {
+    text-decoration: underline;
+}
+
+.responsavel-form .lembrar-dados {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 6px;
+    font-size: 0.88rem;
+}
+
+.responsavel-form .lembrar-dados input {
+    width: 17px;
+    height: 17px;
+    accent-color: var(--azul-escuro);
+}
+
+.responsavel-form .btn-entrar {
+    width: 100%;
+    padding: 13px;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    background-color: var(--rosa-escuro);
+    font: 600 20px "Poppins", sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.responsavel-form .btn-entrar:hover {
+    background: #630336;
+    color: white;
+    transition: 0.3s all;
+}
+
+.responsavel-form .cadastrar-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 5px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* PARTE DO PSICÓLOGO */
+
+.psicologo-form {
+    height: auto;
+    right: 0;
+    color: var(--azul-escuro);
+    background: var(--branco);
+    padding: 150px 8%;
+    transform: translateX(8%);
+}
+
+.psicologo-form .paragrafo {
+    margin-bottom: 8px;
+    color: var(--rosa-escuro);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.psicologo-form h2 {
+    margin-bottom: 20px;
+    color: var(--azul-escuro);
+    font-size: 35px;
+}
+
+.psicologo-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.psicologo-form .label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 16px;
+}
+
+.psicologo-form .input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 2px solid rgb(204, 198, 198);
+    border-radius: 7px;
+    outline: none;
+    color: var(--azul-escuro);
+    background: white;
+    font: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.psicologo-form .input:focus {
+    border-color: var(--rosa-escuro);
+    box-shadow: 0 0 0 3px rgba(185, 0, 97, 0.15);
+}
+
+.psicologo-form .esqueceu-senha, .cadastrar-link a {
+    color: var(--azul-escuro);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.psicologo-form .esqueceu-senha:hover, .cadastrar-link a:hover {
+    text-decoration: underline;
+}
+
+.psicologo-form .lembrar-dados {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 6px;
+    font-size: 0.88rem;
+}
+
+.psicologo-form .lembrar-dados input {
+    width: 17px;
+    height: 17px;
+    accent-color: var(--azul-escuro);
+}
+
+.psicologo-form .btn-entrar {
+    width: 100%;
+    padding: 13px;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    background-color: var(--rosa-escuro);
+    font: 600 20px "Poppins", sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.psicologo-form .btn-entrar:hover {
+    background: #630336;
+    color: white;
+    transition: 0.3s all;
+}
+
+.psicologo-form .cadastrar-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 5px;
+    color: var(--rosa-escuro);
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* PAINEL DA FOTO */
+
+.painel {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 30px 30px 0;
+    overflow: visible;
+    pointer-events: none;
+    transition: left 0.7s cubic-bezier(.2, .8, .2, 1);
+}
+
+.painel img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.painel::after {
+    display: none;
+}
+
+
+/* BOTÃO ALTERNAR */
+
+.alternar {
+    position: absolute;
+    z-index: 3;
+    top: 8%;
+    width: 290px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 20px;
+    padding: 0 8px;
+    color: var(--azul-escuro);
+    background: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+    transition: left 0.5s ease, background 0.2s ease, color 0.2s ease;
+    border: 2px solid rgb(229, 202, 235);
+}
+
+.seta {
+    font-size: 30px;
+    transition: transform 0.7s cubic-bezier(.2, .8, .2, 1);
+}
+
+.modo-psicologo .painel .alternar .seta {
+    transform: rotate(180deg);
+}
+
+
+
+/* MODO PSICÓLOGO */
+
+.modo-psicologo .painel {
+    left: 0;
+}
+
+/* MUDA O LADO DO BOTÃO */
+
+.modo-psicologo .painel .alternar {
+    left: 100%;
+}
+
+.alternar:hover {
+    color: white;
+    background: var(--rosa-escuro);
+    transition: 0.3s all;
+}
+
+
+/* ANIMAÇÃO DOS FORMULÁRIOS */
+
+
+.modo-psicologo .responsavel-form {
+    opacity: 0;
+
+    pointer-events: none;
+
+    transform: translateX(-7%);
+}
+
+.modo-psicologo .psicologo-form {
+    opacity: 1;
+
+    pointer-events: auto;
+
+    transform: translateX(0);
+}
+
+.login-container:not(.modo-psicologo) .psicologo-form {
+    opacity: 0;
+
+    pointer-events: none;
+
+    transform: translateX(7%);
+}
+
+.login-container:not(.modo-psicologo) .responsavel-form {
+    opacity: 1;
+
+    pointer-events: auto;
+
+    transform: translateX(0);
+}

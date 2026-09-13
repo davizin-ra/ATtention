@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a senha?</title>
+    <link rel="stylesheet" href="css/esqueceu-senha.css">
+</head>
+
+<body>
+
+    <main class="recuperar-container">
+
+        <section class="recuperar-card">
+
+            <div class="icone">
+                <img src="assets/images/simbolo-de-cadeado-para-interface-de-seguranca.png" alt="img-cadeado">
+            </div>
+
+            <h2>Esqueceu a senha?</h2>
+
+            <p class="descricao">
+                Não se preocupe! Digite seu e-mail abaixo
+                e enviaremos as instruções para recuperar sua senha.
+            </p>
+
+            <form id="form-recuperacao">
+                <div class="campo">
+
+                    <label for="email">E-mail</label>
+
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                </div>
+
+                <button type="submit" class="btn-enviar">
+                    Enviar instruções
+                </button>
+
+            </form>
+
+            <!-- Mensagem que aparecerá depois do clique -->
+            <div id="mensagem" class="mensagem">
+                A recuperação de senha foi solicitada por e-mail.
+                Verifique sua caixa de entrada.
+            </div>
+
+            <a href="login.html" class="voltar">
+                ← Voltar para o login
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="js/esqueceu-senha.js"></script>
+
+</body>
+
+</html>

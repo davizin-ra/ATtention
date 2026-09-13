@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --rosa: #e96eae;
+    --rosa-escuro: #b90061;
+    --azul-escuro: #0c1d46;
+    --branco: #fff8fb;
+    --sombra: 0 24px 65px rgba(74, 12, 48, 0.2);
+    --azul-mais-claro: #2449A4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    color: var(--azul-escuro);
+    background: #f8d6e7;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+
+/* INICIO HEADER */
+
+#header {
+    width: 100%;
+    height: 125px;
+    padding: 11px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #2449a4;
+    background-color: white;
+}
+
+#header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 315px;
+    font-size: 46px;
+}
+
+#header .logo a {
+    text-decoration: none;
+    color: #2449a4;
+}
+
+#header .logo img {
+    width: 83px;
+    height: 83px;
+}
+
+#header .nav-menu {
+    width: 512px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+    gap: 50px;
+}
+
+#header .nav-menu a {
+    position: relative;
+    text-decoration: none;
+    color: #2449a4;
+    font-size: 20px;
+}
+
+#header .nav-menu a:not(.btn-login)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background: #2449a4;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+#header .nav-menu a:not(.btn-login):hover::after {
+    transform: scaleX(1);
+}
+
+#header .btn-login button {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    border: 0;
+    border-radius: 20px;
+    background: #2449a4;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Momo Trust Display";
+    cursor: pointer;
+}
+
+#header .btn-login button:hover {
+    background: #e96eae;
+    transition: 0.3s all;
+}
+
+/* FIM HEADER */
+
+
+
+/* INICIO MAIN */
+
+.opcao-cadastro-container{
+    position: relative;
+    width: min(1250px, 100%);
+    min-height: 730px;
+    background: var(--azul-mais-claro);
+    box-shadow: var(--sombra);
+    margin: 80px auto;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-direita{
+    width: 50%;
+    min-height: 730px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-direita img{
+    width: 100%;
+    height: 730px;
+    display: block;
+    object-fit: cover;
+    border-radius: 0 28px 28px 0;
+}
+
+.div-esquerda{
+    width: 50%;
+    min-height: 730px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixinha-geral{
+    width: 90%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 0;
+}
+
+.caixinha-geral h2{
+    font-size: 30px;
+    color: #FFF;
+    font-weight: 200;
+}
+
+.caixinha-geral .cards{
+    width: 100%;
+    height: 200px;
+    background: #FFF;
+    border-radius: 20px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 15px;
+}
+
+.cards .btn-cadastrar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.caixinha-geral .cards h3{
+    color: #2449A4;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.caixinha-geral .cards p{
+    color: #000;
+    font-size: 16.5px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.caixinha-geral .cards button{
+    width: 320px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 41px 13px 42px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    background: var(--azul-mais-claro);
+    color: #FFF;
+    border: none;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.caixinha-geral .cards button:hover{
+    background: #051641;
+}
+
+
+.caixinha-geral .cards a{
+    width: 320px;
+    border-radius: 10px;
+    background-color: #e96eae;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.div-voltar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.div-esquerda a button{
+    width: 150px;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #0F2459;;
+    color: #FFF;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.div-esquerda a button:hover{
+    background: #051641;
+}
