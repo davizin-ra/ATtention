@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --rosa: #e96eae;
+    --rosa-escuro: #b90061;
+    --azul-escuro: #0c1d46;
+    --branco: #fff8fb;
+    --sombra: 0 24px 65px rgba(74, 12, 48, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    color: var(--azul-escuro);
+    background: #f8d6e7;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+
+/* INICIO HEADER */
+
+#header {
+    width: 100%;
+    height: 125px;
+    padding: 11px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #2449a4;
+    background-color: white;
+}
+
+#header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 315px;
+    font-size: 46px;
+}
+
+#header .logo a {
+    text-decoration: none;
+    color: #2449a4;
+}
+
+#header .logo img {
+    width: 83px;
+    height: 83px;
+}
+
+#header .nav-menu {
+    width: 512px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+    gap: 50px;
+}
+
+#header .nav-menu a {
+    position: relative;
+    text-decoration: none;
+    color: #2449a4;
+    font-size: 20px;
+}
+
+#header .nav-menu a:not(.btn-login)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background: #2449a4;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+#header .nav-menu a:not(.btn-login):hover::after {
+    transform: scaleX(1);
+}
+
+#header .btn-login button {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    border: 0;
+    border-radius: 20px;
+    background: #2449a4;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Momo Trust Display";
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#header .btn-login button:hover {
+    background: #e96eae;
+    transition: 0.3s all;
+}
+
+/* FIM HEADER */
+
+
+
+/* INICIO MAIN */
+
+#container{
+    position: relative;
+    width: min(1250px, 100%);
+    min-height: 1254px;
+    background: var(--rosa);
+    box-shadow: var(--sombra);
+    margin: 80px auto;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins";
+    
+}
+
+/* SECTION ESQUERDA */
+
+#section-esquerda{
+    position: relative;
+    width: 50%;
+    height: 1254px;
+    border-radius: 28px 0 0 28px;
+}
+
+#section-esquerda img{
+    width: 100%;
+    height: 100%;
+    border-radius: 28px 0 0 28px;
+}
+
+
+/* SECTION-DIREITA */
+
+#section-direita{
+    position: relative;
+    width: 50%;
+    height: 1254PX;
+    border-radius: 0 28px 28px 0;
+    padding: 43px 20px;
+}
+
+#section-direita .textos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#section-direita .textos h2{
+    font-size: 40px;
+    color: #FFF;
+}
+
+#section-direita .textos h2 span{
+    color: var(--rosa-escuro);
+}
+
+#section-direita .textos p{
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+.area-dados-responsavel{
+    width: 100%;
+    height: 360px;
+    margin-top: 50px;
+}
+
+.area-dados-responsavel h3{
+    font-size: 23px;
+}
+
+.area-dados-responsavel .titulo-h3{
+    margin-top: 50px;
+}
+
+.formulario{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: grid;
+    flex-direction: column;
+    color: #FFF;
+    gap: 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formulario input{
+    width: 280px;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #3c4044;
+}
+
+.formulario input::placeholder{
+    color: #3c4044;
+}
+
+.formulario .campo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formulario2{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: grid;
+    flex-direction: column;
+    color: #FFF;
+    gap: 20px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formulario2 input{
+    width: 280px;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #3c4044;
+}
+
+.formulario2 input::placeholder{
+    color: #3c4044;
+}
+
+.formulario2 .campo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-btn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.container-btn button{
+    width: 150px;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: var(--rosa-escuro);
+    color: #FFF;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.container-btn a button:hover{
+    background: #630336;
+}
