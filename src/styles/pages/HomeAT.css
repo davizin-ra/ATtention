@@ -1,0 +1,717 @@
+/* configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    color: #2449A4;
+    font-family: "Momo Trust Sans", sans-serif;
+}
+
+main {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* textos */
+
+h1 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1;
+    color: white;
+}
+
+h2 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #2449A4;
+}
+
+h3 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #2449A4;
+}
+
+h4 {
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #2449A4;
+}
+
+h5 {
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #2449A4;
+}
+
+p {
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #000000;
+}
+
+/* containers */
+
+.container-principal {
+    width: 88%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+/* inicio */
+
+.section-inicio {
+    min-height: 300px;
+    background: #2449A4;
+    position: relative;
+    padding: 48px 0 105px;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.section-inicio::after {
+    content: "";
+    position: absolute;
+    left: -5%;
+    right: -5%;
+    bottom: -92px;
+    height: 145px;
+    background: white;
+    border-radius: 50% 50% 0 0;
+}
+
+.inicio-conteudo {
+    width: 88%;
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.inicio-texto p {
+    margin-top: 10px;
+    color: white;
+}
+
+.inicio-usuario {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.inicio-foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80");
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.inicio-botao-sair {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Momo Trust Sans", sans-serif;
+    cursor: pointer;
+}
+
+/* informações */
+
+.section-informacoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 70px;
+}
+
+.informacoes-card {
+    border: 1px solid #9bb0d7;
+    border-radius: 15px;
+    padding: 24px;
+    background: white;
+}
+
+.informacoes-card h2 {
+    margin-bottom: 8px;
+}
+
+/* agenda e pacientes */
+
+.container-duplo {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+/* pacientes ativos */
+
+.section-pacientes {
+    order: 1;
+    flex: 2.2;
+    min-width: 0;
+    border: 1px solid #9bb0d7;
+    border-radius: 15px;
+    padding: 30px;
+    background: white;
+}
+
+.section-pacientes h3 {
+    margin-bottom: 28px;
+}
+
+.pacientes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.pacientes-card {
+    border: 1px solid #9bb0d7;
+    border-radius: 15px;
+    padding: 28px 26px;
+    background: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pacientes-card h4 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.pacientes-card h5 {
+    color: #000000;
+    font-size: 17px;
+    margin-bottom: 14px;
+}
+
+.pacientes-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* cadastrar paciente */
+
+.botao-cadastrar-paciente {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: 1px solid #2449A4;
+    border-radius: 15px;
+    background: #2449A4;
+    color: white;
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.botao-cadastrar-paciente:hover {
+    background: #1b3780;
+}
+
+.cadastro-paciente {
+    display: none;
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #9bb0d7;
+}
+
+.cadastro-paciente h4 {
+    margin-bottom: 20px;
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.cadastro-paciente label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    color: #2449A4;
+    font-size: 16px;
+}
+
+.cadastro-paciente input,
+.cadastro-paciente textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #9bb0d7;
+    border-radius: 10px;
+    background: white;
+    color: #2449A4;
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 14px;
+}
+
+.cadastro-paciente textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.botao-salvar-paciente {
+    width: 100%;
+    margin-top: 22px;
+    padding: 13px;
+    border: none;
+    border-radius: 15px;
+    background: #E33629;
+    color: white;
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.botao-salvar-paciente:hover {
+    background: #bd281f;
+}
+
+/* agenda */
+
+.section-agenda {
+    order: 2;
+    flex: 1;
+    min-width: 300px;
+    align-self: flex-start;
+    background: white;
+    border: 1px solid #9bb0d7;
+    border-radius: 15px;
+    padding: 30px 26px;
+}
+
+.section-agenda h3 {
+    font-size: 32px;
+    margin-bottom: 28px;
+}
+
+.agenda-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.agenda-item {
+    background: #f8faff;
+    border: 1px solid #9bb0d7;
+    border-radius: 15px;
+    padding: 18px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.agenda-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+}
+
+.agenda-horario {
+    min-width: 58px;
+    font-size: 16px;
+}
+
+.agenda-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+
+.agenda-detalhes h4 {
+    font-size: 17px;
+    color: #000000;
+}
+
+.agenda-detalhes p {
+    color: #999999;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* coluna da agenda */
+
+.coluna-agenda {
+    order: 2;
+    flex: 1;
+    min-width: 300px;
+}
+
+/* agenda */
+
+.coluna-agenda .section-agenda {
+    width: 100%;
+}
+
+/* calendário */
+
+.coluna-agenda .agendar-sessao {
+    width: 100%;
+    margin-top: 30px;
+    padding: 30px 26px;
+    border: 1px solid #9bb0d7;
+    border-radius: 15px;
+    background: white;
+}
+
+.agendar-sessao h3 {
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #2449A4;
+}
+
+.agendar-sessao label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 7px;
+    color: #2449A4;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.agendar-sessao input,
+.agendar-sessao select {
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding: 8px 12px;
+    border: 1px solid #9bb0d7;
+    border-radius: 8px;
+    background: white;
+    color: #2449A4;
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 14px;
+}
+
+.botao-agendar {
+    width: 100%;
+    margin-top: 24px;
+    padding: 13px;
+    border: none;
+    border-radius: 15px;
+    background: #2449A4;
+    color: white;
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.botao-agendar:hover {
+    background: #1b3780;
+}
+
+#sessoesAgendadas {
+    margin-top: 20px;
+}
+
+.sessao-nova {
+    padding: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #9bb0d7;
+    border-radius: 10px;
+    background: #f8faff;
+    color: #2449A4;
+    font-size: 14px;
+    white-space: pre-line;
+}
+
+/* solicitações */
+
+.section-solicitacoes {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.section-solicitacoes h3 {
+    margin-bottom: 28px;
+}
+
+.solicitacoes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.solicitacoes-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #9bb0d7;
+    border-radius: 15px;
+    background: white;
+}
+
+.solicitacoes-card h1 {
+    margin-bottom: 12px;
+    color: #2449A4;
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.solicitacoes-card p {
+    margin-bottom: 30px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.solicitacoes-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: auto;
+}
+
+/* botões das solicitações */
+
+.solicitacoes-botoes .botao-vermelho,
+.solicitacoes-botoes .botao-branco {
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.solicitacoes-botoes .botao-vermelho {
+    background: #E33629;
+    color: white;
+    border: 1px solid #E33629;
+}
+
+.solicitacoes-botoes .botao-branco {
+    background: white;
+    color: #2449A4;
+    border: 1px solid #9bb0d7;
+}
+
+/* tags */
+
+.tag {
+    font-size: 13px;
+    font-family: "Momo Trust Sans", sans-serif;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.tag-azul {
+    border: 1px solid #2449A4;
+    color: #2449A4;
+    background: white;
+}
+
+.tag-escolar {
+    background: #e3352942;
+    color: #E33629
+
+}
+
+.tag-verde {
+    background: #d5f8e7;
+    color: #008c5a;
+    border: 1px solid #d5f8e7;
+}
+
+.tag-amarela {
+    background: #fff1b8;
+    color: #947000;
+}
+
+/* tags da agenda */
+
+.section-agenda .tag-escolar,
+.section-agenda .tag-verde {
+    min-width: 85px;
+    text-align: center;
+    padding: 5px 12px;
+}
+
+/* botões */
+
+.botao-vermelho,
+.botao-branco {
+    border-radius: 15px;
+    padding: 12px 20px;
+    font-family: "Momo Trust Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.botao-vermelho {
+    background: #E33629;
+    color: white;
+    border: 1px solid #E33629;
+}
+
+.botao-branco {
+    background: white;
+    color: #2449A4;
+    border: 1px solid #9bb0d7;
+}
+
+/* responsividade */
+
+@media (max-width: 1000px) {
+
+    .section-informacoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-duplo {
+        flex-direction: column;
+    }
+
+    .section-pacientes,
+    .section-agenda {
+        width: 100%;
+        flex: none;
+    }
+
+    .pacientes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .container-principal {
+        width: 90%;
+    }
+
+    .section-inicio {
+        padding: 35px 0 90px;
+    }
+
+    .inicio-conteudo {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .inicio-usuario {
+        align-self: flex-start;
+    }
+
+    .section-informacoes {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .informacoes-card {
+        padding: 18px;
+    }
+
+    .informacoes-card h2 {
+        font-size: 32px;
+    }
+
+    .informacoes-card h5 {
+        font-size: 14px;
+    }
+
+    .container-duplo {
+        gap: 40px;
+    }
+
+    .section-pacientes {
+        padding: 24px 18px;
+    }
+
+    .pacientes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pacientes-card {
+        padding: 22px;
+    }
+
+    .section-agenda {
+        min-width: 0;
+        padding: 24px 18px;
+    }
+
+    .agenda-item {
+        padding: 16px 12px;
+    }
+
+    .agenda-info {
+        gap: 10px;
+    }
+
+    .agenda-horario {
+        min-width: 52px;
+        font-size: 14px;
+    }
+
+    .agenda-detalhes h4 {
+        font-size: 15px;
+    }
+
+    .tag {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .solicitacoes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .solicitacoes-botoes {
+        flex-direction: column;
+    }
+
+    .botao-azul,
+    .botao-branco {
+        width: 100%;
+    }
+}
