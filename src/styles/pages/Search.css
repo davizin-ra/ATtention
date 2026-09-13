@@ -68,6 +68,7 @@
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 700;
+    outline: none;
   }
 }
 
@@ -191,7 +192,7 @@
     margin: 0;
     padding: 5px 9px;
     border-radius: 100px;
-    background:#eaf5ff;
+    background: #eaf5ff;
     color: #2871a8;
     font-size: 0.72rem;
   }
@@ -201,4 +202,30 @@
   padding: 50px;
   text-align: center;
   color: #607489;
+}
+
+@media (max-width: 860px) {
+  .filters {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .input-search {
+    min-width: 0;
+
+    button {
+      padding: 0 24px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .top-section {
+    padding-top: 42px;
+  }
+  .selects {
+    grid-template-columns: 1fr;
+  }
+  .cards-section {
+    padding-top: 32px;
+  }
 }
