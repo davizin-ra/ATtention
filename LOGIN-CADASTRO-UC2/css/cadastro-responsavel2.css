@@ -286,3 +286,9 @@ body {
 .container-btn a button:hover{
     background: #630336;
 }
+
+.campo2 input{
+    width: 17px;
+    height: 17px;
+    accent-color: var(--azul-escuro);
+}
