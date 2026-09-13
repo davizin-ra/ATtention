@@ -202,18 +202,13 @@ main {
 }
 
 .foto-perfil {
-	width: 150px;
-	height: 150px;
-	border-radius: 20px;
-	background: linear-gradient(145deg, var(--rosa-pastel), var(--rosa-forte));
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: 'Fraunces', serif;
-	font-size: 30px;
-	color: var(--branco);
-	font-weight: 600;
-	border: 4px solid var(--branco);
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+	  background: linear-gradient(145deg, var(--branco), var(--branco));
+    object-fit: cover;
+    display: block;
+    border: 4px solid var(--branco);
 }
 
 .botao-editar-foto {
