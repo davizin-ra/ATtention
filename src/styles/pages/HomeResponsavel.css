@@ -8,7 +8,7 @@
 
 body {
     background: #ffffff;
-    color: #2449A4;
+    color: var(--azul);
     font-family: "Momo Trust Sans", sans-serif;
 }
 
@@ -32,7 +32,7 @@ h2 {
     font-size: 36px;
     font-weight: 400;
     line-height: 1.1;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 h3 {
@@ -40,7 +40,7 @@ h3 {
     font-size: 24px;
     font-weight: 500;
     line-height: 1.15;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 h4 {
@@ -48,14 +48,14 @@ h4 {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.2;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 h5 {
     font-family: "Momo Trust Sans", sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 p {
@@ -67,7 +67,7 @@ p {
 }
 
 a {
-    color: #2449A4;
+    color: var(--azul);
     text-decoration: none;
 }
 
@@ -89,7 +89,7 @@ a {
 
 .section-inicio {
     min-height: 300px;
-    background: #2449A4;
+    background: var(--azul);
     position: relative;
     padding: 48px 0 105px;
     overflow: hidden;
@@ -137,7 +137,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #2449A4;
+    color: var(--azul);
     font-size: 24px;
 }
 
@@ -204,7 +204,7 @@ a {
 .sessao-data strong {
     font-family: "Momo Trust Display", sans-serif;
     font-size: 28px;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 .sessao-data small {
@@ -252,7 +252,7 @@ a {
     font-size: 16px;
     line-height: 1.5;
     padding-left: 20px;
-    border-left: 2px solid #E33629;
+    border-left: 2px solid var(--vermelho);
 }
 
 /* informações */
@@ -327,7 +327,7 @@ a {
     display: block;
     font-family: "Momo Trust Display", sans-serif;
     font-size: 24px;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 .at-informacoes span {
@@ -383,8 +383,8 @@ a {
 }
 
 .tag-vermelha {
-    border: 1px solid #E33629;
-    color: #E33629;
+    border: 1px solid var(--vermelho);
+    color: var(--vermelho);
 }
 
 .tag-verde {
@@ -402,7 +402,7 @@ a {
 
 .botao-azul {
     width: 100%;
-    background: #2449A4;
+    background: var(--azul);
     color: white;
     border: none;
     border-radius: 28px;
@@ -508,7 +508,7 @@ a {
 
     .anotacao p {
         padding-left: 15px;
-        border-left: 3px solid #E33629; 
+        border-left: 3px solid var(--vermelho); 
     }
 
     .at-perfil {
