@@ -33,65 +33,6 @@ a {
 	padding: 0 28px;
 }
 
-/* ========================== cabecalho ========================== */
-
-.cabecalho {
-	background-color: var(--branco);
-	box-shadow: 0 4px 14px rgba(32, 63, 154, 0.09);
-	position: relative;
-	z-index: 2;
-}
-
-.cabecalho-conteudo {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 20px 0;
-}
-
-.marca {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
-.marca-icone {
-	width: 70px;
-	height: 70px;
-	border-radius: 11px;
-	object-fit: cover;
-	display: block;
-}
-
-.marca-nome {
-	font-family: 'Fraunces', serif;
-	font-weight: 600;
-	font-size: 19px;
-}
-
-.menu-principal {
-	display: flex;
-	gap: 34px;
-}
-
-.menu-principal a {
-	font-size: 14.5px;
-	color: var(--texto-suave);
-	font-weight: 500;
-	padding-bottom: 4px;
-	border-bottom: 2px solid transparent;
-}
-
-.menu-principal a.ativo {
-	color: var(--azul);
-	border-bottom-color: var(--rosa-forte);
-}
-
-.cabecalho-acoes {
-	display: flex;
-	gap: 10px;
-}
-
 /* ========================== botoes ========================== */
 
 .botao {
@@ -102,21 +43,6 @@ a {
 	border-radius: 9px;
 	border: 1px solid transparent;
 	cursor: pointer;
-}
-
-.botao-contorno {
-	background-color: var(--rosa-pastel);
-	color: #8A1F5C;
-	border-color: #E5B9D5;
-}
-
-.botao-primario {
-	background-color: var(--azul);
-	color: var(--branco);
-}
-
-.botao-primario:hover {
-	background-color: #182F78;
 }
 
 .botao-destaque {
@@ -188,13 +114,13 @@ main {
 }
 
 .foto-perfil {
-    width: 150px;
-    height: 150px;
-    border-radius: 20px;
-	  background: linear-gradient(145deg, var(--branco), var(--branco));
-    object-fit: cover;
-    display: block;
-    border: 4px solid var(--branco);
+	width: 150px;
+	height: 150px;
+	border-radius: 20px;
+	background: linear-gradient(145deg, var(--branco), var(--branco));
+	object-fit: cover;
+	display: block;
+	border: 4px solid var(--branco);
 }
 
 .botao-editar-foto {
@@ -387,8 +313,6 @@ main {
 .acoes-lateral .botao-destaque:hover {
 	background-color: #182F78;
 }
-
-/* ========================== botoes ========================== */
 
 .acoes-lateral .botao-secundario {
 	background-color: var(--branco);
@@ -597,10 +521,6 @@ main {
 	outline-offset: 2px;
 }
 
-.tag-ativa::before {
-	content: "\2713 ";
-}
-
 .duas-colunas {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -611,8 +531,9 @@ main {
 	min-height: 120px;
 }
 
-.conteudo-principal > .cartao:last-child {
-	height: 140px;
+.cartao-disponibilidade {
+	height: auto !important;
+	min-height: 120px !important;
 }
 
 /* ========================== campos editaveis ========================== */
@@ -637,62 +558,3 @@ main {
 	outline-offset: 0;
 }
 
-/* ========================== rodape ========================== */
-
-.rodape {
-	background-color: var(--azul);
-	color: #DCE8F2;
-	margin-top: 10px;
-}
-
-.rodape-conteudo {
-	padding: 52px 0 30px;
-	display: grid;
-	grid-template-columns: 1.4fr 1fr 1fr;
-	gap: 40px;
-}
-
-.rodape-marca {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	margin-bottom: 14px;
-}
-
-.rodape-marca .marca-nome {
-	color: var(--branco);
-}
-
-.rodape-descricao {
-	font-size: 13.5px;
-	color: var(--azul-pastel);
-	line-height: 1.7;
-	max-width: 320px;
-}
-
-.rodape-coluna h4 {
-	font-family: 'Inter', sans-serif;
-	font-size: 13px;
-	color: var(--branco);
-	font-weight: 600;
-	margin-bottom: 14px;
-}
-
-.rodape-coluna a {
-	display: block;
-	font-size: 13.5px;
-	color: #BCD3EA;
-	padding: 5px 0;
-}
-
-.rodape-coluna a:hover {
-	color: var(--branco);
-}
-
-.rodape-base {
-	border-top: 1px solid rgba(255, 255, 255, 0.14);
-	text-align: center;
-	padding: 18px 0;
-	font-size: 12.5px;
-	color: #8FA9CC;
-}
