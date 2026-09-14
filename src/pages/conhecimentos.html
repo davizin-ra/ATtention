@@ -1,269 +1,538 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATtention</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conhecimentos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display:wght@400&family=Momo+Trust+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/pages/conhecimentos.css">
-</head>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/pages/conhecimentos.css" />
+  </head>
 
-<body>
+  <body>
+    <header class="header" data-header>
+      <nav class="header-container" aria-label="Menu principal">
+        <a
+          class="header-brand"
+          href="../../index.html"
+          aria-label="ATtention — página inicial"
+        >
+          <img
+            class="header-logo"
+            src="../../assets/images/LandingPage/logo-transparente.png"
+            alt="Logo do ATtention"
+          />
+          <span>ATtention</span>
+        </a>
+
+        <button
+          class="header-menu-toggle"
+          data-site-menu-toggle
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <span></span>
+        </button>
+
+        <ul class="header-menu" id="header-menu" data-site-menu>
+          <li><a class="header-link" href="../../index.html">Início</a></li>
+          <li><a class="header-link" href="./SobreNos.html">Sobre Nós</a></li>
+          <li><a class="header-link" href="#">Conhecimento</a></li>
+          <li>
+            <a href="./login.html" class="header-login">Fazer Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
+      <!-- inicio: apresenta a central de conhecimento -->
 
-<!-- inicio: apresenta a central de conhecimento -->
+      <section class="section-inicio">
+        <div class="inicio-conteudo">
+          <div class="inicio-texto">
+            <h1>Central de<br />conhecimento</h1>
+            <p>
+              Aprofunde seus conhecimentos sobre o desenvolvimento infantil.
+              Explore conteúdos e entenda mais sobre o acompanhamento
+              terapêutico para apoiar a aprendizagem, a inclusão escolar e a
+              autonomia das crianças.
+            </p>
+          </div>
+          <img
+            src="../../assets/images/conhecimentos/conhecimento1.png"
+            alt="Criança desenhando uma pintura colorida na janela"
+          />
+        </div>
+      </section>
 
-        <section class="section-inicio">
-            <div class="inicio-conteudo">
-                <div class="inicio-texto">
-                    <h1>Central de<br>conhecimento</h1>
-                    <p>Aprofunde seus conhecimentos sobre o desenvolvimento infantil. Explore conteúdos e entenda mais sobre o acompanhamento terapêutico para apoiar a aprendizagem, a inclusão escolar e a autonomia das crianças.</p>
-                </div>
-                <img src="../../assets/images/conhecimentos/conhecimento1.png" alt="Criança desenhando uma pintura colorida na janela">
-            </div>
-        </section>
+      <!-- buttons: permite filtrar os conteúdos por assunto -->
 
-<!-- buttons: permite filtrar os conteúdos por assunto -->
+      <section class="section-button">
+        <div class="filtros">
+          <button class="filtro ativo" data-filtro="todos">Todos</button>
+          <button class="filtro" data-filtro="tea">TEA</button>
+          <button class="filtro" data-filtro="inclusao">
+            Inclusão escolar
+          </button>
+          <button class="filtro" data-filtro="acompanhamento">
+            Acompanhamento terapêutico
+          </button>
+          <button class="filtro" data-filtro="familias">Famílias</button>
+          <button class="filtro" data-filtro="profissionais">
+            Profissionais
+          </button>
+        </div>
+      </section>
 
-        <section class="section-button">
-            <div class="filtros">
-                <button class="filtro ativo" data-filtro="todos">Todos</button>
-                <button class="filtro" data-filtro="tea">TEA</button>
-                <button class="filtro" data-filtro="inclusao">Inclusão escolar</button>
-                <button class="filtro" data-filtro="acompanhamento">Acompanhamento terapêutico</button>
-                <button class="filtro" data-filtro="familias">Famílias</button>
-                <button class="filtro" data-filtro="profissionais">Profissionais</button>
-            </div>
-        </section>
+      <!-- destaque: apresenta o conteúdo principal da página -->
 
-<!-- destaque: apresenta o conteúdo principal da página -->
+      <section class="section-destaque" id="destaque">
+        <h5>CONTEÚDO EM DESTAQUE</h5>
 
-        <section class="section-destaque" id="destaque">
-            <h5>CONTEÚDO EM DESTAQUE</h5>
+        <div class="destaque-card">
+          <div class="tags">
+            <span>TEA</span>
+            <span>Inclusão escolar</span>
+            <span>Acompanhante terapêutico</span>
+          </div>
 
-            <div class="destaque-card">
-                <div class="tags">
-                    <span>TEA</span>
-                    <span>Inclusão escolar</span>
-                    <span>Acompanhante terapêutico</span>
-                </div>
+          <h2>
+            Acompanhamento terapêutico escolar e autismo: <br />caminhos para a
+            emergência do sujeito
+          </h2>
 
-                <h2>Acompanhamento terapêutico escolar e autismo: <br>caminhos para a emergência do sujeito</h2>
+          <p>
+            Pesquisa publicada na USP que relata uma experiência de
+            acompanhamento terapêutico escolar com uma criança autista ao longo
+            de três anos e meio, analisando impactos no desenvolvimento e na
+            inclusão.
+          </p>
 
-                <p>Pesquisa publicada na USP que relata uma experiência de acompanhamento terapêutico escolar com uma criança autista ao longo de três anos e meio, analisando impactos no desenvolvimento e na inclusão.</p>
+          <a
+            class="botao"
+            href="https://revistas.usp.br/estic/pt_BR/article/view/117769"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ler artigo completo</a
+          >
+        </div>
+      </section>
 
-                <a class="botao" href="https://revistas.usp.br/estic/pt_BR/article/view/117769" target="_blank" rel="noopener noreferrer">Ler artigo completo</a>
-            </div>
-        </section>
+      <!-- conteúdos: apresenta os artigos selecionados em formato de carrossel -->
 
-<!-- conteúdos: apresenta os artigos selecionados em formato de carrossel -->
-
-<section class="section-conteudos">
-    <div class="titulo-secao">
-        <h2>Conteúdos selecionados</h2>
-        <div class="setas">
+      <section class="section-conteudos">
+        <div class="titulo-secao">
+          <h2>Conteúdos selecionados</h2>
+          <div class="setas">
             <button id="voltar" type="button" aria-label="Voltar">←</button>
             <button id="avancar" type="button" aria-label="Avançar">→</button>
+          </div>
         </div>
-    </div>
 
-    <div class="carrossel">
-        <div class="cards" id="cards">
+        <div class="carrossel">
+          <div class="cards" id="cards">
+            <!-- artigo 1 -->
 
-<!-- artigo 1 -->
-
-            <article class="card" data-categorias="tea inclusao acompanhamento profissionais">
-                <img src="../../assets/images/conhecimentos/conhecimento2.png" alt="Acompanhamento terapêutico">
-                <div class="card-conteudo">
-                    <h3>Acompanhamento terapêutico e inclusão escolar</h3>
-                    <p>Estudo sobre a atuação do acompanhante especializado e sua contribuição para a inclusão do aluno autista.</p>
-                    <a class="botao" href="https://revista.uepb.edu.br/REIN/pt_BR/article/view/447" target="_blank" rel="noopener noreferrer">Abrir</a>
-                </div>
+            <article
+              class="card"
+              data-categorias="tea inclusao acompanhamento profissionais"
+            >
+              <img
+                src="../../assets/images/conhecimentos/conhecimento2.png"
+                alt="Acompanhamento terapêutico"
+              />
+              <div class="card-conteudo">
+                <h3>Acompanhamento terapêutico e inclusão escolar</h3>
+                <p>
+                  Estudo sobre a atuação do acompanhante especializado e sua
+                  contribuição para a inclusão do aluno autista.
+                </p>
+                <a
+                  class="botao"
+                  href="https://revista.uepb.edu.br/REIN/pt_BR/article/view/447"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Abrir</a
+                >
+              </div>
             </article>
 
-<!-- artigo 2 -->
+            <!-- artigo 2 -->
 
-            <article class="card" data-categorias="tea inclusao acompanhamento profissionais">
-                <img src="../../assets/images/conhecimentos/conhecimento3.png" alt="Inclusão escolar de alunos autistas">
-                <div class="card-conteudo">
-                    <h3>Inclusão escolar de alunos autistas</h3>
-                    <p>Discussão sobre práticas de acompanhamento e os desafios encontrados no processo de inclusão escolar.</p>
-                    <a class="botao" href="https://periodicos.ufc.br/educacaoemdebate/article/view/82894" target="_blank" rel="noopener noreferrer">Abrir</a>
-                </div>
+            <article
+              class="card"
+              data-categorias="tea inclusao acompanhamento profissionais"
+            >
+              <img
+                src="../../assets/images/conhecimentos/conhecimento3.png"
+                alt="Inclusão escolar de alunos autistas"
+              />
+              <div class="card-conteudo">
+                <h3>Inclusão escolar de alunos autistas</h3>
+                <p>
+                  Discussão sobre práticas de acompanhamento e os desafios
+                  encontrados no processo de inclusão escolar.
+                </p>
+                <a
+                  class="botao"
+                  href="https://periodicos.ufc.br/educacaoemdebate/article/view/82894"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Abrir</a
+                >
+              </div>
             </article>
 
-<!-- artigo 3 -->
+            <!-- artigo 3 -->
 
-            <article class="card" data-categorias="tea acompanhamento profissionais">
-                <img src="../../assets/images/conhecimentos/conhecimento4.png" alt="Acompanhamento terapêutico e desenvolvimento infantil">
-                <div class="card-conteudo">
-                    <h3>Acompanhante terapêutico e desenvolvimento infantil</h3>
-                    <p>Estudo sobre o acompanhamento terapêutico como estratégia de intervenção no desenvolvimento da criança com TEA.</p>
-                    <a class="botao" href="https://ojs.focopublicacoes.com.br/foco/article/view/2870" target="_blank" rel="noopener noreferrer">Abrir</a>
-                </div>
+            <article
+              class="card"
+              data-categorias="tea acompanhamento profissionais"
+            >
+              <img
+                src="../../assets/images/conhecimentos/conhecimento4.png"
+                alt="Acompanhamento terapêutico e desenvolvimento infantil"
+              />
+              <div class="card-conteudo">
+                <h3>Acompanhante terapêutico e desenvolvimento infantil</h3>
+                <p>
+                  Estudo sobre o acompanhamento terapêutico como estratégia de
+                  intervenção no desenvolvimento da criança com TEA.
+                </p>
+                <a
+                  class="botao"
+                  href="https://ojs.focopublicacoes.com.br/foco/article/view/2870"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Abrir</a
+                >
+              </div>
             </article>
 
-<!-- artigo 4 -->
+            <!-- artigo 4 -->
 
             <article class="card" data-categorias="tea familias profissionais">
-                <img src="../../assets/images/conhecimentos/conhecimento5.png" alt="Autismo na adolescência">
-                <div class="card-conteudo">
-                    <h3>Autismo na adolescência</h3>
-                    <p>Reflexões sobre comportamento, comunicação e autonomia de adolescentes com Transtorno do Espectro Autista.</p>
-                    <a class="botao" href="https://periodicos.ufmg.br/index.php/edrevista/article/view/26472" target="_blank" rel="noopener noreferrer">Abrir</a>
-                </div>
+              <img
+                src="../../assets/images/conhecimentos/conhecimento5.png"
+                alt="Autismo na adolescência"
+              />
+              <div class="card-conteudo">
+                <h3>Autismo na adolescência</h3>
+                <p>
+                  Reflexões sobre comportamento, comunicação e autonomia de
+                  adolescentes com Transtorno do Espectro Autista.
+                </p>
+                <a
+                  class="botao"
+                  href="https://periodicos.ufmg.br/index.php/edrevista/article/view/26472"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Abrir</a
+                >
+              </div>
             </article>
 
-<!-- artigo 5 -->
+            <!-- artigo 5 -->
 
-            <article class="card" data-categorias="tea inclusao acompanhamento familias">
-                <img src="../../assets/images/conhecimentos/conhecimento6.png" alt="Criança e acompanhante">
-                <div class="card-conteudo">
-                    <h3>A criança TEA e o AT escolar</h3>
-                    <p>Relato sobre a atuação do AT na escola, destacando aprendizagem, interação social e inclusão.</p>
-                    <a class="botao" href="https://revista.uepb.edu.br/REIN/pt_BR/article/view/447" target="_blank" rel="noopener noreferrer">Abrir</a>
-                </div>
+            <article
+              class="card"
+              data-categorias="tea inclusao acompanhamento familias"
+            >
+              <img
+                src="../../assets/images/conhecimentos/conhecimento6.png"
+                alt="Criança e acompanhante"
+              />
+              <div class="card-conteudo">
+                <h3>A criança TEA e o AT escolar</h3>
+                <p>
+                  Relato sobre a atuação do AT na escola, destacando
+                  aprendizagem, interação social e inclusão.
+                </p>
+                <a
+                  class="botao"
+                  href="https://revista.uepb.edu.br/REIN/pt_BR/article/view/447"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Abrir</a
+                >
+              </div>
             </article>
 
-<!-- artigo 6 -->
+            <!-- artigo 6 -->
 
-            <article class="card" data-categorias="acompanhamento familias profissionais">
-                <img src="../../assets/images/conhecimentos/conhecimento7.png" alt="Acompanhamento terapêutico no cotidiano">
-                <div class="card-conteudo">
-                    <h3>Acompanhamento terapêutico no cotidiano</h3>
-                    <p>Relato sobre o acompanhamento terapêutico e a construção de uma rotina mais organizada e segura.</p>
-                    <a class="botao" href="https://seer.ufu.br/index.php/perspectivasempsicologia/article/view/64943" target="_blank" rel="noopener noreferrer">Abrir</a>
-                </div>
+            <article
+              class="card"
+              data-categorias="acompanhamento familias profissionais"
+            >
+              <img
+                src="../../assets/images/conhecimentos/conhecimento7.png"
+                alt="Acompanhamento terapêutico no cotidiano"
+              />
+              <div class="card-conteudo">
+                <h3>Acompanhamento terapêutico no cotidiano</h3>
+                <p>
+                  Relato sobre o acompanhamento terapêutico e a construção de
+                  uma rotina mais organizada e segura.
+                </p>
+                <a
+                  class="botao"
+                  href="https://seer.ufu.br/index.php/perspectivasempsicologia/article/view/64943"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Abrir</a
+                >
+              </div>
             </article>
-
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-<!-- vídeos: apresenta conteúdos em vídeo -->
+      <!-- vídeos: apresenta conteúdos em vídeo -->
 
-<section class="section-videos">
-
+      <section class="section-videos">
         <h2>Saiba mais com vídeo</h2>
 
         <div class="videos-container">
+          <!-- vídeo 1 -->
+          <article class="video-card">
+            <a
+              href="https://www.youtube.com/watch?v=OdyCqL1QdIw"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="video">
+                <img
+                  src="../../assets/images/conhecimentos/youtube1.jpg"
+                  alt="Capa do vídeo Acompanhante terapêutico, o que é isso?"
+                />
+                <span class="play">▶</span>
+              </div>
+            </a>
 
-<!-- vídeo 1 -->
-            <article class="video-card">
-                <a href="https://www.youtube.com/watch?v=OdyCqL1QdIw" target="_blank" rel="noopener noreferrer">
-                    <div class="video">
-                        <img src="../../assets/images/conhecimentos/youtube1.jpg" alt="Capa do vídeo Acompanhante terapêutico, o que é isso?">
-                        <span class="play">▶</span>
-                    </div>
-                </a>
-
-                <div class="video-conteudo">
-                    <h3>Acompanhante terapêutico, o que é isso?</h3>
-                    <p>Academia do Autismo</p>
-                </div>
-            </article>
-
-<!-- vídeo 2 -->
-
-            <article class="video-card">
-                <a href="https://www.youtube.com/watch?v=QiolDJzjnZs" target="_blank" rel="noopener noreferrer">
-                    <div class="video">
-                        <img src="../../assets/images/conhecimentos/youtube2.jpg" alt="Capa do vídeo Vida de AT - Acompanhante terapêutico na prática">
-                        <span class="play">▶</span>
-                    </div>
-                </a>
-
-                <div class="video-conteudo">
-                    <h3>Vida de AT - Acompanhante terapêutico na prática</h3>
-                    <p>Academia do Autismo</p>
-                </div>
-            </article>
-
-<!-- vídeo 3 -->
-
-            <article class="video-card">
-                <a href="https://www.youtube.com/watch?v=4tsIzk0FnB0" target="_blank" rel="noopener noreferrer">
-                    <div class="video">
-                        <img src="../../assets/images/conhecimentos/youtube3.jpg" alt="Capa do vídeo AT na escola: quando é necessário?">
-                        <span class="play">▶</span>
-                    </div>
-                </a>
-
-                <div class="video-conteudo">
-                    <h3>AT na escola: quando é necessário?</h3>
-                    <p>Mayra Gaiato | Desenvolvimento Infantil e Autismo</p>
-                </div>
-            </article>
-
-        </div>
-
-</section>
-
-<!-- fontes: apresenta sites confiáveis para pesquisa -->
-
-        <section class="section-fontes">
-            <h2>Fontes confiáveis</h2>
-
-            <div class="lista-fontes">
-
-<!-- fonte 1 -->
-
-                <article class="fonte">
-                    <h3>Ministério da Saúde</h3>
-                    <p>Informações oficiais sobre TEA, cuidados, acompanhamento e serviços do SUS.</p>
-                    <a class="botao" href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/autismo" target="_blank" rel="noopener noreferrer">Acessar site</a>
-                </article>
-
-<!-- fonte 2 -->
-
-                <article class="fonte">
-                    <h3>Instituto Jô Clemente</h3>
-                    <p>Referência histórica e científica em TEA, com foco forte em inclusão e autonomia.</p>
-                    <a class="botao" href="https://ijc.org.br/" target="_blank" rel="noopener noreferrer">Acessar site</a>
-                </article>
-
-<!-- fonte 3 -->
-
-                <article class="fonte">
-                    <h3>Canal Autismo</h3>
-                    <p>O maior jornal sobre autismo no Brasil, com notícias, artigos e informação.</p>
-                    <a class="botao" href="https://www.canalautismo.com.br/" target="_blank" rel="noopener noreferrer">Acessar site</a>
-                </article>
-
-<!-- fonte 4 -->
-
-                <article class="fonte">
-                    <h3>Autismo em Dia</h3>
-                    <p>Portal voltado a orientar famílias, educadores e profissionais.</p>
-                    <a class="botao" href="https://autismoemdia.com.br/" target="_blank" rel="noopener noreferrer">Acessar site</a>
-                </article>
-
-<!-- fonte 5 -->
-
-                <article class="fonte">
-                    <h3>Edu Autista</h3>
-                    <p>Plataforma com foco em apoiar cuidadores e famílias com conteúdos educativos.</p>
-                    <a class="botao" href="https://www.eduautista.com.br/" target="_blank" rel="noopener noreferrer">Acessar site</a>
-                </article>
-<!-- fonte 6 -->
-
-                <article class="fonte">
-                    <h3>Observatório do Autista</h3>
-                    <p>Foco em democratizar informações úteis sobre tratamentos, práticas terapêuticas e inclusão.</p>
-                    <a class="botao" href="https://observatoriodoautista.com.br/" target="_blank" rel="noopener noreferrer">Acessar site</a>
-                </article>
-
+            <div class="video-conteudo">
+              <h3>Acompanhante terapêutico, o que é isso?</h3>
+              <p>Academia do Autismo</p>
             </div>
-        </section>
+          </article>
 
+          <!-- vídeo 2 -->
+
+          <article class="video-card">
+            <a
+              href="https://www.youtube.com/watch?v=QiolDJzjnZs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="video">
+                <img
+                  src="../../assets/images/conhecimentos/youtube2.jpg"
+                  alt="Capa do vídeo Vida de AT - Acompanhante terapêutico na prática"
+                />
+                <span class="play">▶</span>
+              </div>
+            </a>
+
+            <div class="video-conteudo">
+              <h3>Vida de AT - Acompanhante terapêutico na prática</h3>
+              <p>Academia do Autismo</p>
+            </div>
+          </article>
+
+          <!-- vídeo 3 -->
+
+          <article class="video-card">
+            <a
+              href="https://www.youtube.com/watch?v=4tsIzk0FnB0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="video">
+                <img
+                  src="../../assets/images/conhecimentos/youtube3.jpg"
+                  alt="Capa do vídeo AT na escola: quando é necessário?"
+                />
+                <span class="play">▶</span>
+              </div>
+            </a>
+
+            <div class="video-conteudo">
+              <h3>AT na escola: quando é necessário?</h3>
+              <p>Mayra Gaiato | Desenvolvimento Infantil e Autismo</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- fontes: apresenta sites confiáveis para pesquisa -->
+
+      <section class="section-fontes">
+        <h2>Fontes confiáveis</h2>
+
+        <div class="lista-fontes">
+          <!-- fonte 1 -->
+
+          <article class="fonte">
+            <h3>Ministério da Saúde</h3>
+            <p>
+              Informações oficiais sobre TEA, cuidados, acompanhamento e
+              serviços do SUS.
+            </p>
+            <a
+              class="botao"
+              href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/autismo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Acessar site</a
+            >
+          </article>
+
+          <!-- fonte 2 -->
+
+          <article class="fonte">
+            <h3>Instituto Jô Clemente</h3>
+            <p>
+              Referência histórica e científica em TEA, com foco forte em
+              inclusão e autonomia.
+            </p>
+            <a
+              class="botao"
+              href="https://ijc.org.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Acessar site</a
+            >
+          </article>
+
+          <!-- fonte 3 -->
+
+          <article class="fonte">
+            <h3>Canal Autismo</h3>
+            <p>
+              O maior jornal sobre autismo no Brasil, com notícias, artigos e
+              informação.
+            </p>
+            <a
+              class="botao"
+              href="https://www.canalautismo.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Acessar site</a
+            >
+          </article>
+
+          <!-- fonte 4 -->
+
+          <article class="fonte">
+            <h3>Autismo em Dia</h3>
+            <p>
+              Portal voltado a orientar famílias, educadores e profissionais.
+            </p>
+            <a
+              class="botao"
+              href="https://autismoemdia.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Acessar site</a
+            >
+          </article>
+
+          <!-- fonte 5 -->
+
+          <article class="fonte">
+            <h3>Edu Autista</h3>
+            <p>
+              Plataforma com foco em apoiar cuidadores e famílias com conteúdos
+              educativos.
+            </p>
+            <a
+              class="botao"
+              href="https://www.eduautista.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Acessar site</a
+            >
+          </article>
+          <!-- fonte 6 -->
+
+          <article class="fonte">
+            <h3>Observatório do Autista</h3>
+            <p>
+              Foco em democratizar informações úteis sobre tratamentos, práticas
+              terapêuticas e inclusão.
+            </p>
+            <a
+              class="botao"
+              href="https://observatoriodoautista.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Acessar site</a
+            >
+          </article>
+        </div>
+      </section>
     </main>
 
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-intro">
+            <a
+              class="footer-brand"
+              href="#inicio"
+              aria-label="ATtention — página inicial"
+            >
+              <img
+                class="footer-logo"
+                src="../../assets/images/LandingPage/logo-transparente.png"
+                alt="Logo do ATtention"
+                loading="lazy"
+              />
+              <span>ATtention </span>
+            </a>
+            <p>
+              Conectamos famílias a profissionais e reunimos informações para
+              tornar a busca por apoio mais simples e acolhedora. Um espaço de
+              escuta, respeito e cuidado em cada etapa.
+            </p>
+          </div>
+
+          <nav class="footer-links" aria-label="Navegação do rodapé">
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre nós</a></li>
+              <li><a href="#frase">Frase</a></li>
+              <li><a href="#funcionamento">Como funciona</a></li>
+              <li><a href="#precos">Valores das sessões</a></li>
+              <li><a href="#artigos">Artigos</a></li>
+              <li><a href="#perguntas-frequentes">Perguntas frequentes</a></li>
+            </ul>
+          </nav>
+
+          <address class="footer-contacts" aria-label="Contatos da plataforma">
+            <ul>
+              <li><strong>Contato:</strong> contato@attention.example</li>
+              <li><strong>Telefone:</strong> +55 (11) 4000-0199</li>
+              <li><strong>Redes:</strong> @attention_apoio</li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-bottom">
+          <small>&copy; 2026 &mdash; Todos os direitos reservados.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
     <script src="../scripts/conhecimentos.js"></script>
-    <script src="https://cdn.userway.org/widget.js" data-account="y2KIm9pPv2"></script>
-
-
-</body>
+    <script
+      src="https://cdn.userway.org/widget.js"
+      data-account="y2KIm9pPv2"
+    ></script>
+  </body>
 </html>
