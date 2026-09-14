@@ -7,8 +7,8 @@
     <title>ATtention</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="../styles/pages/ViewATeditavel.css" />
     <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/pages/ViewATeditavel.css" />
   </head>
   <body>
     <header class="header" data-header>
@@ -45,340 +45,257 @@
           <li>
             <a href="./ViewResponsavel.html" class="header-login">Perfil</a>
           </li>
+          <li>
+            <button class="header-salvar" type="button">Salvar perfil</button>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main class="container">
-      <div class="estrutura">
-        <aside class="barra-lateral">
-          <div class="cartao-perfil">
-            <div class="foto-topo">
-              <div class="foto-perfil-caixa">
-                <img
-                  src="../../assets/images/ViewATeditavel/logoPNG.png"
-                  alt="Foto de perfil"
-                  class="foto-perfil"
-                />
+	<main class="container">
+		<div class="estrutura">
 
-                <button
-                  type="button"
-                  class="botao-editar-foto"
-                  aria-label="Alterar foto de perfil"
-                >
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2.5"
-                  >
-                    <path d="M12 20h9" />
-                    <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" />
-                  </svg>
-                </button>
-              </div>
-            </div>
+			<aside class="barra-lateral">
 
-            <div class="perfil-corpo">
-              <div class="bloco-nome">
-                <span class="botao-editar botao-editar-perfil"></span>
-                <div class="nome-perfil" contenteditable="true">
-                  Ana Oliveira
-                </div>
-                <div class="cargo-perfil" contenteditable="true">
-                  Acompanhante Terapeutica
-                </div>
-              </div>
+				<div class="cartao-perfil">
+					<div class="foto-topo">
+						<div class="foto-perfil-caixa">
+							
+							<img 
+								src="../../assets/images/ViewATeditavel/logoPNG.png" 
+								alt="Foto de perfil" 
+								class="foto-perfil"
+							>
 
-              <div class="linha-informacao linha-editavel">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-                <span class="rotulo-info">Regiao:</span>
-                <input
-                  type="text"
-                  class="campo-editavel"
-                  value="Sao Paulo - SP"
-                />
-                <span class="botao-editar botao-editar-inline"></span>
-              </div>
-              <div class="linha-informacao linha-editavel">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 6v6l4 2" />
-                </svg>
-                <input
-                  type="text"
-                  class="campo-editavel"
-                  value="3 anos de experiencia"
-                />
-                <span class="botao-editar botao-editar-inline"></span>
-              </div>
+							<button type="button" class="botao-editar-foto" aria-label="Alterar foto de perfil">
+								<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+									<path d="M12 20h9"/>
+									<path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/>
+								</svg>
+							</button>
 
-              <div class="titulo-linha">
-                <h3 class="titulo-bloco">HORARIOS DISPONIVEIS</h3>
-                <span class="botao-editar"></span>
-              </div>
+						</div>
+					</div>
 
-              <table class="tabela-horarios">
-                <tr>
-                  <td class="celula-periodo">Manha</td>
-                  <td>Dias +</td>
-                  <td>Horario</td>
-                </tr>
-                <tr>
-                  <td class="celula-periodo">Tarde</td>
-                  <td>Dias +</td>
-                  <td>Horario</td>
-                </tr>
-                <tr>
-                  <td class="celula-periodo">Noite</td>
-                  <td>Dias +</td>
-                  <td>Horario</td>
-                </tr>
-              </table>
+					<div class="perfil-corpo">
+						<div class="bloco-nome">
+							<span class="botao-editar botao-editar-perfil"></span>
+							<div class="nome-perfil" contenteditable="true">Ana Oliveira</div>
+							<div class="cargo-perfil" contenteditable="true">Acompanhante Terapeutica</div>
+						</div>
 
-              <h3 class="titulo-bloco titulo-verificacoes">VERIFICACOES</h3>
-              <div class="item-verificacao">
-                <span class="verificacao-icone">
-                  <svg
-                    width="10"
-                    height="10"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="white"
-                    stroke-width="3"
-                  >
-                    <path d="M20 6L9 17l-5-5" />
-                  </svg>
-                </span>
-                Identidade
-              </div>
-              <div class="item-verificacao">
-                <span class="verificacao-icone">
-                  <svg
-                    width="10"
-                    height="10"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="white"
-                    stroke-width="3"
-                  >
-                    <path d="M20 6L9 17l-5-5" />
-                  </svg>
-                </span>
-                Formacao
-              </div>
-              <div class="item-verificacao">
-                <span class="verificacao-icone">
-                  <svg
-                    width="10"
-                    height="10"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="white"
-                    stroke-width="3"
-                  >
-                    <path d="M20 6L9 17l-5-5" />
-                  </svg>
-                </span>
-                Documentos
-              </div>
+						<div class="linha-informacao linha-editavel">
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+							<span class="rotulo-info">Regiao:</span>
+							<input type="text" class="campo-editavel" value="Sao Paulo - SP">
+							<span class="botao-editar botao-editar-inline"></span>
+						</div>
+						<div class="linha-informacao linha-editavel">
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+							<input type="text" class="campo-editavel" value="3 anos de experiencia">
+							<span class="botao-editar botao-editar-inline"></span>
+						</div>
 
-              <div class="acoes-lateral">
-                <button class="botao botao-destaque botao-largura-total">
-                  Entrar em contato
-                </button>
-                <button class="botao botao-secundario botao-largura-total">
-                  Salvar perfil
-                </button>
-              </div>
-            </div>
-          </div>
+						<div class="titulo-linha">
+							<h3 class="titulo-bloco">HORARIOS DISPONIVEIS</h3>
+							<span class="botao-editar"></span>
+						</div>
 
-          <div class="cartao-estatisticas-lateral">
-            <div class="item-estatistica">
-              <div class="estatistica-numero">+120</div>
-              <div class="estatistica-legenda">Atendimentos</div>
-            </div>
-            <div class="item-estatistica">
-              <div class="estatistica-numero estatistica-destaque">
-                4.9 estrelas
-              </div>
-              <div class="estatistica-legenda">Avaliacao</div>
-            </div>
-            <div class="item-estatistica">
-              <div class="estatistica-numero">38</div>
-              <div class="estatistica-legenda">Familias</div>
-            </div>
-            <div class="item-estatistica">
-              <div class="estatistica-numero">3</div>
-              <div class="estatistica-legenda">Anos de AT</div>
-            </div>
-          </div>
-        </aside>
+						<table class="tabela-horarios">
+							<tr>
+								<td class="celula-periodo">Manha</td>
+								<td>Dias +</td>
+								<td>Horario</td>
+							</tr>
+							<tr>
+								<td class="celula-periodo">Tarde</td>
+								<td>Dias +</td>
+								<td>Horario</td>
+							</tr>
+							<tr>
+								<td class="celula-periodo">Noite</td>
+								<td>Dias +</td>
+								<td>Horario</td>
+							</tr>
+						</table>
 
-        <div class="conteudo-principal">
-          <div class="cartao">
-            <div class="cartao-cabecalho">
-              <h2>Sobre</h2>
-              <div class="botao-editar">Editar</div>
-            </div>
-            <p class="texto-descricao" contenteditable="true">
-              Acompanhante terapeutica com 3 anos de experiencia no suporte a
-              pessoas com TEA. Atuo principalmente com criancas e adolescentes,
-              com foco em inclusao escolar, desenvolvimento de habilidades
-              sociais e comunicacao. Acredito em um trabalho colaborativo com a
-              familia, centrado nas potencialidades de cada pessoa.
-            </p>
-          </div>
+						<h3 class="titulo-bloco titulo-verificacoes">VERIFICACOES</h3>
+						<div class="item-verificacao">
+							<span class="verificacao-icone">
+								<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+							</span>
+							Identidade
+						</div>
+						<div class="item-verificacao">
+							<span class="verificacao-icone">
+								<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+							</span>
+							Formacao
+						</div>
+						<div class="item-verificacao">
+							<span class="verificacao-icone">
+								<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
+							</span>
+							Documentos
+						</div>
 
-          <div class="cartao">
-            <div class="cartao-cabecalho">
-              <h2>Formacao</h2>
-              <div class="botao-editar">Editar</div>
-            </div>
-            <div class="item-formacao">
-              <div class="titulo-formacao" contenteditable="true">
-                Psicologia
-              </div>
-              <div class="subtitulo-formacao" contenteditable="true">
-                Universidade de Sao Paulo (USP) - 2020
-              </div>
-            </div>
-            <div class="item-formacao">
-              <div class="titulo-formacao" contenteditable="true">
-                Especializacao em Acompanhamento Terapeutico
-              </div>
-              <div class="subtitulo-formacao" contenteditable="true">
-                Instituto de AT - Sao Paulo - 2021
-              </div>
-            </div>
-          </div>
+						<div class="acoes-lateral">
+							<button class="botao botao-destaque botao-largura-total">Entrar em contato</button>
+						</div>
+					</div>
+				</div>
 
-          <div class="cartao">
-            <div class="cartao-cabecalho">
-              <h2>Capacitacoes</h2>
-              <div class="botao-editar">Editar</div>
-            </div>
-            <ul class="lista-certificados">
-              <li contenteditable="true">
-                Curso de Analise do Comportamento Aplicado (ABA) - 40 horas -
-                2022
-              </li>
-              <li contenteditable="true">
-                Workshop de Comunicacao Aumentativa e Alternativa (CAA) - 2022
-              </li>
-              <li contenteditable="true">
-                Formacao em Inclusao Escolar para Pessoas com TEA - 2023
-              </li>
-            </ul>
-          </div>
+				<div class="cartao-estatisticas-lateral">
+					<div class="item-estatistica">
+						<div class="estatistica-numero">+120</div>
+						<div class="estatistica-legenda">Atendimentos</div>
+					</div>
+					<div class="item-estatistica">
+						<div class="estatistica-numero estatistica-destaque">4.9 estrelas</div>
+						<div class="estatistica-legenda">Avaliacao</div>
+					</div>
+					<div class="item-estatistica">
+						<div class="estatistica-numero">38</div>
+						<div class="estatistica-legenda">Familias</div>
+					</div>
+					<div class="item-estatistica">
+						<div class="estatistica-numero">3</div>
+						<div class="estatistica-legenda">Anos de AT</div>
+					</div>
+				</div>
 
-          <div class="duas-colunas">
-            <div class="cartao">
-              <div class="cartao-cabecalho">
-                <h2>Modalidades</h2>
-                <div class="botao-editar">Editar</div>
-              </div>
-              <div class="linha-tags">
-                <label class="tag">
-                  <input type="checkbox" class="tag-input" checked />
-                  <span class="tag-texto">Domiciliar</span>
-                </label>
-                <label class="tag">
-                  <input type="checkbox" class="tag-input" checked />
-                  <span class="tag-texto">Escolar</span>
-                </label>
-                <label class="tag">
-                  <input type="checkbox" class="tag-input" />
-                  <span class="tag-texto">Online</span>
-                </label>
-              </div>
-            </div>
+			</aside>
 
-            <div class="cartao">
-              <div class="cartao-cabecalho">
-                <h2>Areas de atuacao</h2>
-                <div class="botao-editar">Editar</div>
-              </div>
-              <div class="linha-tags">
-                <label class="tag">
-                  <input type="checkbox" class="tag-input" checked />
-                  <span class="tag-texto">TEA</span>
-                </label>
-                <label class="tag">
-                  <input type="checkbox" class="tag-input" checked />
-                  <span class="tag-texto">Inclusao escolar</span>
-                </label>
-                <label class="tag">
-                  <input type="checkbox" class="tag-input" checked />
-                  <span class="tag-texto">Desenvolvimento infantil</span>
-                </label>
-                <label class="tag">
-                  <input type="checkbox" class="tag-input" />
-                  <span class="tag-texto">Habilidades sociais</span>
-                </label>
-              </div>
-            </div>
-          </div>
+			<div class="conteudo-principal">
 
-          <div class="cartao">
-            <div class="cartao-cabecalho">
-              <h2>Disponibilidade</h2>
-              <div class="botao-editar">Editar</div>
-            </div>
-            <div class="linha-tags">
-              <label class="tag">
-                <input type="checkbox" class="tag-input" checked />
-                <span class="tag-texto">Segunda</span>
-              </label>
-              <label class="tag">
-                <input type="checkbox" class="tag-input" checked />
-                <span class="tag-texto">Terca</span>
-              </label>
-              <label class="tag">
-                <input type="checkbox" class="tag-input" />
-                <span class="tag-texto">Quarta</span>
-              </label>
-              <label class="tag">
-                <input type="checkbox" class="tag-input" checked />
-                <span class="tag-texto">Quinta</span>
-              </label>
-              <label class="tag">
-                <input type="checkbox" class="tag-input" />
-                <span class="tag-texto">Sexta</span>
-              </label>
-              <label class="tag">
-                <input type="checkbox" class="tag-input" />
-                <span class="tag-texto">Sabado</span>
-              </label>
-              <label class="tag">
-                <input type="checkbox" class="tag-input" />
-                <span class="tag-texto">Domingo</span>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+				<div class="cartao">
+					<div class="cartao-cabecalho">
+						<h2>Sobre</h2>
+						<div class="botao-editar">Editar</div>
+					</div>
+					<p class="texto-descricao" contenteditable="true">
+						Acompanhante terapeutica com 3 anos de experiencia no suporte a pessoas com TEA.
+						Atuo principalmente com criancas e adolescentes, com foco em inclusao escolar,
+						desenvolvimento de habilidades sociais e comunicacao. Acredito em um trabalho
+						colaborativo com a familia, centrado nas potencialidades de cada pessoa.
+					</p>
+				</div>
+
+				<div class="cartao">
+					<div class="cartao-cabecalho">
+						<h2>Formacao</h2>
+						<div class="botao-editar">Editar</div>
+					</div>
+					<div class="item-formacao">
+						<div class="titulo-formacao" contenteditable="true">Psicologia</div>
+						<div class="subtitulo-formacao" contenteditable="true">Universidade de Sao Paulo (USP) - 2020</div>
+					</div>
+					<div class="item-formacao">
+						<div class="titulo-formacao" contenteditable="true">Especializacao em Acompanhamento Terapeutico</div>
+						<div class="subtitulo-formacao" contenteditable="true">Instituto de AT - Sao Paulo - 2021</div>
+					</div>
+				</div>
+
+				<div class="cartao">
+					<div class="cartao-cabecalho">
+						<h2>Capacitacoes</h2>
+						<div class="botao-editar">Editar</div>
+					</div>
+					<ul class="lista-certificados">
+						<li contenteditable="true">Curso de Analise do Comportamento Aplicado (ABA) - 40 horas - 2022</li>
+						<li contenteditable="true">Workshop de Comunicacao Aumentativa e Alternativa (CAA) - 2022</li>
+						<li contenteditable="true">Formacao em Inclusao Escolar para Pessoas com TEA - 2023</li>
+					</ul>
+				</div>
+
+				<div class="duas-colunas">
+					<div class="cartao">
+						<div class="cartao-cabecalho">
+							<h2>Modalidades</h2>
+							<div class="botao-editar">Editar</div>
+						</div>
+						<div class="linha-tags">
+							<label class="tag">
+								<input type="checkbox" class="tag-input" checked>
+								<span class="tag-texto">Domiciliar</span>
+							</label>
+							<label class="tag">
+								<input type="checkbox" class="tag-input" checked>
+								<span class="tag-texto">Escolar</span>
+							</label>
+							<label class="tag">
+								<input type="checkbox" class="tag-input">
+								<span class="tag-texto">Online</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="cartao">
+						<div class="cartao-cabecalho">
+							<h2>Areas de atuacao</h2>
+							<div class="botao-editar">Editar</div>
+						</div>
+						<div class="linha-tags">
+							<label class="tag">
+								<input type="checkbox" class="tag-input" checked>
+								<span class="tag-texto">TEA</span>
+							</label>
+							<label class="tag">
+								<input type="checkbox" class="tag-input" checked>
+								<span class="tag-texto">Inclusao escolar</span>
+							</label>
+							<label class="tag">
+								<input type="checkbox" class="tag-input" checked>
+								<span class="tag-texto">Desenvolvimento infantil</span>
+							</label>
+							<label class="tag">
+								<input type="checkbox" class="tag-input">
+								<span class="tag-texto">Habilidades sociais</span>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="cartao">
+					<div class="cartao-cabecalho">
+						<h2>Disponibilidade</h2>
+						<div class="botao-editar">Editar</div>
+					</div>
+					<div class="linha-tags">
+						<label class="tag">
+								<input type="checkbox" class="tag-input" checked>
+								<span class="tag-texto">Segunda</span>
+							</label>
+						<label class="tag">
+								<input type="checkbox" class="tag-input" checked>
+								<span class="tag-texto">Terca</span>
+							</label>
+						<label class="tag">
+								<input type="checkbox" class="tag-input">
+								<span class="tag-texto">Quarta</span>
+							</label>
+						<label class="tag">
+								<input type="checkbox" class="tag-input" checked>
+								<span class="tag-texto">Quinta</span>
+							</label>
+						<label class="tag">
+								<input type="checkbox" class="tag-input">
+								<span class="tag-texto">Sexta</span>
+							</label>
+						<label class="tag">
+								<input type="checkbox" class="tag-input">
+								<span class="tag-texto">Sabado</span>
+							</label>
+						<label class="tag">
+								<input type="checkbox" class="tag-input">
+								<span class="tag-texto">Domingo</span>
+							</label>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</main>
 
     <footer class="footer">
       <div class="footer-container">
@@ -436,5 +353,6 @@
       src="https://cdn.userway.org/widget.js"
       data-account="y2KIm9pPv2"
     ></script>
-  </body>
+
+</body>
 </html>
