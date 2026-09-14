@@ -1,5 +1,17 @@
-:root{
-    --rosa-claro: #E7A0CC;
-    --azul-escuro: #3D54A5;
-    --rosa-escuro: #B90061;
+:root {
+  --azul: #2449a4;
+  --azul-escuro: #19377f;
+  --azul-profundo: #102659;
+  --texto: #203255;
+  --texto-suave: #52617a;
+  --borda: #dce5f3;
+  --fundo: #fff;
+
+  --vermelho: #e33629;
+  --vermelho-escuro: #8f1d14;
+  --vermelho-escuro-hover: #6f160f;
+
+  --laranja-claro: #fff0e6;
+  --laranja-escuro: #c2410c;
+  --borda-laranja: #f2b8a4;
 }
