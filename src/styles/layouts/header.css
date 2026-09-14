@@ -6,10 +6,11 @@
   border-bottom: 1px solid var(--borda);
 
   a {
-    color: var(--azul-escuro);
+    color: var(--azul);
   }
 
   .header-login {
+    background-color: var(--azul) !important;
     color: white !important;
   }
 }

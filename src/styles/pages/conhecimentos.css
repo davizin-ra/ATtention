@@ -8,7 +8,7 @@
 
 body {
     background: #ffffff;
-    color: #2449A4;
+    color: var(--azul);
     font-family: "Momo Trust Sans", sans-serif;
 }
 
@@ -26,7 +26,7 @@ h1 {
     font-size: 52px;
     font-weight: 400;
     line-height: 1;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 h2 {
@@ -34,7 +34,7 @@ h2 {
     font-size: 36px;
     font-weight: 400;
     line-height: 1.1;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 h3 {
@@ -42,7 +42,7 @@ h3 {
     font-size: 24px;
     font-weight: 500;
     line-height: 1.15;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 h4 {
@@ -50,7 +50,7 @@ h4 {
     font-size: 22px;
     font-weight: 500;
     line-height: 1.2;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 h5 {
@@ -58,7 +58,7 @@ h5 {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.2;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 p {
@@ -73,7 +73,7 @@ p {
 
 .section-inicio {
     min-height: 430px;
-    background: #2449A4;
+    background: var(--azul);
     color: white;
     position: relative;
     padding: 48px 6% 105px;
@@ -143,9 +143,9 @@ p {
 }
 
 .filtro {
-    border: 1px solid #2449A4;
+    border: 1px solid var(--azul);
     background: white;
-    color: #2449A4;
+    color: var(--azul);
     border-radius: 20px;
     padding: 7px 16px;
     font-family: "Momo Trust Sans", sans-serif;
@@ -155,7 +155,7 @@ p {
 }
 
 .filtro:hover, .filtro.ativo {
-    background: #2449A4;
+    background: var(--azul);
     color: white;
 }
 
@@ -175,13 +175,13 @@ p {
 }
 
 .section-destaque > h5 {
-    color: #E33629;
+    color: var(--vermelho);
     text-align: center;
     margin-bottom: 18px;
 }
 
 .destaque-card {
-    background: #E33629;
+    background: var(--vermelho);
     border-radius: 28px;
     padding: 30px 70px 38px;
     color: white;
@@ -234,7 +234,7 @@ p {
 
 .botao {
     display: inline-block;
-    background: #2449A4;
+    background: var(--azul);
     color: white;
     border-radius: 8px;
     padding: 7px 16px;
@@ -266,7 +266,7 @@ p {
 .titulo-secao h2,
 .section-videos h2,
 .section-fontes h2 {
-    color: #2449A4;
+    color: var(--azul);
     font-size: 36px;
     font-weight: 400;
 }
@@ -284,7 +284,7 @@ p {
     height: 42px;
     border: none;
     border-radius: 50%;
-    background: #2449A4;
+    background: var(--azul);
     color: white;
     font-size: 22px;
     cursor: pointer;
@@ -342,7 +342,7 @@ p {
 }
 
 .card h3 {
-    color: #2449A4;
+    color: var(--azul);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.15;
@@ -414,7 +414,7 @@ p {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #E33629;
+    background: var(--vermelho);
     color: white;
     display: flex;
     align-items: center;
@@ -430,7 +430,7 @@ p {
 }
 
 .video-conteudo h3 {
-    color: #2449A4;
+    color: var(--azul);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.15;
@@ -473,7 +473,7 @@ p {
 }
 
 .fonte h3 {
-    color: #2449A4;
+    color: var(--azul);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;

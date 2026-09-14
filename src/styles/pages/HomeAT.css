@@ -8,7 +8,7 @@
 
 body {
     background: #ffffff;
-    color: #2449A4;
+    color: var(--azul);
     font-family: "Momo Trust Sans", sans-serif;
 }
 
@@ -32,7 +32,7 @@ h2 {
     font-size: 48px;
     font-weight: 400;
     line-height: 1.1;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 h3 {
@@ -40,7 +40,7 @@ h3 {
     font-size: 36px;
     font-weight: 400;
     line-height: 1.15;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 h4 {
@@ -48,7 +48,7 @@ h4 {
     font-size: 22px;
     font-weight: 500;
     line-height: 1.2;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 h5 {
@@ -56,7 +56,7 @@ h5 {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.2;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 p {
@@ -79,7 +79,7 @@ p {
 
 .section-inicio {
     min-height: 300px;
-    background: #2449A4;
+    background: var(--azul);
     position: relative;
     padding: 48px 0 105px;
     overflow: hidden;
@@ -226,9 +226,9 @@ p {
     width: 100%;
     margin-top: 25px;
     padding: 14px;
-    border: 1px solid #2449A4;
+    border: 1px solid var(--azul);
     border-radius: 15px;
-    background: #2449A4;
+    background: var(--azul);
     color: white;
     font-family: "Momo Trust Sans", sans-serif;
     font-size: 16px;
@@ -258,7 +258,7 @@ p {
     display: block;
     margin-top: 15px;
     margin-bottom: 7px;
-    color: #2449A4;
+    color: var(--azul);
     font-size: 16px;
 }
 
@@ -269,7 +269,7 @@ p {
     border: 1px solid #9bb0d7;
     border-radius: 10px;
     background: white;
-    color: #2449A4;
+    color: var(--azul);
     font-family: "Momo Trust Sans", sans-serif;
     font-size: 14px;
 }
@@ -285,7 +285,7 @@ p {
     padding: 13px;
     border: none;
     border-radius: 15px;
-    background: #E33629;
+    background: var(--vermelho);
     color: white;
     font-family: "Momo Trust Sans", sans-serif;
     font-size: 16px;
@@ -390,14 +390,14 @@ p {
 .agendar-sessao h3 {
     margin-bottom: 25px;
     font-size: 32px;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 .agendar-sessao label {
     display: block;
     margin-top: 16px;
     margin-bottom: 7px;
-    color: #2449A4;
+    color: var(--azul);
     font-size: 16px;
     font-weight: 500;
 }
@@ -411,7 +411,7 @@ p {
     border: 1px solid #9bb0d7;
     border-radius: 8px;
     background: white;
-    color: #2449A4;
+    color: var(--azul);
     font-family: "Momo Trust Sans", sans-serif;
     font-size: 14px;
 }
@@ -422,7 +422,7 @@ p {
     padding: 13px;
     border: none;
     border-radius: 15px;
-    background: #2449A4;
+    background: var(--azul);
     color: white;
     font-family: "Momo Trust Sans", sans-serif;
     font-size: 16px;
@@ -444,7 +444,7 @@ p {
     border: 1px solid #9bb0d7;
     border-radius: 10px;
     background: #f8faff;
-    color: #2449A4;
+    color: var(--azul);
     font-size: 14px;
     white-space: pre-line;
 }
@@ -477,7 +477,7 @@ p {
 
 .solicitacoes-card h1 {
     margin-bottom: 12px;
-    color: #2449A4;
+    color: var(--azul);
     font-family: "Momo Trust Display", sans-serif;
     font-size: 26px;
     font-weight: 400;
@@ -510,14 +510,14 @@ p {
 }
 
 .solicitacoes-botoes .botao-vermelho {
-    background: #E33629;
+    background: var(--vermelho);
     color: white;
-    border: 1px solid #E33629;
+    border: 1px solid var(--vermelho);
 }
 
 .solicitacoes-botoes .botao-branco {
     background: white;
-    color: #2449A4;
+    color: var(--azul);
     border: 1px solid #9bb0d7;
 }
 
@@ -533,14 +533,14 @@ p {
 }
 
 .tag-azul {
-    border: 1px solid #2449A4;
-    color: #2449A4;
+    border: 1px solid var(--azul);
+    color: var(--azul);
     background: white;
 }
 
 .tag-escolar {
     background: #e3352942;
-    color: #E33629
+    color: var(--vermelho)
 
 }
 
@@ -577,14 +577,14 @@ p {
 }
 
 .botao-vermelho {
-    background: #E33629;
+    background: var(--vermelho);
     color: white;
-    border: 1px solid #E33629;
+    border: 1px solid var(--vermelho);
 }
 
 .botao-branco {
     background: white;
-    color: #2449A4;
+    color: var(--azul);
     border: 1px solid #9bb0d7;
 }
 
