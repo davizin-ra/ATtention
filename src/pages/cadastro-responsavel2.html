@@ -19,7 +19,7 @@
 
         <section id="section-direita">
             <div class="textos">
-                <h2>Cadastro de <span>Aluno</span></h2>
+                <h2>Cadastro de <span>Responsável</span></h2>
                 <p>Crie seu perfil para ter o melhores Psicólogos disponíveis para você.</p>
             </div>
 
@@ -60,15 +60,34 @@
                             <input class="input-flex2" type="checkbox" name="tamanho-texto" value="pequeno">
                             espaçamento da fonte
                         </span>
-                        
                     </div>
 
+                    <div class="campo3">
+                        <h3>Sobre o acompanhamento</h3>
+
+                        <label>O que você procura no acompamento? <br>
+                            <textarea name="area-acompanhmento" placeholder="Conte brevemente o que você procura"></textarea>
+                        </label>
+                    </div>
+
+                    <div class="campo4">
+                        <h3>Atendimento</h3>
+
+                        <label for="tea">Preferência de atendimento<br>
+                            <select id="tea" name="tea" required>
+                                <option value=""></option>
+                                <option value="nivel-1">Online</option>
+                                <option value="nivel-2">A domicílio</option>
+                                <option value="nivel-3">Na escola</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <a href="#"><button class="btn-finalizar">Finalizar Cadastro do responsável</button></a> <!-- botao que vai levar para a tela do responsavel -->
                 </form>
 
                 <div class="container-btn">
                     <a href="cadastro-responsavel.html"><button>Voltar</button></a>
-
-                    <a href="#"><button>Seguinte</button></a>
                 </div>
             </div>
         </section>
