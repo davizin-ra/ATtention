@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assistente virtual da ATtention para dúvidas sobre TEA e indicação de profissionais."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../assets/icone.png"
+    />
+    <title>ATtention</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/pages/IA.css" />
+  </head>
+  <body>
+    <header class="header" data-header>
+      <nav class="header-container" aria-label="Menu principal">
+        <a
+          class="header-brand"
+          href="../../index.html"
+          aria-label="ATtention — página inicial"
+        >
+          <img
+            class="header-logo"
+            src="../../assets/images/LandingPage/logo-transparente.png"
+            alt="Logo do ATtention"
+          />
+          <span>ATtention</span>
+        </a>
+
+        <button
+          class="header-menu-toggle"
+          data-site-menu-toggle
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <span></span>
+        </button>
+        <ul class="header-menu" id="header-menu" data-site-menu>
+          <li><a class="header-link" href="./HomeAT.html">Início</a></li>
+          <li><a class="header-link" href="./IAP.html">IA</a></li>
+          <li>
+            <a href="./ViewATeditavel.html" class="header-login">Perfil</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pagina-ia">
+      <section class="chat">
+        <div class="area-mensagens">
+          <div class="linha-mensagem linha-mensagem-ia">
+            <div class="avatar-ia"></div>
+            <p class="balao balao-ia">
+              Olá! Sou o pecinha, vou te ajudar nessa jornada
+            </p>
+          </div>
+        </div>
+        <form class="formulario-chat">
+          <input
+            id="campo-mensagem"
+            class="campo-mensagem"
+            type="text"
+            placeholder="Preciso de apoio para inclusão escolar"
+            autocomplete="off"
+          />
+          <button class="botao-enviar" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="../scripts/IA.js"></script>
+    <script
+      src="https://cdn.userway.org/widget.js"
+      data-account="y2KIm9pPv2"
+    ></script>
+  </body>
+</html>
