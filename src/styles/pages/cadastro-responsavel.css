@@ -27,7 +27,7 @@ body {
 #container{
     position: relative;
     width: min(1250px, 100%);
-    min-height: 1254px;
+    min-height: 1240px;
     background: var(--rosa);
     box-shadow: var(--sombra);
     margin: 80px auto;
@@ -44,8 +44,8 @@ body {
 
 #section-esquerda{
     position: relative;
-    width: 50%;
-    height: 1254px;
+    width: 47%;
+    height: 1240px;
     border-radius: 28px 0 0 28px;
 }
 
@@ -60,10 +60,10 @@ body {
 
 #section-direita{
     position: relative;
-    width: 50%;
-    height: 1254PX;
+    width: 53%;
+    height: 1240PX;
     border-radius: 0 28px 28px 0;
-    padding: 43px 20px;
+    padding: 43px 40px;
 }
 
 #section-direita .textos{
@@ -125,11 +125,11 @@ body {
     font-size: 13px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    color: #3c4044;
+    color: #787e83;
 }
 
 .formulario input::placeholder{
-    color: #3c4044;
+    color: #787e83;
 }
 
 .formulario .campo{
@@ -162,11 +162,11 @@ body {
     font-size: 15px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    color: #3c4044;
+    color: #787e83;
 }
 
 .formulario2 input::placeholder{
-    color: #3c4044;
+    color: #787e83;
 }
 
 .formulario2 .campo{
