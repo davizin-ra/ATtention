@@ -3,7 +3,7 @@
 const foto = document.querySelector(".inicio-foto");
 
 foto.onclick = function () {
-  window.location.href = "../pages/ViewATeditavel.html";
+  window.location.href = "../pages/ViewResponsavel.html";
 };
 
 foto.style.cursor = "pointer";
