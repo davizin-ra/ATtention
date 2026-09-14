@@ -6,26 +6,50 @@
 	<title>Acompanhante Terapeutica</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Momo+Trust+Display&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../styles/pages/ViewATeditavel.css">
+	<link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
+	
 
-	<header class="cabecalho">
-		<div class="container cabecalho-conteudo">
-			<div class="marca">
-				<img src="../../assets/images/ViewATeditavel/logoPNG.png" alt="Logoaqui" class="marca-icone">
-				<span class="marca-nome">ATtention</span>
-			</div>
-			<nav class="menu-principal">
-				<a href="#" class="ativo">Inicio</a>
-				<a href="#">Sobre Nos</a>
-			</nav>
-			<div class="cabecalho-acoes">
-				<button class="botao botao-contorno">Editar</button>
-				<button class="botao botao-primario">Salvar</button>
-			</div>
-		</div>
+ <header class="header" data-header>
+      <nav class="header-container" aria-label="Menu principal">
+        <a
+          class="header-brand"
+          href="../../index.html"
+          aria-label="ATtention — página inicial"
+        >
+          <img
+            class="header-logo"
+            src="../../assets/images/LandingPage/logo-transparente.png"
+            alt="Logo do ATtention"
+          />
+          <span>ATtention</span>
+        </a>
+
+        <button
+          class="header-menu-toggle"
+          data-site-menu-toggle
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <span></span>
+        </button>
+
+        <ul class="header-menu" id="header-menu" data-site-menu>
+          <li><a class="header-link" href="../../index.html">Início</a></li>
+          <li><a class="header-link" href="./SobreNos.html">Sobre Nós</a></li>
+          <li>
+            <a class="header-link" href="./conhecimentos.html">Conhecimento</a>
+          </li>
+          <li>
+            <a href="./login.html" class="header-login">Painel</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 	</header>
 
 	<main class="container">
@@ -274,36 +298,62 @@
 		</div>
 	</main>
 
-	<footer class="rodape">
-		<div class="container rodape-conteudo">
-			<div class="rodape-marca-bloco">
-				<div class="rodape-marca">
-					<img src="../../assets/images/ViewATeditavel/logoPNG.png" alt="ATtention" class="marca-icone">
-					<span class="marca-nome">ATtention</span>
-				</div>
-				<p class="rodape-descricao">
-					Conectamos familias a acompanhantes terapeuticos qualificados,
-					com verificacao de formacao e historico profissional.
-				</p>
-			</div>
-			<div class="rodape-coluna">
-				<h4>Navegacao</h4>
-				<a href="#">Inicio</a>
-				<a href="#">Sobre Nos</a>
-				<a href="#">Como Funciona</a>
-				<a href="#">Area do Profissional</a>
-				<a href="#">Artigos</a>
-				<a href="#">Formulario de Avaliacao</a>
-			</div>
-			<div class="rodape-coluna">
-				<h4>Contato</h4>
-				<a href="#">contato@logoaqui.com.br</a>
-				<a href="#">(00) 00000-0000</a>
-				<a href="#">@site_oo</a>
-			</div>
-		</div>
-		<div class="rodape-base">Direitos reservados a Logoaqui - 2026</div>
-	</footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-intro">
+            <a
+              class="footer-brand"
+              href="#inicio"
+              aria-label="ATtention — página inicial"
+            >
+              <img
+                class="footer-logo"
+                src="../../assets/images/LandingPage/logo-transparente.png"
+                alt="Logo do ATtention"
+                loading="lazy"
+              />
+              <span>ATtention </span>
+            </a>
+            <p>
+              Conectamos famílias a profissionais e reunimos informações para
+              tornar a busca por apoio mais simples e acolhedora. Um espaço de
+              escuta, respeito e cuidado em cada etapa.
+            </p>
+          </div>
+
+          <nav class="footer-links" aria-label="Navegação do rodapé">
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre nós</a></li>
+              <li><a href="#frase">Frase</a></li>
+              <li><a href="#funcionamento">Como funciona</a></li>
+              <li><a href="#precos">Valores das sessões</a></li>
+              <li><a href="#artigos">Artigos</a></li>
+              <li><a href="#perguntas-frequentes">Perguntas frequentes</a></li>
+            </ul>
+          </nav>
+
+          <address class="footer-contacts" aria-label="Contatos da plataforma">
+            <ul>
+              <li><strong>Contato:</strong> contato@attention.example</li>
+              <li><strong>Telefone:</strong> +55 (11) 4000-0199</li>
+              <li><strong>Redes:</strong> @attention_apoio</li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-bottom">
+          <small>&copy; 2026 &mdash; Todos os direitos reservados.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script
+      src="https://cdn.userway.org/widget.js"
+      data-account="y2KIm9pPv2"
+    ></script>
 
 </body>
 </html>

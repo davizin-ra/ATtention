@@ -1,12 +1,11 @@
 main {
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
+  padding-bottom: 150px;
 }
 
 .user-section {
   width: 20%;
-  height: 100vh;
   padding-top: 2%;
   margin-right: 2%;
 }
