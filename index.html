@@ -1,12 +1,637 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATtention</title>
-</head>
-<body>
-    <h1>ATtention</h1>
-    <img src="assets/images/Boneco.png" alt="">
-</body>
+    <meta
+      name="description"
+      content="O ATtention conecta famílias de crianças com TEA a profissionais de saúde mental e reúne informações sobre acompanhamento e inclusão."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/icone.png"
+    />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="./src/styles/pages/LandingPage.css" />
+  </head>
+
+  <body>
+    <a class="pular-conteudo" href="#inicio">Pular para o conteúdo</a>
+
+    <!-- Cabeçalho -->
+    <header class="header" data-header>
+      <nav class="header-container" aria-label="Menu principal">
+        <a
+          class="header-brand"
+          href="#"
+          aria-label="ATtention — página inicial"
+        >
+          <img
+            class="header-logo"
+            src="./assets/images/LandingPage/logo-transparente.png"
+            alt="Logo do ATtention"
+          />
+          <span>ATtention</span>
+        </a>
+
+        <button
+          class="header-menu-toggle"
+          data-site-menu-toggle
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <span></span>
+        </button>
+
+        <ul class="header-menu" id="header-menu" data-site-menu>
+          <li><a class="header-link" href="#">Início</a></li>
+          <li><a class="header-link" href="./src/pages/SobreNos.html">Sobre Nós</a></li>
+          <li><a class="header-link" href="./src/pages/conhecimentos.html">Conhecimento</a></li>
+          <li>
+            <a href="src/pages/login.html" class="header-login">Fazer Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <!-- Apresentação -->
+      <section class="container apresentacao">
+        <div class="chamada">
+          <h1>
+            Profissionais que
+            <span class="titulo-linha">cuidam do seu filho</span>
+          </h1>
+          <p>
+            Conectamos famílias a acompanhantes terapêuticos e reunimos
+            informações confiáveis sobre o Transtorno do Espectro Autista.
+          </p>
+        </div>
+
+        <video
+          class="video"
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="metadata"
+          aria-label="Vídeo de apresentação"
+        >
+          <source
+            src="./assets/images/LandingPage/8612319-hd_1920_1080_25fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </section>
+
+      <!-- Sobre nós -->
+      <section class="sobre" id="sobre" aria-labelledby="historia-titulo">
+        <div class="sobre-texto">
+          <h2 id="historia-titulo">Nossa História</h2>
+          <p>
+            Queremos aproximar famílias de acompanhantes terapêuticos e tornar a
+            busca por apoio mais simples, clara e acolhedora.
+          </p>
+          <p>
+            Reunimos informações sobre o Transtorno do Espectro Autista (TEA) em
+            um espaço pensado para quem cuida. Acreditamos no respeito às
+            diferenças, na escuta e na singularidade de cada criança.
+          </p>
+          <a class="botao-sobre" href="./src/pages/SobreNos.html">Sobre nós</a>
+        </div>
+
+        <div class="sobre-foto">
+          <img
+            src="./assets/images/LandingPage/pexels-karola-g-7296485.jpg"
+            alt="Adulto e criança brincando com blocos de montar coloridos sobre uma manta"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
+
+      <!-- Citação -->
+      <section class="citacao" id="frase" aria-labelledby="frase-titulo">
+        <img
+          class="citacao-foto"
+          src="./assets/images/LandingPage/carl-rogers-retrato.png"
+          alt="Retrato em preto e branco de Carl Rogers"
+          loading="lazy"
+          decoding="async"
+        />
+
+        <div class="citacao-texto">
+          <h2 id="frase-titulo">
+            "A criança que se sente aceita tal como é, desenvolve confiança em
+            si mesma e no mundo ao seu redor."
+          </h2>
+          <p><strong>Carl Rogers</strong> <span>1902 - 1987</span></p>
+        </div>
+      </section>
+
+      <!-- Como funciona -->
+      <section
+        class="passos"
+        id="funcionamento"
+        aria-labelledby="funcionamento-titulo"
+      >
+        <div class="container passos-conteudo">
+          <h2 id="funcionamento-titulo">Saiba como funciona</h2>
+
+          <ol class="etapas">
+            <li class="etapa">
+              <span class="icone" aria-hidden="true"
+                ><img
+                  src="./assets/images/LandingPage/como-funciona-01.svg"
+                  alt=""
+              /></span>
+              <span class="numero">01</span>
+              <h3>Cadastre-se</h3>
+              <p>Crie sua conta como família ou acompanhante terapêutico.</p>
+            </li>
+            <li class="etapa">
+              <span class="icone" aria-hidden="true"
+                ><img
+                  src="./assets/images/LandingPage/como-funciona-02.svg"
+                  alt=""
+              /></span>
+              <span class="numero">02</span>
+              <h3>Encontre profissionais</h3>
+              <p>Veja perfis e escolha o profissional ideal.</p>
+            </li>
+            <li class="etapa">
+              <span class="icone" aria-hidden="true"
+                ><img
+                  src="./assets/images/LandingPage/como-funciona-03.svg"
+                  alt=""
+              /></span>
+              <span class="numero">03</span>
+              <h3>Entre em contato</h3>
+              <p>Fale diretamente com o profissional escolhido.</p>
+            </li>
+            <li class="etapa">
+              <span class="icone" aria-hidden="true"
+                ><img
+                  src="./assets/images/LandingPage/como-funciona-04.svg"
+                  alt=""
+              /></span>
+              <span class="numero">04</span>
+              <h3>Combine o atendimento</h3>
+              <p>Combine valor, horários e modalidade.</p>
+            </li>
+            <li class="etapa">
+              <span class="icone" aria-hidden="true"
+                ><img
+                  src="./assets/images/LandingPage/como-funciona-05.svg"
+                  alt=""
+              /></span>
+              <span class="numero">05</span>
+              <h3>Inicie o atendimento</h3>
+              <p>Comece o acompanhamento com tranquilidade.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Preços -->
+      <section class="precos" id="precos" aria-labelledby="precos-titulo">
+        <div class="container precos-conteudo">
+          <div class="precos-texto">
+            <h2 id="precos-titulo">Entenda os valores</h2>
+            <p>
+              Mais clareza para planejar o cuidado e o orçamento da sua família.
+            </p>
+            <a
+              class="botao precos-botao"
+              type="button"
+              href="./src/pages/cadastre-se.html"
+            >
+              Cadastre-se
+            </a>
+          </div>
+
+          <div class="preco-cartao">
+            <h3>Valor a combinar</h3>
+            <p>
+              entre os <strong>pais ou responsáveis e o profissional.</strong>
+            </p>
+            <img
+              class="preco-foto"
+              src="./assets/images/LandingPage/pexels-rdne-7104223.jpg"
+              alt="Adulto e criança brincando com peças de montar coloridas"
+              loading="lazy"
+            />
+          </div>
+
+          <aside
+            class="precos-explicacao"
+            aria-label="Informações sobre os valores"
+          >
+            <ul>
+              <li>
+                <strong>Converse antes de agendar</strong>
+                <span
+                  >Fale com o profissional sobre as necessidades da criança e
+                  esclareça suas dúvidas sobre o atendimento.</span
+                >
+              </li>
+              <li>
+                <strong>Um acordo entre vocês</strong>
+                <span
+                  >Definam juntos o valor, a frequência e as condições do
+                  atendimento antes de começar.</span
+                >
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Contratação de psicólogos -->
+      <section
+        class="contratacao"
+        id="contratacao"
+        aria-labelledby="contratacao-titulo"
+      >
+        <div class="container contratacao-conteudo">
+          <div class="contratacao-texto">
+            <h2 id="contratacao-titulo">
+              Faça parte da nossa rede de psicólogos
+            </h2>
+            <p>
+              Seu trabalho também merece um espaço. Crie seu perfil, apresente
+              sua abordagem e especialidades e conecte-se com famílias que
+              procuram apoio psicológico. Faça parte do ATtention e leve seu
+              cuidado a mais pessoas.
+            </p>
+            <a
+              href="./src/pages/cadastre-se.html"
+              class="botao contratacao-botao"
+              type="button"
+            >
+              Quero fazer parte
+            </a>
+          </div>
+
+          <video
+            class="contratacao-video"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            aria-label="Vídeo de apresentação para psicólogos"
+          >
+            <source
+              src="./assets/images/LandingPage/video-psicologos.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta vídeos.
+            <a href="./assets/images/LandingPage/video-psicologos.mp4"
+              >Abrir vídeo</a
+            >.
+          </video>
+        </div>
+      </section>
+
+      <!-- Conteúdos -->
+      <section
+        class="conteudos"
+        id="artigos"
+        aria-labelledby="conteudos-titulo"
+      >
+        <div class="container conteudos-conteudo">
+          <header class="conteudos-topo">
+            <h2 id="conteudos-titulo">Encontre o apoio ideal</h2>
+            <p>
+              Aqui você encontra artigos e vídeos educativos sobre o Transtorno
+              do Espectro Autista (TEA), com informações para apoiar famílias e
+              educadores no dia a dia.
+            </p>
+          </header>
+
+          <a
+            href="./src/pages/conhecimentos.html"
+            class="botao conteudos-botao"
+            type="button"
+          >
+            Ver mais conteúdos
+          </a>
+
+          <div class="cartoes">
+            <article class="cartao">
+              <figure class="cartao-imagem">
+                <img
+                  src="./assets/images/LandingPage/img 2.jpg"
+                  alt="Pessoa procurando por um profissional"
+                />
+              </figure>
+              <div class="cartao-conteudo">
+                <h3>Acompanhamento terapêutico e inclusão escolar</h3>
+                <p>
+                  Estudo sobre a atuação do acompanhante especializado e sua
+                  contribuição para a inclusão do aluno autista.
+                </p>
+                <a
+                  class="cartao-botao"
+                  href="https://revista.uepb.edu.br/REIN/pt_BR/article/view/447"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Abrir artigo: Acompanhamento terapêutico e inclusão escolar (nova aba)"
+                >
+                  Abrir artigo
+                </a>
+              </div>
+            </article>
+
+            <article class="cartao">
+              <figure class="cartao-imagem">
+                <img
+                  src="./assets/images/LandingPage/pexels-cottonbro-4569334.jpg"
+                  alt="Duas pessoas conversando"
+                />
+              </figure>
+              <div class="cartao-conteudo">
+                <h3>Inclusão escolar de alunos autistas</h3>
+                <p>
+                  Discussão sobre práticas de acompanhamento e os desafios
+                  encontrados no processo de inclusão escolar.
+                </p>
+                <a
+                  class="cartao-botao"
+                  href="https://periodicos.ufc.br/educacaoemdebate/article/view/82894"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Abrir artigo: Inclusão escolar de alunos autistas (nova aba)"
+                >
+                  Abrir artigo
+                </a>
+              </div>
+            </article>
+
+            <article class="cartao">
+              <figure class="cartao-imagem">
+                <img
+                  src="./assets/images/LandingPage/pexels-mikhail-nilov-8120324.jpg"
+                  alt="Símbolo relacionado aos detalhes do atendimento"
+                />
+              </figure>
+              <div class="cartao-conteudo">
+                <h3>Acompanhante terapêutico e desenvolvimento infantil</h3>
+                <p>
+                  Estudo sobre o acompanhamento terapêutico como estratégia de
+                  intervenção no desenvolvimento da criança com TEA.
+                </p>
+                <a
+                  class="cartao-botao"
+                  href="https://ojs.focopublicacoes.com.br/foco/article/view/2870"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Abrir artigo: Acompanhante terapêutico e desenvolvimento infantil (nova aba)"
+                >
+                  Abrir artigo
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Depoimento -->
+      <section
+        class="comentarios"
+        id="comentarios"
+        aria-labelledby="comentarios-titulo"
+      >
+        <div class="container comentarios-conteudo">
+          <h2 id="comentarios-titulo">Um olhar de quem cuida</h2>
+
+          <div class="comentarios-introducao">
+            <p class="comentarios-contexto">
+              Conte o que você achou do site e ajude a tornar este espaço ainda
+              melhor. Deixe seu comentário.
+            </p>
+          </div>
+
+          <a
+            class="botao comentario-botao"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeP8NPA9IoJqAZYDW1Jbslv0w9VeYfdn6imUwwxUgpVsT25yA/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Adicionar comentário
+          </a>
+
+          <div class="comentarios-grade">
+            <figure class="comentario-retrato">
+              <img
+                class="comentario-foto"
+                src="./assets/images/LandingPage/daniele-carneiro.jpeg"
+                alt="Retrato da professora Daniele Carneiro"
+                loading="lazy"
+              />
+              <figcaption class="comentario-autora">
+                <span>
+                  <strong>Daniele Carneiro</strong>
+                  <span class="comentario-cargo"
+                    >Professora e cuidadora de crianças com TEA</span
+                  >
+                </span>
+              </figcaption>
+            </figure>
+
+            <div class="comentario-cartao">
+              <span class="comentario-aspas" aria-hidden="true">“</span>
+              <blockquote>
+                Esse site traz informações muito importantes para quem trabalha
+                na educação infantil. Além de recursos e orientações, também
+                precisamos de mais profissionais preparados dentro das salas de
+                aula, para que cada criança receba a atenção e o acompanhamento
+                que precisa.
+              </blockquote>
+              <div class="comentario-base">
+                <span class="comentario-estrelas" aria-label="5 estrelas"
+                  >★★★★★</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Perguntas frequentes -->
+      <section
+        class="perguntas"
+        id="perguntas-frequentes"
+        aria-labelledby="perguntas-titulo"
+      >
+        <div class="container">
+          <h2 id="perguntas-titulo">Perguntas frequentes</h2>
+
+          <div class="perguntas-lista">
+            <details>
+              <summary>
+                O que é o ATtention? <span aria-hidden="true"></span>
+              </summary>
+              <p>
+                O ATtention é uma plataforma digital que conecta pais e
+                responsáveis de crianças com Transtorno do Espectro Autista
+                (TEA) a profissionais de saúde mental especializados.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                O ATtention fornece ou gerencia o tratamento psicológico?
+                <span aria-hidden="true"></span>
+              </summary>
+              <p>
+                Não, a plataforma atua exclusivamente como um canal de
+                divulgação e intermediação, cobrando apenas taxas de uso. O
+                contrato de prestação de serviços é firmado de forma direta
+                entre a família e o psicólogo escolhido.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                Quais são as modalidades de atendimento disponíveis?
+                <span aria-hidden="true"></span>
+              </summary>
+              <p>
+                Os profissionais parceiros podem oferecer até três modalidades
+                de atendimento: presencial na residência da criança, presencial
+                no ambiente escolar e sessões online. A oferta do atendimento
+                domiciliar ou escolar depende da aceitação prévia do próprio
+                profissional.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                Quais são as regras para o atendimento escolar presencial?
+                <span aria-hidden="true"></span>
+              </summary>
+              <p>
+                Para que o atendimento ocorra na escola, o psicólogo precisa
+                concordar previamente com a modalidade e os pais ou responsáveis
+                têm a obrigação de comunicar a instituição de ensino de forma
+                formal sobre a presença do profissional externo antes do início
+                do acompanhamento.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                A criança pode realizar sessões online durante o horário de
+                aula? <span aria-hidden="true"></span>
+              </summary>
+              <p>
+                Não. O atendimento online é estritamente restrito aos momentos
+                em que a criança está em casa. Essa regra existe porque
+                participar de uma chamada durante a aula prejudicaria a rotina
+                escolar, os colegas de turma e o professor.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                Como as famílias escolhem o profissional ideal?
+                <span aria-hidden="true"></span>
+              </summary>
+              <p>
+                Cada psicólogo cadastrado possui uma página de apresentação
+                profissional própria. Esse perfil exibe de forma transparente a
+                formação, especializações, experiência, disponibilidade de
+                horários e os valores cobrados, permitindo que as famílias
+                comparem as opções antes da contratação.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                Quem é o público-alvo da plataforma?
+                <span aria-hidden="true"></span>
+              </summary>
+              <p>
+                O público-alvo são os pais e responsáveis por crianças
+                diagnosticadas com TEA que buscam suporte psicológico regular e
+                integrado entre a casa e a escola. Os psicólogos cadastrados
+                atuam como parceiros prestadores de serviços que utilizam o site
+                para divulgar seu trabalho e captar clientes, de forma
+                semelhante à relação de restaurantes com aplicativos de
+                delivery.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-intro">
+            <a
+              class="footer-brand"
+              href="#inicio"
+              aria-label="ATtention — página inicial"
+            >
+              <img
+                class="footer-logo"
+                src="./assets/images/LandingPage/logo-transparente.png"
+                alt="Logo do ATtention"
+                loading="lazy"
+              />
+              <span>ATtention </span>
+            </a>
+            <p>
+              Conectamos famílias a profissionais e reunimos informações para
+              tornar a busca por apoio mais simples e acolhedora. Um espaço de
+              escuta, respeito e cuidado em cada etapa.
+            </p>
+          </div>
+
+          <nav class="footer-links" aria-label="Navegação do rodapé">
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre nós</a></li>
+              <li><a href="#frase">Frase</a></li>
+              <li><a href="#funcionamento">Como funciona</a></li>
+              <li><a href="#precos">Valores das sessões</a></li>
+              <li><a href="#artigos">Artigos</a></li>
+              <li><a href="#perguntas-frequentes">Perguntas frequentes</a></li>
+            </ul>
+          </nav>
+
+          <address
+            class="footer-contacts"
+            aria-label="Contatos da plataforma"
+          >
+            <ul>
+              <li><strong>Contato:</strong> contato@attention.example</li>
+              <li><strong>Telefone:</strong> +55 (11) 4000-0199</li>
+              <li><strong>Redes:</strong> @attention_apoio</li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-bottom">
+          <small>&copy; 2026 &mdash; Todos os direitos reservados.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/scripts/main.js"></script>
+    <script
+      src="https://cdn.userway.org/widget.js"
+      data-account="y2KIm9pPv2"
+    ></script>
+  </body>
 </html>

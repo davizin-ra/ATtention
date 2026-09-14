@@ -6,10 +6,16 @@
 
 @import url("./components/button.css");
 
-@import url("./responsive.css");
-
 @import url("https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap");
 
 * {
   font-family: "Momo Trust Sans", sans-serif;
+}
+
+#userway_buttons_wrapper,
+.userway_buttons_wrapper {
+  top: auto !important;
+  bottom: 40px !important;
+  right: 10px !important;
+  left: auto !important;
 }

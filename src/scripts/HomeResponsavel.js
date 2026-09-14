@@ -3,46 +3,39 @@
 const foto = document.querySelector(".inicio-foto");
 
 foto.onclick = function () {
-    window.location.href = "PerfilResponsavel.html";
+  window.location.href = "../pages/ViewResponsavel.html";
 };
 
 foto.style.cursor = "pointer";
-
 
 // botão sair
 
 const botaoSair = document.querySelector(".inicio-botao-sair");
 
 botaoSair.onclick = function () {
-
-    if (confirm("Deseja realmente sair da sua conta?")) {
-        window.location.href = "Login.html";
-    }
-
+  if (confirm("Deseja realmente sair da sua conta?")) {
+    window.location.href = "../../index.html";
+  }
 };
-
 
 // enviar mensagem para a AT
 
 const botaoMensagem = document.querySelector(".botao-azul");
 
 botaoMensagem.onclick = function () {
+  const mensagem = prompt("Digite sua mensagem para a AT:");
 
-    const mensagem = prompt("Digite sua mensagem para a AT:");
+  if (mensagem !== null && mensagem !== "") {
+    const confirmar = confirm("Deseja enviar esta mensagem?");
 
-    if (mensagem !== null && mensagem !== "") {
-
-        const confirmar = confirm("Deseja enviar esta mensagem?");
-
-        if (confirmar) {
-            window.location.href =
-                "mailto:anaoliveira@email.com" +
-                "?subject=Mensagem pelo ATtention" +
-                "&body=" + encodeURIComponent(mensagem);
-        }
-
+    if (confirmar) {
+      window.location.href =
+        "mailto:anaoliveira@email.com" +
+        "?subject=Mensagem pelo ATtention" +
+        "&body=" +
+        encodeURIComponent(mensagem);
     }
-
+  }
 };
 
 // confirmar sessão pendente
@@ -50,23 +43,17 @@ botaoMensagem.onclick = function () {
 const sessaoPendente = document.querySelector(".tag-amarela");
 
 if (sessaoPendente) {
+  const botaoConfirmar = document.createElement("button");
 
-    const botaoConfirmar = document.createElement("button");
+  botaoConfirmar.textContent = "Confirmar sessão";
+  botaoConfirmar.className = "botao-confirmar";
 
-    botaoConfirmar.textContent = "Confirmar sessão";
-    botaoConfirmar.className = "botao-confirmar";
+  sessaoPendente.replaceWith(botaoConfirmar);
 
-    sessaoPendente.replaceWith(botaoConfirmar);
-
-    botaoConfirmar.onclick = function () {
-
-        if (confirm("Deseja confirmar esta sessão?")) {
-
-            botaoConfirmar.textContent = "Sessão confirmada";
-            botaoConfirmar.disabled = true;
-
-        }
-
-    };
-
+  botaoConfirmar.onclick = function () {
+    if (confirm("Deseja confirmar esta sessão?")) {
+      botaoConfirmar.textContent = "Sessão confirmada";
+      botaoConfirmar.disabled = true;
+    }
+  };
 }
