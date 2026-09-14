@@ -1,3 +1,6 @@
+
+/* configurações gerais */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,21 +9,25 @@
 
 body {
     background: #ffffff;
-    color: #2449A4;
+    color: var(--azul);
     font-family: "Momo Trust Sans", sans-serif;
 }
 
 main {
     width: 100%;
     overflow: hidden;
+    margin-bottom: 150px;
 }
+
+
+/* textos */
 
 h1 {
     font-family: "Momo Trust Display", sans-serif;
     font-size: 52px;
     font-weight: 400;
     line-height: 1;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 h2 {
@@ -28,40 +35,54 @@ h2 {
     font-size: 36px;
     font-weight: 400;
     line-height: 1.1;
-    color: #2449A4;
+    color: var(--azul);
 }
 
-h3 {
-    font-family: "Momo Trust Display", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.15;
-    color: #2449A4;
-}
-
-h5 {
+h4 {
     font-family: "Momo Trust Sans", sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     line-height: 1.2;
-    color: #2449A4;
+    color: var(--azul);
 }
 
 p {
     font-family: "Momo Trust Sans", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 1.25;
+    line-height: 1.2;
     color: #000000;
 }
 
+/* início */
+
 .section-inicio {
     min-height: 430px;
-    background: #2449A4;
+    background: var(--azul);
     color: white;
     position: relative;
     padding: 48px 6% 105px;
     overflow: hidden;
+}
+
+.section-inicio::after {
+    content: "";
+    position: absolute;
+    left: -5%;
+    right: -5%;
+    bottom: -92px;
+    height: 145px;
+    background: white;
+    border-radius: 50% 50% 0 0;
+}
+
+.inicio-conteudo {
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
 }
 
 .inicio-texto {
@@ -82,7 +103,8 @@ p {
 
 .inicio-conteudo img {
     width: 400px;
-    height: 300px;
+    height: 280px;
     object-fit: contain;
 }
+
 
