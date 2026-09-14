@@ -27,7 +27,7 @@ body {
 #container{
     position: relative;
     width: min(1250px, 100%);
-    min-height: 1240px;
+    min-height: 1250px;
     background: var(--rosa);
     box-shadow: var(--sombra);
     margin: 80px auto;
@@ -44,8 +44,8 @@ body {
 
 #section-esquerda{
     position: relative;
-    width: 47%;
-    height: 1240px;
+    width: 48%;
+    height: 1250px;
     border-radius: 28px 0 0 28px;
 }
 
@@ -60,10 +60,10 @@ body {
 
 #section-direita{
     position: relative;
-    width: 53%;
-    height: 1240PX;
+    width: 52%;
+    height: 1250PX;
     border-radius: 0 28px 28px 0;
-    padding: 43px 40px;
+    padding: 43px 25px;
 }
 
 #section-direita .textos{

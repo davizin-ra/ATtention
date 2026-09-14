@@ -43,7 +43,7 @@ body {
 
 #section-esquerda{
     position: relative;
-    width: 47%;
+    width: 48%;
     height: 1180px;
     border-radius: 28px 0 0 28px;
 }
@@ -59,10 +59,10 @@ body {
 
 #section-direita{
     position: relative;
-    width: 53%;
+    width: 52%;
     height: 1180PX;
     border-radius: 0 28px 28px 0;
-    padding: 43px 40px;
+    padding: 43px 25px;
 }
 
 #section-direita .textos{

@@ -27,13 +27,11 @@ body {
 
 .login-container {
     position: relative;
-    width: min(1250px, 100%);
-    min-height: 730px;
+    width: min(100%);
+    min-height: 100vh;
     overflow: hidden;
-    border-radius: 28px;
-    background: var(--rosa);
+    background: var(--branco);
     box-shadow: var(--sombra);
-    margin: 80px auto;
 }
 
 .login-form {
@@ -55,13 +53,17 @@ body {
 /* PARTE DO RESPONSÁVEL */
 
 .responsavel-form {
-    height: auto;
     left: 0;
-    padding: 150px 8%;
-    color: white;
+    height: 100vh;
+    color: var(--branco);
     background: var(--rosa);
     transform: translateX(-8%);
 }
+
+.responsavel-form .div-form{
+    margin-top: 60px;
+}
+
 
 .responsavel-form .paragrafo {
     margin-bottom: 8px;
@@ -167,12 +169,15 @@ body {
 /* PARTE DO PSICÓLOGO */
 
 .psicologo-form {
-    height: auto;
+    height: 100vh;
     right: 0;
     color: var(--azul-escuro);
     background: var(--branco);
-    padding: 150px 8%;
     transform: translateX(8%);
+}
+
+.psicologo-form .div-form{
+    margin-top: 60px;
 }
 
 .psicologo-form .paragrafo {
@@ -187,7 +192,7 @@ body {
 .psicologo-form h2 {
     margin-bottom: 20px;
     color: var(--azul-escuro);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .psicologo-form form {
