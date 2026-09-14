@@ -142,7 +142,7 @@ main {
 }
 
 .botao-editar-foto:hover {
-	background-color: var(--rosa-forte);
+	background-color: #bd281f;
 	color: var(--branco);
 	transform: scale(1.08);
 }
@@ -345,14 +345,14 @@ main {
 }
 
 .estatistica-numero {
-	font-family: 'Fraunces', serif;
-	font-size: 24px;
-	font-weight: 600;
-	color: var(--azul);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--azul);
 }
 
 .estatistica-destaque {
-	color: var(--rosa-forte);
+	color: #bd281f;
 }
 
 .estatistica-legenda {
