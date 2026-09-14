@@ -71,6 +71,25 @@ a {
 	gap: 7px;
 }
 
+/* ========================== botao salvar na header ========================== */
+
+.header-salvar {
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 11px 18px;
+	border-radius: 9px;
+	border: 1px solid #bd281f;
+	background-color: #bd281f;
+	color: var(--branco);
+	cursor: pointer;
+	line-height: normal;
+}
+
+.header-salvar:hover {
+	background-color: #182F78;
+}
+
 /* ========================== estrutura principal ========================== */
 
 main {
@@ -345,10 +364,10 @@ main {
 }
 
 .estatistica-numero {
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--azul);
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--azul);
 }
 
 .estatistica-destaque {
