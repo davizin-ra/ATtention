@@ -1,235 +1,313 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Área do Responsável</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display:wght@400&family=Momo+Trust+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/pages/HomeResponsavel.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<body>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/pages/HomeResponsavel.css" />
+  </head>
+
+  <body>
+    <header class="header" data-header>
+      <nav class="header-container" aria-label="Menu principal">
+        <a
+          class="header-brand"
+          href="../../index.html"
+          aria-label="ATtention — página inicial"
+        >
+          <img
+            class="header-logo"
+            src="../../assets/images/LandingPage/logo-transparente.png"
+            alt="Logo do ATtention"
+          />
+          <span>ATtention</span>
+        </a>
+
+        <button
+          class="header-menu-toggle"
+          data-site-menu-toggle
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <span></span>
+        </button>
+
+        <ul class="header-menu" id="header-menu" data-site-menu>
+          <li><a class="header-link" href="../../index.html">Início</a></li>
+          <li><a class="header-link" href="./SobreNos.html">Sobre Nós</a></li>
+          <li>
+            <a class="header-link" href="./conhecimentos.html">Conhecimento</a>
+          </li>
+          <li>
+            <a href="./login.html" class="header-login">Painel</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
-
-<!-- inicio -->
-
-        <section class="section-inicio">
-
-            <div class="inicio-conteudo">
-
-                <div class="inicio-texto">
-                    <h1>Olá, Roberto!</h1>
-                    <p>Acompanhe as sessões e o desenvolvimento dos seus dependentes.</p>
-                </div>
-
-                <div class="inicio-usuario">
-                    <div class="inicio-foto">R</div>
-                    <button class="inicio-botao-sair">Sair</button>
-                </div>
-
-            </div>
-        </section>
-
-        <div class="container-principal">
-
-            <div class="container-duplo">
-
-<!-- próximas sessões -->
-
-                <div class="coluna-esquerda">
-
-                    <section class="section-sessoes">
-
-                        <div class="section-titulo">
-                            <h2>Próximas sessões</h2>
-                            <a href="#">Ver todas</a>
-                        </div>
-
-                        <div class="sessoes-lista">
-
-<!-- sessão 1 -->
-
-                            <div class="sessao-card">
-
-                                <div class="sessao-data">
-                                    <span>TER</span>
-                                    <strong>10</strong>
-                                    <small>set</small>
-                                </div>
-
-                                <div class="sessao-linha"></div>
-
-                                <div class="sessao-info">
-                                    <h4>14h00 · Domiciliar</h4>
-                                    <p>Ana Oliveira</p>
-                                </div>
-
-                                <span class="tag tag-verde">Confirmada</span>
-
-                            </div>
-
-<!-- sessão 2 -->
-
-                            <div class="sessao-card">
-
-                                <div class="sessao-data">
-                                    <span>QUI</span>
-                                    <strong>12</strong>
-                                    <small>set</small>
-                                </div>
-
-                                <div class="sessao-linha"></div>
-
-                                <div class="sessao-info">
-                                    <h4>15h30 · Escolar</h4>
-                                    <p>Ana Oliveira</p>
-                                </div>
-
-                                <span class="tag tag-verde">Confirmada</span>
-
-                            </div>
-
-<!-- sessão 3 -->
-
-                            <div class="sessao-card">
-
-                                <div class="sessao-data">
-                                    <span>SEX</span>
-                                    <strong>13</strong>
-                                    <small>set</small>
-                                </div>
-
-                                <div class="sessao-linha"></div>
-
-                                <div class="sessao-info">
-                                    <h4>14h00 · Domiciliar</h4>
-                                    <p>Ana Oliveira</p>
-                                </div>
-
-                                <span class="tag tag-amarela">Pendente</span>
-
-                            </div>
-                        </div>
-                    </section>
-
-<!-- anotações -->
-
-                    <section class="section-anotacoes">
-
-                        <div class="section-titulo">
-                            <h2>Anotações da AT</h2>
-                            <a href="#">Ver histórico</a>
-                        </div>
-
-                        <div class="anotacoes-lista">
-
-                            <div class="anotacao">
-                                <span>05 set</span>
-
-                                <p>Ótima sessão! Lucas participou ativamente das atividades de comunicação e demonstrou evolução na interação social.</p>
-                            </div>
-
-                            <div class="anotacao">
-                                <span>02 set</span>
-
-                                <p> Sessão escolar com boa adaptação ao ambiente. Trabalhamos rotina visual e organização do material.</p>
-                            </div>
-
-                            <div class="anotacao">
-                                <span>29 ago</span>
-
-                                <p>Lucas está demonstrando maior autonomia nas atividades de vida diária. Continue incentivando em casa.</p>
-                            </div>
-
-                        </div>
-                    </section>
-                </div>
-
-<!-- informações -->
-                <div class="coluna-direita">
-
-<!-- perfil da at -->
-
-                    <section class="section-at">
-
-                        <h5>SUA AT</h5>
-
-                        <div class="at-perfil">
-
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Ana Oliveira">
-
-                            <div>
-                                <h3>Ana Oliveira</h3>
-                                <p>Acompanhante Terapêutica</p>
-
-                                <span class="status">
-                                    <span></span>
-                                    Online
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="at-informacoes">
-
-                            <div>
-                                <strong>3</strong>
-                                <span>anos exp.</span>
-                            </div>
-
-                            <div>
-                                <strong>4.9</strong>
-                                <span>avaliação</span>
-                            </div>
-
-                            <div>
-                                <strong>10</strong>
-                                <span>atendimentos</span>
-                            </div>
-
-                        </div>
-
-                        <button class="botao-azul">Enviar mensagem</button>
-
-                    </section>
-
-<!-- acompanhado -->
-
-                    <section class="section-acompanhado">
-
-                        <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=600&q=80" alt="Criança desenhando">
-
-                        <div class="acompanhado-conteudo">
-
-                            <h5>ACOMPANHADO</h5>
-
-                            <h3>Lucas Silva</h3>
-
-                            <p>8 anos · TEA nível 1</p>
-
-                            <div class="acompanhado-tags">
-                                <span class="tag tag-vermelha">Inclusão escolar</span>
-                                <span class="tag tag-vermelha">Habilidades sociais</span>
-                                <span class="tag tag-vermelha">Comunicação</span>
-                            </div>
-
-                        </div>
-
-                    </section>
-
-                </div>
-
-            </div>
-
+      <!-- inicio -->
+
+      <section class="section-inicio">
+        <div class="inicio-conteudo">
+          <div class="inicio-texto">
+            <h1>Olá, Roberto!</h1>
+            <p>
+              Acompanhe as sessões e o desenvolvimento dos seus dependentes.
+            </p>
+          </div>
+
+          <div class="inicio-usuario">
+            <div class="inicio-foto">R</div>
+            <button class="inicio-botao-sair">Sair</button>
+          </div>
         </div>
+      </section>
 
+      <div class="container-principal">
+        <div class="container-duplo">
+          <!-- próximas sessões -->
+
+          <div class="coluna-esquerda">
+            <section class="section-sessoes">
+              <div class="section-titulo">
+                <h2>Próximas sessões</h2>
+                <a href="#">Ver todas</a>
+              </div>
+
+              <div class="sessoes-lista">
+                <!-- sessão 1 -->
+
+                <div class="sessao-card">
+                  <div class="sessao-data">
+                    <span>TER</span>
+                    <strong>10</strong>
+                    <small>set</small>
+                  </div>
+
+                  <div class="sessao-linha"></div>
+
+                  <div class="sessao-info">
+                    <h4>14h00 · Domiciliar</h4>
+                    <p>Ana Oliveira</p>
+                  </div>
+
+                  <span class="tag tag-verde">Confirmada</span>
+                </div>
+
+                <!-- sessão 2 -->
+
+                <div class="sessao-card">
+                  <div class="sessao-data">
+                    <span>QUI</span>
+                    <strong>12</strong>
+                    <small>set</small>
+                  </div>
+
+                  <div class="sessao-linha"></div>
+
+                  <div class="sessao-info">
+                    <h4>15h30 · Escolar</h4>
+                    <p>Ana Oliveira</p>
+                  </div>
+
+                  <span class="tag tag-verde">Confirmada</span>
+                </div>
+
+                <!-- sessão 3 -->
+
+                <div class="sessao-card">
+                  <div class="sessao-data">
+                    <span>SEX</span>
+                    <strong>13</strong>
+                    <small>set</small>
+                  </div>
+
+                  <div class="sessao-linha"></div>
+
+                  <div class="sessao-info">
+                    <h4>14h00 · Domiciliar</h4>
+                    <p>Ana Oliveira</p>
+                  </div>
+
+                  <span class="tag tag-amarela">Pendente</span>
+                </div>
+              </div>
+            </section>
+
+            <!-- anotações -->
+
+            <section class="section-anotacoes">
+              <div class="section-titulo">
+                <h2>Anotações da AT</h2>
+                <a href="#">Ver histórico</a>
+              </div>
+
+              <div class="anotacoes-lista">
+                <div class="anotacao">
+                  <span>05 set</span>
+
+                  <p>
+                    Ótima sessão! Lucas participou ativamente das atividades de
+                    comunicação e demonstrou evolução na interação social.
+                  </p>
+                </div>
+
+                <div class="anotacao">
+                  <span>02 set</span>
+
+                  <p>
+                    Sessão escolar com boa adaptação ao ambiente. Trabalhamos
+                    rotina visual e organização do material.
+                  </p>
+                </div>
+
+                <div class="anotacao">
+                  <span>29 ago</span>
+
+                  <p>
+                    Lucas está demonstrando maior autonomia nas atividades de
+                    vida diária. Continue incentivando em casa.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- informações -->
+          <div class="coluna-direita">
+            <!-- perfil da at -->
+
+            <section class="section-at">
+              <h5>SUA AT</h5>
+
+              <div class="at-perfil">
+                <img
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80"
+                  alt="Ana Oliveira"
+                />
+
+                <div>
+                  <h3>Ana Oliveira</h3>
+                  <p>Acompanhante Terapêutica</p>
+
+                  <span class="status">
+                    <span></span>
+                    Online
+                  </span>
+                </div>
+              </div>
+
+              <div class="at-informacoes">
+                <div>
+                  <strong>3</strong>
+                  <span>anos exp.</span>
+                </div>
+
+                <div>
+                  <strong>4.9</strong>
+                  <span>avaliação</span>
+                </div>
+
+                <div>
+                  <strong>10</strong>
+                  <span>atendimentos</span>
+                </div>
+              </div>
+
+              <button class="botao-azul">Enviar mensagem</button>
+            </section>
+
+            <!-- acompanhado -->
+
+            <section class="section-acompanhado">
+              <img
+                src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=600&q=80"
+                alt="Criança desenhando"
+              />
+
+              <div class="acompanhado-conteudo">
+                <h5>ACOMPANHADO</h5>
+
+                <h3>Lucas Silva</h3>
+
+                <p>8 anos · TEA nível 1</p>
+
+                <div class="acompanhado-tags">
+                  <span class="tag tag-vermelha">Inclusão escolar</span>
+                  <span class="tag tag-vermelha">Habilidades sociais</span>
+                  <span class="tag tag-vermelha">Comunicação</span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
     </main>
 
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-intro">
+            <a
+              class="footer-brand"
+              href="#inicio"
+              aria-label="ATtention — página inicial"
+            >
+              <img
+                class="footer-logo"
+                src="../../assets/images/LandingPage/logo-transparente.png"
+                alt="Logo do ATtention"
+                loading="lazy"
+              />
+              <span>ATtention </span>
+            </a>
+            <p>
+              Conectamos famílias a profissionais e reunimos informações para
+              tornar a busca por apoio mais simples e acolhedora. Um espaço de
+              escuta, respeito e cuidado em cada etapa.
+            </p>
+          </div>
+
+          <nav class="footer-links" aria-label="Navegação do rodapé">
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre nós</a></li>
+              <li><a href="#frase">Frase</a></li>
+              <li><a href="#funcionamento">Como funciona</a></li>
+              <li><a href="#precos">Valores das sessões</a></li>
+              <li><a href="#artigos">Artigos</a></li>
+              <li><a href="#perguntas-frequentes">Perguntas frequentes</a></li>
+            </ul>
+          </nav>
+
+          <address class="footer-contacts" aria-label="Contatos da plataforma">
+            <ul>
+              <li><strong>Contato:</strong> contato@attention.example</li>
+              <li><strong>Telefone:</strong> +55 (11) 4000-0199</li>
+              <li><strong>Redes:</strong> @attention_apoio</li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-bottom">
+          <small>&copy; 2026 &mdash; Todos os direitos reservados.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+
     <script src="../scripts/HomeResponsavel.js"></script>
-    <script src="https://cdn.userway.org/widget.js" data-account="y2KIm9pPv2"></script>
-
-
-</body>
-
+    <script
+      src="https://cdn.userway.org/widget.js"
+      data-account="y2KIm9pPv2"
+    ></script>
+  </body>
 </html>
