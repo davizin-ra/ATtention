@@ -1,31 +1,209 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 
+<!doctype html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../assets/icone.png" />
-    <title>ATtention</title>
+    <title>Sobre nós</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display:wght@400&family=Momo+Trust+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/pages/conhecimentos.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pages/SobreNos.css">
 </head>
 
 <body>
+    <header class="header" data-header>
+      <nav class="header-container" aria-label="Menu principal">
+        <a
+          class="header-brand"
+          href="../../index.html"
+          aria-label="ATtention — página inicial"
+        >
+          <img
+            class="header-logo"
+            src="../../assets/images/LandingPage/logo-transparente.png"
+            alt="Logo do ATtention"
+          />
+          <span>ATtention</span>
+        </a>
+
+        <button
+          class="header-menu-toggle"
+          data-site-menu-toggle
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <span></span>
+        </button>
+
+        <ul class="header-menu" id="header-menu" data-site-menu>
+          <li><a class="header-link" href="../../index.html">Início</a></li>
+          <li><a class="header-link" href="./SobreNos.html">Sobre Nós</a></li>
+          <li><a class="header-link" href="../../index.html#conhecimento">Conhecimento</a></li>
+          <li>
+            <a href="./login.html" class="header-login">Fazer Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
 
-<!-- inicio: apresenta a central de conhecimento -->
+        <!-- início -->
 
         <section class="section-inicio">
             <div class="inicio-conteudo">
                 <div class="inicio-texto">
-                    <h1>Cuidado que <br> conecta pessoas</h1>
-                    <p>O ATtention é uma plataforma digital de intermediação entre pais e responsáveis de crianças com TEA e acompanhantes terapêuticos especializados, de forma simples, transparente e segura.</p>
+
+                    <h1>Cuidado que<br>conecta pessoas</h1>
+
+                    <p> O ATtention é uma plataforma digital de intermediação entre pais e responsáveis de crianças com TEA e acompanhantes terapêuticos especializados, de forma simples, transparente e segura.</p>
+                    
                 </div>
-                <img src="../../assets/images/Boneco.png" alt="Criança desenhando uma pintura colorida na janela">
+
+                <img src="../../assets/images/Boneco.png" alt="Ilustração do ATtention">
+
+            </div>
+
+        </section>
+
+<!-- modalidades de atendimento -->
+
+        <section class="section-modalidades">
+
+            <h2>Modalidades de atendimento</h2>
+
+            <div class="modalidades-cards">
+
+                <div class="modalidade-card">
+
+                    <h3>Atendimento domiciliar</h3>
+
+                    <p>O profissional se desloca até a residência da criança, mediante prévia autorização. Nem todo profissional cadastrado oferece essa modalidade.</p>
+
+                </div>
+
+                <div class="modalidade-card">
+
+                    <h3>Atendimento escolar</h3>
+
+                    <p>O profissional se desloca até a escola da criança, após autorização da presença do profissional nas aulas.</p>
+
+                </div>
+
+                <div class="modalidade-card">
+
+                    <h3>Sessão online</h3>
+
+                    <p>Atendimento remoto disponível exclusivamente quando a criança estiver em casa, não sendo oferecido durante o período escolar.</p>
+
+                </div>
             </div>
         </section>
-        </main>
-</body>
+
+ <!-- missão, visão e valores -->
+
+        <section class="section-sobre">
+            <div class="missao-visao">
+
+                <h2>Missão</h2>
+
+                <p>Facilitar o acesso de crianças com TEA a tratamento psicológico especializado, contínuo e integrado entre os principais ambientes de sua rotina, conectando famílias a profissionais qualificados de forma simples, transparente e segura. </p>
+
+                <h2>Visão</h2>
+
+                <p>Ser reconhecida como a principal plataforma de conexão entre famílias e profissionais especializados no atendimento a crianças com TEA, ampliando o acesso a cuidado psicológico de qualidade em diferentes regiões do Brasil. </p>
+                
+            </div>
+
+            <div class="valores">
+
+                <h2>Valores</h2>
+
+                <h3>● Acolhimento</h3>
+                <h3>● Ética profissional</h3>
+                <h3>● Especialização</h3>
+                <h3>● Transparência</h3>
+                <h3>● Compromisso com o desenvolvimento infantil</h3>
+
+            </div>
+
+        </section>
+
+<!-- chamada para cadastro -->
+
+        <section class="section-cadastro">
+
+            <h2>Pronto para encontrar o profissional ideal?</h2>
+
+            <p>Conecte sua família a profissionais especializados em TEA de forma simples, transparente e segura.</p>
+
+            <a href="../pages/cadastre-se.html" class="botao-cadastro">Cadastre-se</a>
+
+        </section>
+
+    </main>
+
+        <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-intro">
+            <a
+              class="footer-brand"
+              href="#inicio"
+              aria-label="ATtention — página inicial"
+            >
+              <img
+                class="footer-logo"
+                src="../../assets/images/LandingPage/logo-transparente.png"
+                alt="Logo do ATtention"
+                loading="lazy"
+              />
+              <span>ATtention </span>
+            </a>
+            <p>
+              Conectamos famílias a profissionais e reunimos informações para
+              tornar a busca por apoio mais simples e acolhedora. Um espaço de
+              escuta, respeito e cuidado em cada etapa.
+            </p>
+          </div>
+
+          <nav class="footer-links" aria-label="Navegação do rodapé">
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre nós</a></li>
+              <li><a href="#frase">Frase</a></li>
+              <li><a href="#funcionamento">Como funciona</a></li>
+              <li><a href="#precos">Valores das sessões</a></li>
+              <li><a href="#artigos">Artigos</a></li>
+              <li><a href="#perguntas-frequentes">Perguntas frequentes</a></li>
+            </ul>
+          </nav>
+
+          <address class="footer-contacts" aria-label="Contatos da plataforma">
+            <ul>
+              <li><strong>Contato:</strong> contato@attention.example</li>
+              <li><strong>Telefone:</strong> +55 (11) 4000-0199</li>
+              <li><strong>Redes:</strong> @attention_apoio</li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-bottom">
+          <small>&copy; 2026 &mdash; Todos os direitos reservados.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+
+    <script src="../scripts/HomeResponsavel.js"></script>
+    <script
+      src="https://cdn.userway.org/widget.js"
+      data-account="y2KIm9pPv2"
+    ></script>
+
+  </body>
 </html>
