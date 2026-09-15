@@ -314,27 +314,6 @@ main {
 	flex: none;
 }
 
-.acoes-lateral {
-	margin-top: 18px;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-
-.acoes-lateral .botao-destaque {
-	background-color: var(--azul);
-}
-
-.acoes-lateral .botao-destaque:hover {
-	background-color: #182F78;
-}
-
-.acoes-lateral .botao-secundario {
-	background-color: var(--branco);
-	color: var(--azul);
-	border: 1px solid var(--azul);
-}
-
 .cartao-estatisticas-lateral {
 	background-color: var(--branco);
 	border: 1px solid var(--azul-medio);
@@ -512,10 +491,6 @@ main {
 	border: 0;
 }
 
-.tag-texto::before {
-	content: "";
-}
-
 .tag:has(.tag-input:checked) {
 	background-color: var(--azul-pastel);
 	border-color: var(--azul-medio);
@@ -544,11 +519,6 @@ main {
 
 .duas-colunas .cartao {
 	min-height: 120px;
-}
-
-.cartao-disponibilidade {
-	height: auto !important;
-	min-height: 120px !important;
 }
 
 /* ========================== campos editaveis ========================== */
