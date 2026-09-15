@@ -12,14 +12,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
     min-height: 100%;
-    color: var(--azul-escuro);
-    font-family: "Momo Trust Display", sans-serif;
 }
-
 
 /* INICIO FORMULÁRIO */
 
@@ -44,7 +42,11 @@ body {
     justify-content: center;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.45s ease, transform 0.7s cubic-bezier(.2, .8, .2, 1);
+    filter: blur(2px);
+    transition: opacity 0.75s ease,
+                transform 1.0s cubic-bezier(.2, .8, .2, 1),
+                filter 0.45s ease,
+                background 0.5s ease;
 }
 
 
@@ -316,8 +318,9 @@ body {
 
 .alternar {
     position: absolute;
-    z-index: 3;
-    top: 8%;
+    z-index: 4;
+    top: 24px;
+    left: 50%;
     width: 290px;
     height: 58px;
     display: flex;
@@ -333,7 +336,7 @@ body {
     font-size: 15px;
     cursor: pointer;
     pointer-events: auto;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     transition: left 0.5s ease, background 0.2s ease, color 0.2s ease;
     border: 2px solid rgb(229, 202, 235);
 }
@@ -373,33 +376,29 @@ body {
 
 .modo-psicologo .responsavel-form {
     opacity: 0;
-
+    filter: blur(3px);
     pointer-events: none;
-
-    transform: translateX(-7%);
+    transform: translateX(-8%);
 }
 
 .modo-psicologo .psicologo-form {
     opacity: 1;
-
+    filter: blur(0);
     pointer-events: auto;
-
     transform: translateX(0);
 }
 
 .login-container:not(.modo-psicologo) .psicologo-form {
     opacity: 0;
-
+    filter: blur(3px);
     pointer-events: none;
-
-    transform: translateX(7%);
+    transform: translateX(8%);
 }
 
 .login-container:not(.modo-psicologo) .responsavel-form {
     opacity: 1;
-
+    filter: blur(0);
     pointer-events: auto;
-
     transform: translateX(0);
 }
 
@@ -413,6 +412,7 @@ body {
         gap: 20px;
         padding: 20px 0;
         overflow: visible;
+        border-radius: 30px;
     }
 
     .login-form {
@@ -422,7 +422,7 @@ body {
         right: auto;
         width: min(680px, calc(100vw - 32px));
         height: auto;
-        min-height: 520px;
+        min-height: 420px;
         padding: 30px 24px;
         opacity: 1;
         pointer-events: auto;
@@ -451,39 +451,39 @@ body {
     }
 
     .painel {
-        position: relative;
-        top: auto;
-        left: auto;
-        width: min(680px, calc(100vw - 32px));
-        height: 260px;
-        border-radius: 30px;
-        overflow: hidden;
         display: none;
     }
 
-    .painel img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
     .alternar {
-        top: 50%;
-        left: 50%;
+        display: flex;
+        top: 16px;
+        position: absolute;
+        z-index: 4;
     }
 
-    .modo-psicologo .painel {
-        left: auto;
+    .login-container:not(.modo-psicologo) .responsavel-form {
+        display: flex;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
     }
 
-    .modo-psicologo .painel .alternar {
-        left: 50%;
+    .login-container:not(.modo-psicologo) .psicologo-form {
+        display: none;
+        opacity: 0;
+        pointer-events: none;
+        transform: none;
     }
 
-    .login-container:not(.modo-psicologo) .psicologo-form,
-    .login-container:not(.modo-psicologo) .responsavel-form,
-    .modo-psicologo .responsavel-form,
+    .modo-psicologo .responsavel-form {
+        display: none;
+        opacity: 0;
+        pointer-events: none;
+        transform: none;
+    }
+
     .modo-psicologo .psicologo-form {
+        display: flex;
         opacity: 1;
         pointer-events: auto;
         transform: none;
@@ -500,6 +500,12 @@ body {
         width: min(100%, calc(100vw - 20px));
         min-height: auto;
         padding: 24px 18px;
+        margin-top: 50px;
+    }
+
+    .responsavel-form,
+    .psicologo-form {
+        min-height: auto;
     }
 
     .responsavel-form h2,
@@ -517,7 +523,23 @@ body {
         flex-wrap: wrap;
     }
 
+    .responsavel-form form,
+    .psicologo-form form {
+        gap: 16px;
+    }
+
+    .responsavel-form .label,
+    .psicologo-form .label {
+        font-size: 14px;
+    }
+
     .painel {
         display: none;
+    }
+
+    .alternar {
+        display: flex;
+        top: 14px;
+        width: min(260px, calc(100vw - 30px));
     }
 }

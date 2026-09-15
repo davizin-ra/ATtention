@@ -243,3 +243,128 @@ body {
 .formulario .btn-finalizar:hover{
     background: #420b07;
 }
+
+@media (max-width: 860px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #section-esquerda {
+        display: none;
+    }
+
+    #section-direita {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        margin-left: 0;
+        padding: 20px 16px 40px;
+        background-color: #e33629;
+    }
+
+    #section-direita .div-form {
+        width: min(680px, calc(100vw - 32px));
+        height: auto;
+        margin-top: 0;
+        padding: 0 20px;
+    }
+
+    #section-direita .textos h2 {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    #section-direita .textos p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .formulario {
+        margin-top: 30px;
+    }
+
+    .formulario .campo {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .formulario .campo label {
+        width: 48%;
+    }
+
+    .formulario input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    #container {
+        min-height: auto;
+    }
+
+    #section-direita {
+        padding: 16px 12px 28px;
+    }
+
+    #section-direita .div-form {
+        width: min(100%, calc(100vw - 24px));
+    }
+
+    #section-direita .textos h2 {
+        font-size: 30px;
+    }
+
+    #section-direita .textos p {
+        font-size: 14px;
+    }
+
+    .formulario {
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .formulario .campo {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .formulario .campo label {
+        width: 100%;
+    }
+
+    .formulario input {
+        width: 100%;
+    }
+
+    .formulario .campo2 input,
+    .formulario .campo3 textarea,
+    .formulario .campo4 select {
+        width: 100%;
+    }
+
+    .formulario .campo3 textarea {
+        height: 130px;
+    }
+
+    .formulario .btn-finalizar {
+        height: 46px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .container-btn {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .container-btn button {
+        width: 130px;
+        height: 44px;
+        font-size: 16px;
+    }
+}
