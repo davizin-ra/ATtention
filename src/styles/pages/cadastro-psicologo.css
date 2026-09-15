@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --rosa: #e96eae;
+    --rosa-escuro: #b90061;
+    --azul-escuro: #0c1d46;
+    --branco: #fff8fb;
+    --sombra: 0 24px 65px rgba(74, 12, 48, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+/* INICIO MAIN */
+
+#container{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins";
+}
+
+/* SECTION ESQUERDA */
+
+#section-esquerda{
+    width: 45%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+#section-esquerda img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 -50px;
+}
+
+/* SECTION-DIREITA */
+
+#section-direita{
+    position: relative;
+    margin-left: 45%;
+    flex: 1;
+    height: 1750px;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    background-color: #e33629;
+}
+
+#section-direita .div-form{
+    width: 80%;
+    height: 1100px;
+    margin-top: 50px;
+}
+
+#section-direita .textos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#section-direita .textos h2{
+    font-size: 40px;
+    color: #FFF;
+}
+
+#section-direita .textos h2 span{
+    color: #83160f;
+}
+
+#section-direita .textos p{
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+
+/* DADOS PESSOAIS DO PSICÓLOGO */
+
+.formulario{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: grid;
+    flex-direction: column;
+    color: #FFF;
+    gap: 15px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formulario .container-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formulario label{
+    margin-top: 10px;
+}
+
+.formulario input{
+    width: 280px;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: var(--azul-escuro);
+}
+
+.formulario input::placeholder{
+    color: #8c8d96;
+}
+
+.formulario .campo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formulario .titulo-h3a{
+    margin-top: 50px;
+    color: #57120d;
+    margin-bottom: 10px;
+}
+
+.formulario .titulo-h3b{
+    color: #57120d;
+}
+
+/* PERFIL PROFISSIONAL */
+
+.formulario .campo2{
+    width: 100%;
+}
+
+.formulario .campo2 input{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.formulario .campo3 textarea{
+    width: 100%;
+    height: 150px;
+    margin-top: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+    border: none;
+}
+
+.formulario .campo4{
+    width: 100%;
+}
+
+.formulario .campo4 select{
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #0c1d46;
+}
+
+
+/* BOTÕES */
+
+.container-btn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.container-btn button{
+    width: 150px;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #83160f;
+    color: #FFF;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.container-btn a button:hover{
+    background: #420b07;
+}
+
+.formulario .btn-finalizar{
+    width: 100%;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #83160f;
+    color: #FFF;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    transition: transform 0.2s ease, background 0.2s ease;
+    margin-top: 40px;
+}
+
+.formulario .btn-finalizar:hover{
+    background: #420b07;
+}
+
+@media (max-width: 860px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #section-esquerda {
+        display: none;
+    }
+
+    #section-direita {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        margin-left: 0;
+        padding: 20px 16px 40px;
+        background-color: #e33629;
+    }
+
+    #section-direita .div-form {
+        width: min(680px, calc(100vw - 32px));
+        height: auto;
+        margin-top: 0;
+        padding: 0 20px;
+    }
+
+    #section-direita .textos h2 {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    #section-direita .textos p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .formulario {
+        margin-top: 30px;
+    }
+
+    .formulario .campo {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .formulario .campo label {
+        width: 48%;
+    }
+
+    .formulario input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    #container {
+        min-height: auto;
+    }
+
+    #section-direita {
+        padding: 16px 12px 28px;
+    }
+
+    #section-direita .div-form {
+        width: min(100%, calc(100vw - 24px));
+    }
+
+    #section-direita .textos h2 {
+        font-size: 30px;
+    }
+
+    #section-direita .textos p {
+        font-size: 14px;
+    }
+
+    .formulario {
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .formulario .campo {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .formulario .campo label {
+        width: 100%;
+    }
+
+    .formulario input {
+        width: 100%;
+    }
+
+    .formulario .campo2 input,
+    .formulario .campo3 textarea,
+    .formulario .campo4 select {
+        width: 100%;
+    }
+
+    .formulario .campo3 textarea {
+        height: 130px;
+    }
+
+    .formulario .btn-finalizar {
+        height: 46px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .container-btn {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .container-btn button {
+        width: 130px;
+        height: 44px;
+        font-size: 16px;
+    }
+}

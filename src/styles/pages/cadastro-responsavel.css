@@ -16,8 +16,6 @@
 
 body {
     min-height: 100%;
-    color: var(--azul-escuro);
-    background: #f8d6e7;
     font-family: "Momo Trust Display", sans-serif;
 }
 
@@ -26,33 +24,30 @@ body {
 
 #container{
     position: relative;
-    width: min(1250px, 100%);
-    min-height: 1250px;
-    background: var(--rosa);
+    width: 100%;
+    min-height: 100%;
     box-shadow: var(--sombra);
-    margin: 80px auto;
-    border-radius: 28px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     font-family: "Poppins";
-    
 }
 
 /* SECTION ESQUERDA */
 
 #section-esquerda{
-    position: relative;
-    width: 48%;
-    height: 1250px;
-    border-radius: 28px 0 0 28px;
+    width: 45%;
+    height: 100%;
+    position: fixed;
+    top: 0;
 }
 
 #section-esquerda img{
     width: 100%;
     height: 100%;
-    border-radius: 28px 0 0 28px;
+    object-fit: cover;
+    object-position: 0 -210px;
 }
 
 
@@ -60,10 +55,20 @@ body {
 
 #section-direita{
     position: relative;
-    width: 52%;
-    height: 1250PX;
-    border-radius: 0 28px 28px 0;
-    padding: 43px 25px;
+    margin-left: 45%;
+    flex: 1;
+    height: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    background-color: #4E7CB2;
+}
+
+#section-direita .div-form{
+    width: 80%;
+    height: 1100px;
+    margin-top: 50px;
 }
 
 #section-direita .textos{
@@ -79,7 +84,7 @@ body {
 }
 
 #section-direita .textos h2 span{
-    color: var(--rosa-escuro);
+    color: var(--azul-escuro);
 }
 
 #section-direita .textos p{
@@ -90,16 +95,14 @@ body {
 
 .area-dados-responsavel{
     width: 100%;
-    height: 360px;
+    height: auto;
     margin-top: 50px;
-}
-
-.area-dados-responsavel h3{
-    font-size: 23px;
 }
 
 .area-dados-responsavel .titulo-h3{
     margin-top: 50px;
+    font-size: 23px;
+    color: var(--azul-escuro);
 }
 
 .formulario{
@@ -109,10 +112,37 @@ body {
     display: grid;
     flex-direction: column;
     color: #FFF;
-    gap: 20px;
+    gap: 15px;
     letter-spacing: 1px;
     font-size: 16px;
     font-weight: 400;
+}
+
+.formulario .container-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formulario .container-btn #btn-voltar{
+    width: 150px;
+    height: 47px;
+    background: #1c487a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.formulario .container-btn #btn-voltar:hover{
+    background: #1d2557;
 }
 
 .formulario input{
@@ -125,51 +155,14 @@ body {
     font-size: 13px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    color: #787e83;
+    color: var(--azul-escuro);
 }
 
 .formulario input::placeholder{
-    color: #787e83;
+    color: #8c8d96;
 }
 
 .formulario .campo{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.formulario2{
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    display: grid;
-    flex-direction: column;
-    color: #FFF;
-    gap: 20px;
-    letter-spacing: 1px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.formulario2 input{
-    width: 280px;
-    padding: 10px;
-    margin-top: 5px;
-    border: none;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    color: #787e83;
-}
-
-.formulario2 input::placeholder{
-    color: #787e83;
-}
-
-.formulario2 .campo{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -192,7 +185,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background: var(--rosa-escuro);
+    background: #1c487a;
     color: #FFF;
     border-radius: 10px;
     border: none;
@@ -202,6 +195,126 @@ body {
     transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.container-btn a button:hover{
-    background: #630336;
+.container-btn button:hover{
+    background: #1d2557;
+}
+
+@media (max-width: 860px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #section-esquerda {
+        display: none;
+    }
+
+    #section-direita {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        margin-left: 0;
+        padding: 20px 16px 40px;
+        background-color: #4E7CB2;
+    }
+
+    #section-direita .div-form {
+        width: min(680px, calc(100vw - 32px));
+        height: auto;
+        margin-top: 0;
+        padding: 0 20px;
+    }
+
+    #section-direita .textos h2 {
+        font-size: 34px;
+    }
+
+    #section-direita .textos p {
+        font-size: 16px;
+    }
+
+    .formulario {
+        margin-top: 20px;
+    }
+
+    .formulario .campo {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .formulario .campo label {
+        width: 48%;
+    }
+
+    .formulario input {
+        width: 100%;
+    }
+
+    .container-btn {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 560px) {
+    #container {
+        min-height: auto;
+    }
+
+    #section-direita {
+        padding: 16px 12px 30px;
+    }
+
+    #section-direita .div-form {
+        width: min(100%, calc(100vw - 24px));
+    }
+
+    #section-direita .textos h2 {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #section-direita .textos p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .area-dados-responsavel .titulo-h3 {
+        font-size: 20px;
+    }
+
+    .formulario {
+        gap: 12px;
+        margin-top: 16px;
+    }
+
+    .formulario .campo {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .formulario .campo label {
+        width: 100%;
+    }
+
+    .formulario input {
+        width: 100%;
+    }
+
+    .container-btn {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .container-btn button,
+    .formulario .container-btn #btn-voltar {
+        width: 130px;
+        height: 44px;
+        font-size: 16px;
+    }
 }

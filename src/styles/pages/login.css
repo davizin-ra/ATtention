@@ -12,15 +12,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
     min-height: 100%;
-    color: var(--azul-escuro);
-    background: #f8d6e7;
-    font-family: "Momo Trust Display", sans-serif;
 }
-
 
 /* INICIO FORMULÁRIO */
 
@@ -45,7 +42,11 @@ body {
     justify-content: center;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.45s ease, transform 0.7s cubic-bezier(.2, .8, .2, 1);
+    filter: blur(2px);
+    transition: opacity 0.75s ease,
+                transform 1.0s cubic-bezier(.2, .8, .2, 1),
+                filter 0.45s ease,
+                background 0.5s ease;
 }
 
 
@@ -56,7 +57,7 @@ body {
     left: 0;
     height: 100vh;
     color: var(--branco);
-    background: var(--rosa);
+    background: #5886BA;
     transform: translateX(-8%);
 }
 
@@ -67,7 +68,7 @@ body {
 
 .responsavel-form .paragrafo {
     margin-bottom: 8px;
-    color: var(--rosa-escuro);
+    color: var(--branco);
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -108,11 +109,11 @@ body {
 }
 
 .responsavel-form .input:focus {
-    border-color: var(--rosa-escuro);
-    box-shadow: 0 0 0 3px rgba(185, 0, 97, 0.15);
+    border-color: #5886BA;
+    box-shadow: 0 0 0 3px rgba(2, 12, 49, 0.15);
 }
 
-.responsavel-form .esqueceu-senha, .cadastrar-link a {
+.responsavel-form .esqueceu-senha, a{
     color: var(--azul-escuro);
     font-size: 15px;
     text-decoration: none;
@@ -142,14 +143,14 @@ body {
     border: 0;
     border-radius: 7px;
     color: white;
-    background-color: var(--rosa-escuro);
+    background-color: #3c628f;
     font: 600 20px "Poppins", sans-serif;
     cursor: pointer;
     transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .responsavel-form .btn-entrar:hover {
-    background: #630336;
+    background: #21426b;
     color: white;
     transition: 0.3s all;
 }
@@ -165,14 +166,18 @@ body {
     text-align: center;
 }
 
+.responsavel-form .cadastrar-link a{
+    color: var(--azul-escuro);
+}
+
 
 /* PARTE DO PSICÓLOGO */
 
 .psicologo-form {
     height: 100vh;
     right: 0;
-    color: var(--azul-escuro);
-    background: var(--branco);
+    color: black;
+    background: #e4493e;
     transform: translateX(8%);
 }
 
@@ -182,7 +187,7 @@ body {
 
 .psicologo-form .paragrafo {
     margin-bottom: 8px;
-    color: var(--rosa-escuro);
+    color: black;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -191,7 +196,7 @@ body {
 
 .psicologo-form h2 {
     margin-bottom: 20px;
-    color: var(--azul-escuro);
+    color: #fff;
     font-size: 32px;
 }
 
@@ -208,6 +213,7 @@ body {
     flex-direction: column;
     gap: 6px;
     font-size: 16px;
+    color: white;
 }
 
 .psicologo-form .input {
@@ -216,19 +222,19 @@ body {
     border: 2px solid rgb(204, 198, 198);
     border-radius: 7px;
     outline: none;
-    color: var(--azul-escuro);
+    color: black;
     background: white;
     font: inherit;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .psicologo-form .input:focus {
-    border-color: var(--rosa-escuro);
-    box-shadow: 0 0 0 3px rgba(185, 0, 97, 0.15);
+    border-color: #d65e56;
+    box-shadow: 0 0 0 3px rgba(66, 23, 3, 0.15);
 }
 
 .psicologo-form .esqueceu-senha, .cadastrar-link a {
-    color: var(--azul-escuro);
+    color: rgb(0, 0, 0);
     font-size: 15px;
     text-decoration: none;
 }
@@ -257,14 +263,14 @@ body {
     border: 0;
     border-radius: 7px;
     color: white;
-    background-color: var(--rosa-escuro);
+    background-color: #a32a21;
     font: 600 20px "Poppins", sans-serif;
     cursor: pointer;
     transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .psicologo-form .btn-entrar:hover {
-    background: #630336;
+    background: #691a16;
     color: white;
     transition: 0.3s all;
 }
@@ -275,7 +281,7 @@ body {
     justify-content: center;
     margin-top: 10px;
     gap: 5px;
-    color: var(--rosa-escuro);
+    color: white;
     font-size: 15px;
     text-align: center;
 }
@@ -312,8 +318,9 @@ body {
 
 .alternar {
     position: absolute;
-    z-index: 3;
-    top: 8%;
+    z-index: 4;
+    top: 24px;
+    left: 50%;
     width: 290px;
     height: 58px;
     display: flex;
@@ -329,7 +336,7 @@ body {
     font-size: 15px;
     cursor: pointer;
     pointer-events: auto;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     transition: left 0.5s ease, background 0.2s ease, color 0.2s ease;
     border: 2px solid rgb(229, 202, 235);
 }
@@ -359,7 +366,7 @@ body {
 
 .alternar:hover {
     color: white;
-    background: var(--rosa-escuro);
+    background: #3c628f;
     transition: 0.3s all;
 }
 
@@ -369,32 +376,170 @@ body {
 
 .modo-psicologo .responsavel-form {
     opacity: 0;
-
+    filter: blur(3px);
     pointer-events: none;
-
-    transform: translateX(-7%);
+    transform: translateX(-8%);
 }
 
 .modo-psicologo .psicologo-form {
     opacity: 1;
-
+    filter: blur(0);
     pointer-events: auto;
-
     transform: translateX(0);
 }
 
 .login-container:not(.modo-psicologo) .psicologo-form {
     opacity: 0;
-
+    filter: blur(3px);
     pointer-events: none;
-
-    transform: translateX(7%);
+    transform: translateX(8%);
 }
 
 .login-container:not(.modo-psicologo) .responsavel-form {
     opacity: 1;
-
+    filter: blur(0);
     pointer-events: auto;
-
     transform: translateX(0);
+}
+
+@media (max-width: 860px) {
+    .login-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+        overflow: visible;
+        border-radius: 30px;
+    }
+
+    .login-form {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: min(680px, calc(100vw - 32px));
+        height: auto;
+        min-height: 420px;
+        padding: 30px 24px;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+    }
+
+    .responsavel-form,
+    .psicologo-form {
+        height: auto;
+        min-height: 420px;
+        left: auto;
+        right: auto;
+    }
+
+    .responsavel-form .div-form,
+    .psicologo-form .div-form {
+        margin-top: 0;
+    }
+
+    .responsavel-form {
+        background: #5886BA;
+    }
+
+    .psicologo-form {
+        background: #e4493e;
+    }
+
+    .painel {
+        display: none;
+    }
+
+    .alternar {
+        display: flex;
+        top: 16px;
+        position: absolute;
+        z-index: 4;
+    }
+
+    .login-container:not(.modo-psicologo) .responsavel-form {
+        display: flex;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+    }
+
+    .login-container:not(.modo-psicologo) .psicologo-form {
+        display: none;
+        opacity: 0;
+        pointer-events: none;
+        transform: none;
+    }
+
+    .modo-psicologo .responsavel-form {
+        display: none;
+        opacity: 0;
+        pointer-events: none;
+        transform: none;
+    }
+
+    .modo-psicologo .psicologo-form {
+        display: flex;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .login-container {
+        padding: 16px 0;
+        gap: 14px;
+    }
+
+    .login-form {
+        width: min(100%, calc(100vw - 20px));
+        min-height: auto;
+        padding: 24px 18px;
+        margin-top: 50px;
+    }
+
+    .responsavel-form,
+    .psicologo-form {
+        min-height: auto;
+    }
+
+    .responsavel-form h2,
+    .psicologo-form h2 {
+        font-size: 28px;
+    }
+
+    .responsavel-form .btn-entrar,
+    .psicologo-form .btn-entrar {
+        font-size: 18px;
+    }
+
+    .responsavel-form .cadastrar-link,
+    .psicologo-form .cadastrar-link {
+        flex-wrap: wrap;
+    }
+
+    .responsavel-form form,
+    .psicologo-form form {
+        gap: 16px;
+    }
+
+    .responsavel-form .label,
+    .psicologo-form .label {
+        font-size: 14px;
+    }
+
+    .painel {
+        display: none;
+    }
+
+    .alternar {
+        display: flex;
+        top: 14px;
+        width: min(260px, calc(100vw - 30px));
+    }
 }

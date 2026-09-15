@@ -20,7 +20,7 @@ body {
     place-items: center;
     padding: 30px 20px;
     font-family: "Poppins", sans-serif;
-    background: #f8d6e7;
+    background: #FFF0E6;
     color: var(--azul-escuro);
 }
 
@@ -48,7 +48,7 @@ body {
     justify-content: center;
     margin: 0 auto 25px;
     border-radius: 50%;
-    background: #fce1ee;
+    background: #e33629;
     font-size: 32px;
 }
 
@@ -108,7 +108,7 @@ form {
     height: 52px;
     border: none;
     border-radius: 12px;
-    background: var(--rosa-escuro);
+    background: #e33629;
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
@@ -118,7 +118,7 @@ form {
 }
 
 .btn-enviar:hover {
-    background: #630336;
+    background: #9e2e24;
     transform: translateY(-2px);
 }
 
@@ -142,7 +142,7 @@ form {
 .voltar {
     display: inline-block;
     margin-top: 25px;
-    color: var(--rosa-escuro);
+    color: var(--azul-escuro);
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
