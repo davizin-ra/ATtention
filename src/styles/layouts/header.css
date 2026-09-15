@@ -7,6 +7,7 @@
 
   a {
     color: var(--azul);
+    font-family: "Momo Trust Sans", sans-serif;
   }
 
   .header-login {

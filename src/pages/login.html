@@ -1,101 +1,175 @@
 <!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../../src/styles/pages/login.css" type="text/css">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../assets/icone.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="../../src/styles/pages/login.css"
+      type="text/css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../assets/icone.png"
+    />
     <title>ATtention</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="header" data-header>
+      <nav class="header-container" aria-label="Menu principal">
+        <a
+          class="header-brand"
+          href="../../index.html"
+          aria-label="ATtention — página inicial"
+        >
+          <img
+            class="header-logo"
+            src="../../assets/images/LandingPage/logo-transparente.png"
+            alt="Logo do ATtention"
+          />
+          <span>ATtention</span>
+        </a>
 
-        <!-- COMEÇO DA MINHA SESSÃO -->
+        <button
+          class="header-menu-toggle"
+          data-site-menu-toggle
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <span></span>
+        </button>
 
-        <main class="login-container" id="login-container">
+        <ul class="header-menu" id="header-menu" data-site-menu>
+          <li><a class="header-link" href="../../index.html">Início</a></li>
+          <li><a class="header-link" href="./SobreNos.html">Sobre Nós</a></li>
+          <li>
+            <a class="header-link" href="../../index.html#conhecimento"
+              >Conhecimento</a
+            >
+          </li>
+          <li>
+            <a href="./login.html" class="header-login">Fazer Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-            <button class="alternar">
-                <span class="seta">→</span>
-                <span class="texto-alternar">Fazer login como psicólogo</span>
-            </button>
+    <main class="login-container" id="login-container">
+      <button class="alternar">
+        <span class="seta">→</span>
+        <span class="texto-alternar">Fazer login como psicólogo</span>
+      </button>
 
-            <section class="login-form responsavel-form">
+      <section class="login-form responsavel-form">
+        <div class="div-form">
+          <h2 id="titulo-aluno">Entrar como responsável</h2>
 
-                <div class="div-form">
-                    
-                    <h2 id="titulo-aluno">Entrar como responsável</h2>
+          <form id="form-responsavel">
+            <label class="label">
+              Email
+              <input
+                class="input"
+                type="email"
+                placeholder="Seu e-mail"
+                required
+              />
+            </label>
 
-                    <form id="form-responsavel">
-                        <label class="label">
-                            Email
-                            <input class="input" type="email" placeholder="Seu e-mail" required>
-                        </label>
+            <label class="label">
+              Senha
+              <input
+                class="input"
+                type="password"
+                placeholder="Sua senha"
+                required
+              />
+            </label>
 
-                        <label class="label">
-                            Senha
-                            <input class="input" type="password" placeholder="Sua senha" required>
-                        </label>
+            <a href="esqueceu-senha.html" class="esqueceu-senha"
+              >Esqueceu a senha?</a
+            >
 
-                        <a href="esqueceu-senha.html" class="esqueceu-senha">Esqueceu a senha?</a>
+            <label class="lembrar-dados">
+              <input type="checkbox" />
+              <span>Lembrar meus dados</span>
+            </label>
 
-                        <label class="lembrar-dados">
-                            <input type="checkbox">
-                            <span>Lembrar meus dados</span>
-                        </label>
+            <button class="btn-entrar" type="submit">Entrar</button>
 
-                        <button class="btn-entrar" type="submit">Entrar</button>
+            <div class="cadastrar-link">
+              <p>Ainda não tem uma conta?</p>
+              <a href="cadastre-se.html">Cadastre-se</a>
+            </div>
+          </form>
+        </div>
+      </section>
 
-                        <div class="cadastrar-link">
-                            <p>Ainda não tem uma conta?</p>
-                            <a href="cadastre-se.html">Cadastre-se</a>   
-                        </div>
-                    </form>
-                </div>
-            </section>
+      <section class="login-form psicologo-form">
+        <div class="div-form">
+          <h2 id="titulo-psicologo">Entrar como psicólogo</h2>
+          <form id="form-psicologo">
+            <label class="label">
+              Email
+              <input
+                class="input"
+                type="email"
+                placeholder="Seu e-mail"
+                required
+              />
+            </label>
 
-            <section class="login-form psicologo-form">
+            <label class="label">
+              Senha
+              <input
+                class="input"
+                type="password"
+                placeholder="Sua senha"
+                required
+              />
+            </label>
 
-                <div class="div-form">
-                    
-                    <h2 id="titulo-psicologo">Entrar como psicólogo</h2>
-                    <form id="form-psicologo">
-                        <label class="label">
-                            Email
-                            <input class="input" type="email" placeholder="Seu e-mail" required>
-                        </label>
+            <a href="esqueceu-senha.html" class="esqueceu-senha"
+              >Esqueceu a senha?</a
+            >
 
-                        <label class="label">
-                            Senha
-                            <input class="input" type="password" placeholder="Sua senha" required>
-                        </label>
+            <label class="lembrar-dados">
+              <input type="checkbox" />
+              <span>Lembrar meus dados</span>
+            </label>
 
-                        <a href="esqueceu-senha.html" class="esqueceu-senha">Esqueceu a senha?</a>
+            <button class="btn-entrar" type="submit">Entrar</button>
 
-                        <label class="lembrar-dados">
-                            <input type="checkbox">
-                            <span>Lembrar meus dados</span>
-                        </label>
+            <div class="cadastrar-link">
+              <span></span>
+              <p>Ainda não tem uma conta?</p>
+              <a href="cadastre-se.html">Cadastre-se</a>
+              <span></span>
+            </div>
+          </form>
+        </div>
+      </section>
 
-                        <button class="btn-entrar" type="submit">Entrar</button>
-
-                        <div class="cadastrar-link">
-                            <span></span>
-                            <p>Ainda não tem uma conta?</p>
-                            <a href="cadastre-se.html">Cadastre-se</a>
-                            <span></span>
-                        </div>
-                    </form>
-                </div>
-            </section>
-
-            <aside class="painel" id="painel">
-                <img src="../../assets/images/fernando/mulher-crianca.png" alt="mulher com a criança">
-            </aside>
+      <aside class="painel" id="painel">
+        <img
+          src="../../assets/images/fernando/mulher-crianca.png"
+          alt="mulher com a criança"
+        />
+      </aside>
     </main>
 
     <!-- FIM DA MINHA SESSÃO -->
 
-    <script src="https://cdn.userway.org/widget.js" data-account="y2KIm9pPv2"></script>
+    <script src="../scripts/main.js"></script>
+    <script
+      src="https://cdn.userway.org/widget.js"
+      data-account="y2KIm9pPv2"
+    ></script>
     <script src="../scripts/login.js"></script>
   </body>
 </html>

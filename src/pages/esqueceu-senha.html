@@ -1,17 +1,61 @@
 <!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../assets/icone.png" />
-    <link rel="stylesheet" href="../styles/pages/esqueceu-senha.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../assets/icone.png"
+    />
+    <link rel="stylesheet" href="../styles/pages/esqueceu-senha.css" />
     <title>ATtention</title>
-</head>
-
-<body>
+  </head>
 
   <body>
+    <header class="header" data-header>
+      <nav class="header-container" aria-label="Menu principal">
+        <a
+          class="header-brand"
+          href="../../index.html"
+          aria-label="ATtention — página inicial"
+        >
+          <img
+            class="header-logo"
+            src="../../assets/images/LandingPage/logo-transparente.png"
+            alt="Logo do ATtention"
+          />
+          <span>ATtention</span>
+        </a>
+
+        <button
+          class="header-menu-toggle"
+          data-site-menu-toggle
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <span></span>
+        </button>
+
+        <ul class="header-menu" id="header-menu" data-site-menu>
+          <li><a class="header-link" href="../../index.html">Início</a></li>
+          <li><a class="header-link" href="./SobreNos.html">Sobre Nós</a></li>
+          <li>
+            <a class="header-link" href="../../index.html#conhecimento"
+              >Conhecimento</a
+            >
+          </li>
+          <li>
+            <a href="./login.html" class="header-login">Fazer Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <main class="recuperar-container">
       <section class="recuperar-card">
         <div class="icone">
@@ -54,7 +98,11 @@
       </section>
     </main>
 
-    <script src="https://cdn.userway.org/widget.js" data-account="y2KIm9pPv2"></script>
+    <script src="../scripts/main.js"></script>
+    <script
+      src="https://cdn.userway.org/widget.js"
+      data-account="y2KIm9pPv2"
+    ></script>
     <script src="../scripts/esqueceu-senha.js"></script>
   </body>
 </html>

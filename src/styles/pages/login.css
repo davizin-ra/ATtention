@@ -8,24 +8,20 @@
     --sombra: 0 24px 65px rgba(74, 12, 48, 0.2);
 }
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
-body {
-    min-height: 100%;
-}
-
 /* INICIO FORMULÁRIO */
 
 
 .login-container {
     position: relative;
     width: min(100%);
-    min-height: 100vh;
+    min-height: calc(100vh - 90px);
     overflow: hidden;
     background: var(--branco);
     box-shadow: var(--sombra);

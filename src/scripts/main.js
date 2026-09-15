@@ -21,6 +21,7 @@ function inicializarMenus() {
     }
 
     botaoMenu.addEventListener("click", function () {
+      console.log("Apertei");
       atualizarMenu(!menu.classList.contains("header-menu--open"));
     });
 
@@ -42,11 +43,13 @@ function inicializarMenus() {
   });
 }
 
+inicializarMenus();
+
 const loading = document.getElementById("loading");
 const video = document.getElementById("loading-video");
 
-video.addEventListener("ended", () => {
-  loading.classList.add("esconder");
-});
-
-inicializarMenus();
+if (video) {
+  video.addEventListener("ended", () => {
+    loading.classList.add("esconder");
+  });
+}

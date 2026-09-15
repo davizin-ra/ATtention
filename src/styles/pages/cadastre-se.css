@@ -1,253 +1,250 @@
-@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-    --rosa: #e96eae;
-    --rosa-escuro: #b90061;
-    --azul-escuro: #0c1d46;
-    --branco: #fff8fb;
-    --sombra: 0 24px 65px rgba(74, 12, 48, 0.2);
-    --azul-mais-claro: #2449A4;
+  --rosa: #e96eae;
+  --rosa-escuro: #b90061;
+  --azul-escuro: #0c1d46;
+  --branco: #fff8fb;
+  --sombra: 0 24px 65px rgba(74, 12, 48, 0.2);
+  --azul-mais-claro: #2449a4;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Momo Trust Display", sans-serif;
-}
-
-body {
-    min-height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Momo Trust Display", sans-serif;
 }
 
 /* INICIO MAIN */
 
-.opcao-cadastro-container{
-    position: relative;
-    width: 100%;
-    min-height: 100%;
-    background: #4e7cb2;
-    box-shadow: var(--sombra);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+.opcao-cadastro-container {
+  position: relative;
+  width: 100%;
+  background: #4e7cb2;
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.div-direita{
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 0;
+.div-direita {
+  width: 50%;
+  height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
 }
 
-.div-direita img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
+.div-direita img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 
-.div-esquerda{
-    width: 50%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.div-esquerda {
+  width: 50%;
+  height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.caixinha-geral{
-    width: 75%;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+.caixinha-geral {
+  width: 75%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
-.caixinha-geral h2{
-    font-size: 32px;
-    color: #FFF;
-    font-weight: 200;
+.caixinha-geral h2 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 200;
 }
 
-.caixinha-geral .cards{
-    width: 100%;
-    height: 180px;
-    background: #FFF;
-    border-radius: 20px;
-    padding: 20px 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    gap: 10px;
+.caixinha-geral .cards {
+  width: 100%;
+  height: 180px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 10px;
 }
 
-.cards .btn-cadastrar{
-    width: 100%;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+.cards .btn-cadastrar {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.caixinha-geral .cards h3{
-    color: #2449A4;
-    font-size: 25px;
-    font-weight: 400;
+.caixinha-geral .cards h3 {
+  color: #2449a4;
+  font-size: 25px;
+  font-weight: 400;
 }
 
-.caixinha-geral .cards p{
-    color: #000;
-    font-size: 15px;
-    font-weight: 200;
-    text-align: justify;
+.caixinha-geral .cards p {
+  color: #000;
+  font-size: 15px;
+  font-weight: 200;
+  text-align: justify;
 }
 
-.caixinha-geral .cards button{
-    width: 320px;
-    height: 47px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 41px 13px 42px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    border-radius: 10px;
-    background: var(--azul-mais-claro);
-    color: #FFF;
-    border: none;
-    transition: transform 0.2s ease, background 0.2s ease;
+.caixinha-geral .cards button {
+  width: 320px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 41px 13px 42px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  background: var(--azul-mais-claro);
+  color: #fff;
+  border: none;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
-.caixinha-geral .cards button:hover{
-    background: #051641;
+.caixinha-geral .cards button:hover {
+  background: #051641;
 }
 
-
-.caixinha-geral .cards a{
-    width: 320px;
-    border-radius: 10px;
-    background-color: #e96eae;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+.caixinha-geral .cards a {
+  width: 320px;
+  border-radius: 10px;
+  background-color: #e96eae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
-.div-voltar{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: left;
+.div-voltar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
-.div-esquerda a button{
-    width: 150px;
-    height: 47px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background: #0F2459;;
-    color: #FFF;
-    border-radius: 10px;
-    border: none;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    transition: transform 0.2s ease, background 0.2s ease;
+.div-esquerda a button {
+  width: 150px;
+  height: 47px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #0f2459;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
-.div-esquerda a button:hover{
-    background: #051641;
+.div-esquerda a button:hover {
+  background: #051641;
 }
 
 @media (max-width: 860px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
 
-    body{
-        width: 100%;
-        height: 100vh;
-    }
+  .opcao-cadastro-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 30px 16px;
+  }
 
-    .opcao-cadastro-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 24px;
-        padding: 30px 16px;
-    }
+  .div-direita {
+    display: none;
+  }
 
-    .div-direita {
-        display: none;
-    }
+  .div-esquerda {
+    width: min(680px, calc(100vw - 32px));
+    min-height: auto;
+  }
 
-    .div-esquerda {
-        width: min(680px, calc(100vw - 32px));
-        min-height: auto;
-    }
+  .caixinha-geral {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    padding: 24px 16px;
+  }
 
-    .caixinha-geral {
-        width: 100%;
-        height: auto;
-        gap: 20px;
-        padding: 24px 16px;
-    }
+  .caixinha-geral .cards {
+    height: auto;
+  }
 
-    .caixinha-geral .cards {
-        height: auto;
-    }
+  .caixinha-geral .cards .btn-cadastrar button {
+    font-size: 13px;
+  }
 
-     .caixinha-geral .cards .btn-cadastrar button{
-        font-size: 13px;
-     }
-
-    .caixinha-geral .cards button,
-    .caixinha-geral .cards a {
-        width: min(320px, 100%);
-    }
+  .caixinha-geral .cards button,
+  .caixinha-geral .cards a {
+    width: min(320px, 100%);
+  }
 }
 
 @media (max-width: 560px) {
-    .opcao-cadastro-container {
-        padding: 20px 12px;
-    }
+  .opcao-cadastro-container {
+    padding: 20px 12px;
+  }
 
-    .div-esquerda {
-        width: min(100%, calc(100vw - 24px));
-    }
+  .div-esquerda {
+    width: min(100%, calc(100vw - 24px));
+  }
 
-    .caixinha-geral {
-        width: 100%;
-        gap: 16px;
-    }
+  .caixinha-geral {
+    width: 100%;
+    gap: 16px;
+  }
 
-    .caixinha-geral h2 {
-        font-size: 28px;
-    }
+  .caixinha-geral h2 {
+    font-size: 28px;
+  }
 
-    .caixinha-geral .cards h3 {
-        font-size: 22px;
-    }
+  .caixinha-geral .cards h3 {
+    font-size: 22px;
+  }
 
-    .caixinha-geral .cards p {
-        font-size: 14px;
-    }
+  .caixinha-geral .cards p {
+    font-size: 14px;
+  }
 
-    .caixinha-geral .cards button {
-        width: 100%;
-        height: 44px;
-        font-size: 14px;
-    }
+  .caixinha-geral .cards button {
+    width: 100%;
+    height: 44px;
+    font-size: 14px;
+  }
 
-    .div-esquerda a button {
-        width: 130px;
-        height: 44px;
-        font-size: 16px;
-    }
+  .div-esquerda a button {
+    width: 130px;
+    height: 44px;
+    font-size: 16px;
+  }
 }
