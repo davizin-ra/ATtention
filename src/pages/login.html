@@ -1,99 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../src/styles/pages/login.css" type="text/css">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../assets/icone.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../src/styles/pages/login.css"
+      type="text/css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../assets/icone.png"
+    />
     <title>ATtention</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- COMEÇO DA MINHA SESSÃO -->
 
-        <!-- COMEÇO DA MINHA SESSÃO -->
+    <main class="login-container" id="login-container">
+      <section class="login-form responsavel-form">
+        <div class="div-form">
+          <span class="paragrafo">Área do responsável</span>
+          <h2 id="titulo-aluno">Entrar como responsável</h2>
 
-        <main class="login-container" id="login-container">
+          <form id="form-responsavel">
+            <label class="label">
+              Email
+              <input
+                class="input"
+                type="email"
+                placeholder="Seu e-mail"
+                required
+              />
+            </label>
 
-            <section class="login-form responsavel-form">
+            <label class="label">
+              Senha
+              <input
+                class="input"
+                type="password"
+                placeholder="Sua senha"
+                required
+              />
+            </label>
 
-                <div class="div-form">
-                    <span class="paragrafo">Área do responsável</span>
-                    <h2 id="titulo-aluno">Entrar como responsável</h2>
+            <a href="esqueceu-senha.html" class="esqueceu-senha"
+              >Esqueceu a senha?</a
+            >
 
-                    <form id="form-responsavel">
-                        <label class="label">
-                            Email
-                            <input class="input" type="email" placeholder="Seu e-mail" required>
-                        </label>
+            <label class="lembrar-dados">
+              <input type="checkbox" />
+              <span>Lembrar meus dados</span>
+            </label>
 
-                        <label class="label">
-                            Senha
-                            <input class="input" type="password" placeholder="Sua senha" required>
-                        </label>
+            <button class="btn-entrar" type="submit">Entrar</button>
 
-                        <a href="esqueceu-senha.html" class="esqueceu-senha">Esqueceu a senha?</a>
+            <div class="cadastrar-link">
+              <p>Ainda não tem uma conta?</p>
+              <a href="cadastre-se.html">Cadastre-se</a>
+            </div>
+          </form>
+        </div>
+      </section>
 
-                        <label class="lembrar-dados">
-                            <input type="checkbox">
-                            <span>Lembrar meus dados</span>
-                        </label>
+      <section class="login-form psicologo-form">
+        <div class="div-form">
+          <span class="paragrafo">Área profissional</span>
+          <h2 id="titulo-psicologo">Entrar como psicólogo</h2>
+          <form id="form-psicologo">
+            <label class="label">
+              Email
+              <input
+                class="input"
+                type="email"
+                placeholder="Seu e-mail"
+                required
+              />
+            </label>
 
-                        <button class="btn-entrar" type="submit">Entrar</button>
+            <label class="label">
+              Senha
+              <input
+                class="input"
+                type="password"
+                placeholder="Sua senha"
+                required
+              />
+            </label>
 
-                        <div class="cadastrar-link">
-                            <p>Ainda não tem uma conta?</p>
-                            <a href="cadastre-se.html">Cadastre-se</a>   
-                        </div>
-                    </form>
-                </div>
-            </section>
+            <a href="esqueceu-senha.html" class="esqueceu-senha"
+              >Esqueceu a senha?</a
+            >
 
-            <section class="login-form psicologo-form">
+            <label class="lembrar-dados">
+              <input type="checkbox" />
+              <span>Lembrar meus dados</span>
+            </label>
 
-                <div class="div-form">
-                    <span class="paragrafo">Área profissional</span>
-                    <h2 id="titulo-psicologo">Entrar como psicólogo</h2>
-                    <form id="form-psicologo">
-                        <label class="label">
-                            Email
-                            <input class="input" type="email" placeholder="Seu e-mail" required>
-                        </label>
+            <button class="btn-entrar" type="submit">Entrar</button>
 
-                        <label class="label">
-                            Senha
-                            <input class="input" type="password" placeholder="Sua senha" required>
-                        </label>
+            <div class="cadastrar-link">
+              <span></span>
+              <p>Ainda não tem uma conta?</p>
+              <a href="cadastre-se.html">Cadastre-se</a>
+              <span></span>
+            </div>
+          </form>
+        </div>
+      </section>
 
-                        <a href="esqueceu-senha.html" class="esqueceu-senha">Esqueceu a senha?</a>
+      <aside class="painel" id="painel">
+        <img
+          src="../../assets/images/fernando/mulher-crianca.png"
+          alt="mulher com a criança"
+        />
 
-                        <label class="lembrar-dados">
-                            <input type="checkbox">
-                            <span>Lembrar meus dados</span>
-                        </label>
-
-                        <button class="btn-entrar" type="submit">Entrar</button>
-
-                        <div class="cadastrar-link">
-                            <span></span>
-                            <p>Ainda não tem uma conta?</p>
-                            <a href="cadastre-se.html">Cadastre-se</a>
-                            <span></span>
-                        </div>
-                    </form>
-                </div>
-            </section>
-
-            <aside class="painel" id="painel">
-                <img src="../../assets/images/fernando/mulher-crianca.png" alt="mulher com a criança">
-
-                <button class="alternar">
-                    <span class="seta">→</span>
-                    <span class="texto-alternar">Fazer login como psicólogo</span>
-                </button>
-            </aside>
+        <button class="alternar">
+          <span class="seta">→</span>
+          <span class="texto-alternar">Fazer login como psicólogo</span>
+        </button>
+      </aside>
     </main>
 
     <!-- FIM DA MINHA SESSÃO -->
 
     <script src="../scripts/login.js"></script>
-</body>
+  </body>
 </html>
