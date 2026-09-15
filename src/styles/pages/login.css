@@ -17,7 +17,6 @@
 body {
     min-height: 100%;
     color: var(--azul-escuro);
-    background: #f8d6e7;
     font-family: "Momo Trust Display", sans-serif;
 }
 
@@ -56,7 +55,7 @@ body {
     left: 0;
     height: 100vh;
     color: var(--branco);
-    background: var(--rosa);
+    background: #5886BA;
     transform: translateX(-8%);
 }
 
@@ -67,7 +66,7 @@ body {
 
 .responsavel-form .paragrafo {
     margin-bottom: 8px;
-    color: var(--rosa-escuro);
+    color: var(--branco);
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -108,11 +107,11 @@ body {
 }
 
 .responsavel-form .input:focus {
-    border-color: var(--rosa-escuro);
-    box-shadow: 0 0 0 3px rgba(185, 0, 97, 0.15);
+    border-color: #5886BA;
+    box-shadow: 0 0 0 3px rgba(2, 12, 49, 0.15);
 }
 
-.responsavel-form .esqueceu-senha, .cadastrar-link a {
+.responsavel-form .esqueceu-senha, a{
     color: var(--azul-escuro);
     font-size: 15px;
     text-decoration: none;
@@ -142,14 +141,14 @@ body {
     border: 0;
     border-radius: 7px;
     color: white;
-    background-color: var(--rosa-escuro);
+    background-color: #3c628f;
     font: 600 20px "Poppins", sans-serif;
     cursor: pointer;
     transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .responsavel-form .btn-entrar:hover {
-    background: #630336;
+    background: #21426b;
     color: white;
     transition: 0.3s all;
 }
@@ -165,14 +164,18 @@ body {
     text-align: center;
 }
 
+.responsavel-form .cadastrar-link a{
+    color: var(--azul-escuro);
+}
+
 
 /* PARTE DO PSICÓLOGO */
 
 .psicologo-form {
     height: 100vh;
     right: 0;
-    color: var(--azul-escuro);
-    background: var(--branco);
+    color: black;
+    background: #e4493e;
     transform: translateX(8%);
 }
 
@@ -182,7 +185,7 @@ body {
 
 .psicologo-form .paragrafo {
     margin-bottom: 8px;
-    color: var(--rosa-escuro);
+    color: black;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -191,7 +194,7 @@ body {
 
 .psicologo-form h2 {
     margin-bottom: 20px;
-    color: var(--azul-escuro);
+    color: #fff;
     font-size: 32px;
 }
 
@@ -208,6 +211,7 @@ body {
     flex-direction: column;
     gap: 6px;
     font-size: 16px;
+    color: white;
 }
 
 .psicologo-form .input {
@@ -216,19 +220,19 @@ body {
     border: 2px solid rgb(204, 198, 198);
     border-radius: 7px;
     outline: none;
-    color: var(--azul-escuro);
+    color: black;
     background: white;
     font: inherit;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .psicologo-form .input:focus {
-    border-color: var(--rosa-escuro);
-    box-shadow: 0 0 0 3px rgba(185, 0, 97, 0.15);
+    border-color: #d65e56;
+    box-shadow: 0 0 0 3px rgba(66, 23, 3, 0.15);
 }
 
 .psicologo-form .esqueceu-senha, .cadastrar-link a {
-    color: var(--azul-escuro);
+    color: rgb(0, 0, 0);
     font-size: 15px;
     text-decoration: none;
 }
@@ -257,14 +261,14 @@ body {
     border: 0;
     border-radius: 7px;
     color: white;
-    background-color: var(--rosa-escuro);
+    background-color: #a32a21;
     font: 600 20px "Poppins", sans-serif;
     cursor: pointer;
     transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .psicologo-form .btn-entrar:hover {
-    background: #630336;
+    background: #691a16;
     color: white;
     transition: 0.3s all;
 }
@@ -275,7 +279,7 @@ body {
     justify-content: center;
     margin-top: 10px;
     gap: 5px;
-    color: var(--rosa-escuro);
+    color: white;
     font-size: 15px;
     text-align: center;
 }
@@ -359,7 +363,7 @@ body {
 
 .alternar:hover {
     color: white;
-    background: var(--rosa-escuro);
+    background: #3c628f;
     transition: 0.3s all;
 }
 
@@ -397,4 +401,123 @@ body {
     pointer-events: auto;
 
     transform: translateX(0);
+}
+
+@media (max-width: 860px) {
+    .login-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+        overflow: visible;
+    }
+
+    .login-form {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: min(680px, calc(100vw - 32px));
+        height: auto;
+        min-height: 520px;
+        padding: 30px 24px;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+    }
+
+    .responsavel-form,
+    .psicologo-form {
+        height: auto;
+        min-height: 420px;
+        left: auto;
+        right: auto;
+    }
+
+    .responsavel-form .div-form,
+    .psicologo-form .div-form {
+        margin-top: 0;
+    }
+
+    .responsavel-form {
+        background: #5886BA;
+    }
+
+    .psicologo-form {
+        background: #e4493e;
+    }
+
+    .painel {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: min(680px, calc(100vw - 32px));
+        height: 260px;
+        border-radius: 30px;
+        overflow: hidden;
+        display: none;
+    }
+
+    .painel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .alternar {
+        top: 50%;
+        left: 50%;
+    }
+
+    .modo-psicologo .painel {
+        left: auto;
+    }
+
+    .modo-psicologo .painel .alternar {
+        left: 50%;
+    }
+
+    .login-container:not(.modo-psicologo) .psicologo-form,
+    .login-container:not(.modo-psicologo) .responsavel-form,
+    .modo-psicologo .responsavel-form,
+    .modo-psicologo .psicologo-form {
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .login-container {
+        padding: 16px 0;
+        gap: 14px;
+    }
+
+    .login-form {
+        width: min(100%, calc(100vw - 20px));
+        min-height: auto;
+        padding: 24px 18px;
+    }
+
+    .responsavel-form h2,
+    .psicologo-form h2 {
+        font-size: 28px;
+    }
+
+    .responsavel-form .btn-entrar,
+    .psicologo-form .btn-entrar {
+        font-size: 18px;
+    }
+
+    .responsavel-form .cadastrar-link,
+    .psicologo-form .cadastrar-link {
+        flex-wrap: wrap;
+    }
+
+    .painel {
+        display: none;
+    }
 }
