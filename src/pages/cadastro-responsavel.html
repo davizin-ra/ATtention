@@ -1,16 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/pages/cadastro-responsavel.css">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../assets/icone.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/pages/cadastro-responsavel.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../assets/icone.png"
+    />
     <title>ATtention</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- INICIO - MAIN (CADASTRAR-SE) -->
     <main class="container" id="container">
         <section id="section-esquerda">
@@ -131,11 +134,72 @@
                     <!-- FIM - DADOS DOS ALUNO -->
                 </div>
             </div>
-        </section>
+
+            <div class="campo">
+              <label for="estado"
+                >Estado: <br />
+                <input type="text" id="estado" placeholder="Estado" />
+              </label>
+            </div>
+          </form>
+          <!-- FIM - DADOS DOS RESPONSÁVEIS -->
+
+          <!-- DADOS DOS ALUNOS -->
+          <h3 class="titulo-h3">Dados Pessoais do aluno</h3>
+
+          <form class="formulario2">
+            <div class="campo">
+              <label>
+                Nome completo <br />
+                <input
+                  type="text"
+                  name="text"
+                  placeholder="Seu nome completo"
+                  required
+                />
+              </label>
+
+              <label>
+                Nome social (opcional) <br />
+                <input
+                  type="text"
+                  name="text"
+                  placeholder="Como prefere ser chamado"
+                  required
+                />
+              </label>
+            </div>
+
+            <div class="campo">
+              <label>
+                Data de nascimento <br />
+                <input type="date" name="Data" required />
+              </label>
+
+              <label>
+                CPF <br />
+                <input
+                  type="text"
+                  name="documento"
+                  maxlength="11"
+                  placeholder="Digite o número do CPF"
+                  required
+                />
+              </label>
+            </div>
+          </form>
+          <!-- FIM - DADOS DOS ALUNO -->
+
+          <div class="container-btn">
+            <a href="cadastre-se.html"><button>Voltar</button></a>
+
+            <a href="cadastro-responsavel2.html"><button>Seguinte</button></a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdn.userway.org/widget.js" data-account="y2KIm9pPv2"></script>
     <script src="../scripts/cadastro-responsavel.js"></script>
-</body>
-
+  </body>
 </html>

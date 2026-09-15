@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
@@ -11,53 +11,50 @@
 
 <body>
 
+  <body>
     <main class="recuperar-container">
+      <section class="recuperar-card">
+        <div class="icone">
+          <img
+            src="../../assets/images/fernando/simbolo-de-cadeado-para-interface-de-seguranca.png"
+            alt="img-cadeado"
+          />
+        </div>
 
-        <section class="recuperar-card">
+        <h2>Esqueceu a senha?</h2>
 
-            <div class="icone">
-                <img src="../../assets/images/fernando/simbolo-de-cadeado-para-interface-de-seguranca.png" alt="img-cadeado">
-            </div>
+        <p class="descricao">
+          Não se preocupe! Digite seu e-mail abaixo e enviaremos as instruções
+          para recuperar sua senha.
+        </p>
 
-            <h2>Esqueceu a senha?</h2>
+        <form id="form-recuperacao">
+          <div class="campo">
+            <label for="email">E-mail</label>
 
-            <p class="descricao">
-                Não se preocupe! Digite seu e-mail abaixo
-                e enviaremos as instruções para recuperar sua senha.
-            </p>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+              required
+            />
+          </div>
 
-            <form id="form-recuperacao">
-                <div class="campo">
+          <button type="submit" class="btn-enviar">Enviar instruções</button>
+        </form>
 
-                    <label for="email">E-mail</label>
+        <!-- Mensagem que aparecerá depois do clique -->
+        <div id="mensagem" class="mensagem">
+          A recuperação de senha foi solicitada por e-mail. Verifique sua caixa
+          de entrada.
+        </div>
 
-                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-
-                </div>
-
-                <button type="submit" class="btn-enviar">
-                    Enviar instruções
-                </button>
-
-            </form>
-
-            <!-- Mensagem que aparecerá depois do clique -->
-            <div id="mensagem" class="mensagem">
-                A recuperação de senha foi solicitada por e-mail.
-                Verifique sua caixa de entrada.
-            </div>
-
-            <a href="login.html" class="voltar">
-                ← Voltar para o login
-            </a>
-
-        </section>
-
+        <a href="login.html" class="voltar"> ← Voltar para o login </a>
+      </section>
     </main>
 
     <script src="https://cdn.userway.org/widget.js" data-account="y2KIm9pPv2"></script>
     <script src="../scripts/esqueceu-senha.js"></script>
-
-</body>
-
+  </body>
 </html>

@@ -8,12 +8,7 @@
       name="description"
       content="O ATtention conecta famílias de crianças com TEA a profissionais de saúde mental e reúne informações sobre acompanhamento e inclusão."
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./assets/icone.png"
-    />
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/icone.png" />
     <link rel="stylesheet" href="./src/styles/main.css" />
     <link rel="stylesheet" href="./src/styles/pages/LandingPage.css" />
   </head>
@@ -24,34 +19,29 @@
     <!-- Cabeçalho -->
     <header class="header" data-header>
       <nav class="header-container">
-        <a
-          class="header-brand"
-          href="#"
-          aria-label="ATtention — página inicial"
-        >
           <img
             class="header-logo"
             src="./assets/images/LandingPage/logo-transparente.png"
-            alt="Logo do ATtention"
           />
           <span>ATtention</span>
         </a>
 
-        <button
-          class="header-menu-toggle"
-          data-site-menu-toggle
-          type="button"
-          aria-label="Abrir menu"
-          aria-expanded="false"
-          aria-controls="header-menu"
-        >
+        <button class="header-menu-toggle" data-site-menu-toggle type="button">
           <span></span>
         </button>
 
         <ul class="header-menu" id="header-menu" data-site-menu>
           <li><a class="header-link" href="#">Início</a></li>
-          <li><a class="header-link" href="./src/pages/SobreNos.html">Sobre Nós</a></li>
-          <li><a class="header-link" href="./src/pages/conhecimentos.html">Conhecimento</a></li>
+          <li>
+            <a class="header-link" href="./src/pages/SobreNos.html"
+              >Sobre Nós</a
+            >
+          </li>
+          <li>
+            <a class="header-link" href="./src/pages/conhecimentos.html"
+              >Conhecimento</a
+            >
+          </li>
           <li>
             <a href="src/pages/login.html" class="header-login">Fazer Login</a>
           </li>
@@ -73,15 +63,7 @@
           </p>
         </div>
 
-        <video
-          class="video"
-          autoplay
-          loop
-          muted
-          playsinline
-          preload="metadata"
-          aria-label="Vídeo de apresentação"
-        >
+        <video class="video" autoplay loop muted playsinline preload="metadata">
           <source
             src="./assets/images/LandingPage/8612319-hd_1920_1080_25fps.mp4"
             type="video/mp4"
@@ -90,7 +72,7 @@
       </section>
 
       <!-- Sobre nós -->
-      <section class="sobre" id="sobre" aria-labelledby="historia-titulo">
+      <section class="sobre" id="sobre">
         <div class="sobre-texto">
           <h2 id="historia-titulo">Nossa História</h2>
           <p>
@@ -108,7 +90,6 @@
         <div class="sobre-foto">
           <img
             src="./assets/images/LandingPage/pexels-karola-g-7296485.jpg"
-            alt="Adulto e criança brincando com blocos de montar coloridos sobre uma manta"
             loading="lazy"
             decoding="async"
           />
@@ -116,11 +97,10 @@
       </section>
 
       <!-- Citação -->
-      <section class="citacao" id="frase" aria-labelledby="frase-titulo">
+      <section class="citacao" id="frase">
         <img
           class="citacao-foto"
           src="./assets/images/LandingPage/carl-rogers-retrato.png"
-          alt="Retrato em preto e branco de Carl Rogers"
           loading="lazy"
           decoding="async"
         />
@@ -135,61 +115,47 @@
       </section>
 
       <!-- Como funciona -->
-      <section
-        class="passos"
-        id="funcionamento"
-        aria-labelledby="funcionamento-titulo"
-      >
+      <section class="passos" id="funcionamento">
         <div class="container passos-conteudo">
           <h2 id="funcionamento-titulo">Saiba como funciona</h2>
 
           <ol class="etapas">
             <li class="etapa">
-              <span class="icone" aria-hidden="true"
-                ><img
-                  src="./assets/images/LandingPage/como-funciona-01.svg"
-                  alt=""
-              /></span>
+              <span class="icone">
+                <img src="./assets/images/LandingPage/como-funciona-01.svg" />
+              </span>
               <span class="numero">01</span>
               <h3>Cadastre-se</h3>
               <p>Crie sua conta como família ou acompanhante terapêutico.</p>
             </li>
             <li class="etapa">
-              <span class="icone" aria-hidden="true"
-                ><img
-                  src="./assets/images/LandingPage/como-funciona-02.svg"
-                  alt=""
-              /></span>
+              <span class="icone">
+                <img src="./assets/images/LandingPage/como-funciona-02.svg" />
+              </span>
               <span class="numero">02</span>
               <h3>Encontre profissionais</h3>
               <p>Veja perfis e escolha o profissional ideal.</p>
             </li>
             <li class="etapa">
-              <span class="icone" aria-hidden="true"
-                ><img
-                  src="./assets/images/LandingPage/como-funciona-03.svg"
-                  alt=""
-              /></span>
+              <span class="icone">
+                <img src="./assets/images/LandingPage/como-funciona-03.svg" />
+              </span>
               <span class="numero">03</span>
               <h3>Entre em contato</h3>
               <p>Fale diretamente com o profissional escolhido.</p>
             </li>
             <li class="etapa">
-              <span class="icone" aria-hidden="true"
-                ><img
-                  src="./assets/images/LandingPage/como-funciona-04.svg"
-                  alt=""
-              /></span>
+              <span class="icone">
+                <img src="./assets/images/LandingPage/como-funciona-04.svg" />
+              </span>
               <span class="numero">04</span>
               <h3>Combine o atendimento</h3>
               <p>Combine valor, horários e modalidade.</p>
             </li>
             <li class="etapa">
-              <span class="icone" aria-hidden="true"
-                ><img
-                  src="./assets/images/LandingPage/como-funciona-05.svg"
-                  alt=""
-              /></span>
+              <span class="icone">
+                <img src="./assets/images/LandingPage/como-funciona-05.svg" />
+              </span>
               <span class="numero">05</span>
               <h3>Inicie o atendimento</h3>
               <p>Comece o acompanhamento com tranquilidade.</p>
@@ -199,7 +165,7 @@
       </section>
 
       <!-- Preços -->
-      <section class="precos" id="precos" aria-labelledby="precos-titulo">
+      <section class="precos" id="precos">
         <div class="container precos-conteudo">
           <div class="precos-texto">
             <h2 id="precos-titulo">Entenda os valores</h2>
@@ -223,29 +189,25 @@
             <img
               class="preco-foto"
               src="./assets/images/LandingPage/pexels-rdne-7104223.jpg"
-              alt="Adulto e criança brincando com peças de montar coloridas"
               loading="lazy"
             />
           </div>
 
-          <aside
-            class="precos-explicacao"
-            aria-label="Informações sobre os valores"
-          >
+          <aside class="precos-explicacao">
             <ul>
               <li>
                 <strong>Converse antes de agendar</strong>
-                <span
-                  >Fale com o profissional sobre as necessidades da criança e
-                  esclareça suas dúvidas sobre o atendimento.</span
-                >
+                <span>
+                  Fale com o profissional sobre as necessidades da criança e
+                  esclareça suas dúvidas sobre o atendimento.
+                </span>
               </li>
               <li>
                 <strong>Um acordo entre vocês</strong>
-                <span
-                  >Definam juntos o valor, a frequência e as condições do
-                  atendimento antes de começar.</span
-                >
+                <span>
+                  Definam juntos o valor, a frequência e as condições do
+                  atendimento antes de começar.
+                </span>
               </li>
             </ul>
           </aside>
@@ -253,11 +215,7 @@
       </section>
 
       <!-- Contratação de psicólogos -->
-      <section
-        class="contratacao"
-        id="contratacao"
-        aria-labelledby="contratacao-titulo"
-      >
+      <section class="contratacao" id="contratacao">
         <div class="container contratacao-conteudo">
           <div class="contratacao-texto">
             <h2 id="contratacao-titulo">
@@ -285,7 +243,6 @@
             muted
             playsinline
             preload="metadata"
-            aria-label="Vídeo de apresentação para psicólogos"
           >
             <source
               src="./assets/images/LandingPage/video-psicologos.mp4"
@@ -300,11 +257,7 @@
       </section>
 
       <!-- Conteúdos -->
-      <section
-        class="conteudos"
-        id="artigos"
-        aria-labelledby="conteudos-titulo"
-      >
+      <section class="conteudos" id="artigos">
         <div class="container conteudos-conteudo">
           <header class="conteudos-topo">
             <h2 id="conteudos-titulo">Encontre o apoio ideal</h2>
@@ -326,10 +279,7 @@
           <div class="cartoes">
             <article class="cartao">
               <figure class="cartao-imagem">
-                <img
-                  src="./assets/images/LandingPage/img 2.jpg"
-                  alt="Pessoa procurando por um profissional"
-                />
+                <img src="./assets/images/LandingPage/img 2.jpg" />
               </figure>
               <div class="cartao-conteudo">
                 <h3>Acompanhamento terapêutico e inclusão escolar</h3>
@@ -342,7 +292,6 @@
                   href="https://revista.uepb.edu.br/REIN/pt_BR/article/view/447"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Abrir artigo: Acompanhamento terapêutico e inclusão escolar (nova aba)"
                 >
                   Abrir artigo
                 </a>
@@ -353,7 +302,6 @@
               <figure class="cartao-imagem">
                 <img
                   src="./assets/images/LandingPage/pexels-cottonbro-4569334.jpg"
-                  alt="Duas pessoas conversando"
                 />
               </figure>
               <div class="cartao-conteudo">
@@ -367,7 +315,6 @@
                   href="https://periodicos.ufc.br/educacaoemdebate/article/view/82894"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Abrir artigo: Inclusão escolar de alunos autistas (nova aba)"
                 >
                   Abrir artigo
                 </a>
@@ -378,7 +325,6 @@
               <figure class="cartao-imagem">
                 <img
                   src="./assets/images/LandingPage/pexels-mikhail-nilov-8120324.jpg"
-                  alt="Símbolo relacionado aos detalhes do atendimento"
                 />
               </figure>
               <div class="cartao-conteudo">
@@ -392,7 +338,6 @@
                   href="https://ojs.focopublicacoes.com.br/foco/article/view/2870"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Abrir artigo: Acompanhante terapêutico e desenvolvimento infantil (nova aba)"
                 >
                   Abrir artigo
                 </a>
@@ -403,11 +348,7 @@
       </section>
 
       <!-- Depoimento -->
-      <section
-        class="comentarios"
-        id="comentarios"
-        aria-labelledby="comentarios-titulo"
-      >
+      <section class="comentarios" id="comentarios">
         <div class="container comentarios-conteudo">
           <h2 id="comentarios-titulo">Um olhar de quem cuida</h2>
 
@@ -432,7 +373,6 @@
               <img
                 class="comentario-foto"
                 src="./assets/images/LandingPage/daniele-carneiro.jpeg"
-                alt="Retrato da professora Daniele Carneiro"
                 loading="lazy"
               />
               <figcaption class="comentario-autora">
@@ -446,7 +386,7 @@
             </figure>
 
             <div class="comentario-cartao">
-              <span class="comentario-aspas" aria-hidden="true">“</span>
+              <span class="comentario-aspas">“</span>
               <blockquote>
                 Esse site traz informações muito importantes para quem trabalha
                 na educação infantil. Além de recursos e orientações, também
@@ -455,9 +395,7 @@
                 que precisa.
               </blockquote>
               <div class="comentario-base">
-                <span class="comentario-estrelas" aria-label="5 estrelas"
-                  >★★★★★</span
-                >
+                <span class="comentario-estrelas">★★★★★</span>
               </div>
             </div>
           </div>
@@ -465,19 +403,13 @@
       </section>
 
       <!-- Perguntas frequentes -->
-      <section
-        class="perguntas"
-        id="perguntas-frequentes"
-        aria-labelledby="perguntas-titulo"
-      >
+      <section class="perguntas" id="perguntas-frequentes">
         <div class="container">
           <h2 id="perguntas-titulo">Perguntas frequentes</h2>
 
           <div class="perguntas-lista">
             <details>
-              <summary>
-                O que é o ATtention? <span aria-hidden="true"></span>
-              </summary>
+              <summary>O que é o ATtention? <span></span></summary>
               <p>
                 O ATtention é uma plataforma digital que conecta pais e
                 responsáveis de crianças com Transtorno do Espectro Autista
@@ -488,7 +420,7 @@
             <details>
               <summary>
                 O ATtention fornece ou gerencia o tratamento psicológico?
-                <span aria-hidden="true"></span>
+                <span></span>
               </summary>
               <p>
                 Não, a plataforma atua exclusivamente como um canal de
@@ -501,7 +433,7 @@
             <details>
               <summary>
                 Quais são as modalidades de atendimento disponíveis?
-                <span aria-hidden="true"></span>
+                <span></span>
               </summary>
               <p>
                 Os profissionais parceiros podem oferecer até três modalidades
@@ -515,7 +447,7 @@
             <details>
               <summary>
                 Quais são as regras para o atendimento escolar presencial?
-                <span aria-hidden="true"></span>
+                <span></span>
               </summary>
               <p>
                 Para que o atendimento ocorra na escola, o psicólogo precisa
@@ -529,7 +461,7 @@
             <details>
               <summary>
                 A criança pode realizar sessões online durante o horário de
-                aula? <span aria-hidden="true"></span>
+                aula? <span></span>
               </summary>
               <p>
                 Não. O atendimento online é estritamente restrito aos momentos
@@ -541,8 +473,7 @@
 
             <details>
               <summary>
-                Como as famílias escolhem o profissional ideal?
-                <span aria-hidden="true"></span>
+                Como as famílias escolhem o profissional ideal? <span></span>
               </summary>
               <p>
                 Cada psicólogo cadastrado possui uma página de apresentação
@@ -555,8 +486,7 @@
 
             <details>
               <summary>
-                Quem é o público-alvo da plataforma?
-                <span aria-hidden="true"></span>
+                Quem é o público-alvo da plataforma? <span></span>
               </summary>
               <p>
                 O público-alvo são os pais e responsáveis por crianças
@@ -585,7 +515,7 @@
             >
               <img
                 class="footer-logo"
-                src="./assets/images/LandingPage/logo-transparente.png"
+                src="../../assets/images/LandingPage/logo-transparente.png"
                 alt="Logo do ATtention"
                 loading="lazy"
               />
@@ -600,20 +530,21 @@
 
           <nav class="footer-links" aria-label="Navegação do rodapé">
             <ul>
-              <li><a href="#inicio">Início</a></li>
-              <li><a href="#sobre">Sobre nós</a></li>
-              <li><a href="#frase">Frase</a></li>
-              <li><a href="#funcionamento">Como funciona</a></li>
-              <li><a href="#precos">Valores das sessões</a></li>
-              <li><a href="#artigos">Artigos</a></li>
-              <li><a href="#perguntas-frequentes">Perguntas frequentes</a></li>
+              <li><a href="/index.html">Início</a></li>
+              <li><a href="/src/pages/SobreNos.html">Sobre nós</a></li>
+              <li><a href="/index.html#frase">Frase</a></li>
+              <li><a href="/index.html#funcionamento">Como funciona</a></li>
+              <li><a href="/index.html#precos">Valores das sessões</a></li>
+              <li><a href="/index.html#artigos">Artigos</a></li>
+              <li>
+                <a href="/index.html#perguntas-frequentes"
+                  >Perguntas frequentes</a
+                >
+              </li>
             </ul>
           </nav>
 
-          <address
-            class="footer-contacts"
-            aria-label="Contatos da plataforma"
-          >
+          <address class="footer-contacts" aria-label="Contatos da plataforma">
             <ul>
               <li><strong>Contato:</strong> contato@attention.example</li>
               <li><strong>Telefone:</strong> +55 (11) 4000-0199</li>
