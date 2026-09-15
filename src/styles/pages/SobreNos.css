@@ -1,470 +1,465 @@
 /* configurações gerais */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #ffffff;
-    color: #2449A4;
-    font-family: "Momo Trust Sans", sans-serif;
+  background: #ffffff;
+  color: #2449a4;
+  font-family: "Momo Trust Sans", sans-serif;
 }
 
 main {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
-
 
 /* textos com padrão */
 
 h1 {
-    font-family: "Momo Trust Display", sans-serif;
-    font-size: 52px;
-    font-weight: 400;
-    line-height: 1;
-    color: #2449A4;
+  font-family: "Momo Trust Display", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1;
+  color: #2449a4;
 }
 
 h2 {
-    font-family: "Momo Trust Display", sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 1.1;
-    color: #2449A4;
+  font-family: "Momo Trust Display", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #2449a4;
 }
 
 h3 {
-    font-family: "Momo Trust Display", sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.15;
-    color: #2449A4;
+  font-family: "Momo Trust Display", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.15;
+  color: #2449a4;
 }
 
 h4 {
-    font-family: "Momo Trust Sans", sans-serif;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #2449A4;
+  font-family: "Momo Trust Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #2449a4;
 }
 
 h5 {
-    font-family: "Momo Trust Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #2449A4;
+  font-family: "Momo Trust Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #2449a4;
 }
 
 p {
-    font-family: "Momo Trust Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #000000;
+  font-family: "Momo Trust Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000;
 }
 
 /* início */
 
 .section-inicio {
-    min-height: 430px;
-    background: #2449A4;
-    color: white;
-    position: relative;
-    padding: 48px 6% 105px;
-    overflow: hidden;
+  min-height: 430px;
+  background: #2449a4;
+  color: white;
+  position: relative;
+  padding: 48px 6% 105px;
+  overflow: hidden;
 }
 
 .section-inicio::after {
-    content: "";
-    position: absolute;
-    left: -5%;
-    right: -5%;
-    bottom: -92px;
-    height: 145px;
-    background: white;
-    border-radius: 50% 50% 0 0;
+  content: "";
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  bottom: -92px;
+  height: 145px;
+  background: white;
+  border-radius: 50% 50% 0 0;
 }
 
 .inicio-conteudo {
-    max-width: 1180px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
+  max-width: 1180px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
 }
 
 .inicio-texto {
-    width: 50%;
+  width: 50%;
 }
 
 .section-inicio h1 {
-    color: white;
-    margin-bottom: 18px;
-    text-align: left;
+  color: white;
+  margin-bottom: 18px;
+  text-align: left;
 }
 
 .section-inicio p {
-    color: white;
-    max-width: 570px;
-    text-align: justify;
+  color: white;
+  max-width: 570px;
+  text-align: justify;
 }
 
 /* imagem do início */
 
 .inicio-conteudo img {
-    width: 500px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 12px;
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 /* modalidades de atendimento */
 
 .section-modalidades {
-    background: #ffffff;
-    padding: 25px 6% 80px;
+  background: #ffffff;
+  padding: 25px 6% 80px;
 }
 
 .section-modalidades h2 {
-    max-width: 100%;
-    margin: 20px auto 28px;
-    color: #2449A4;
+  max-width: 100%;
+  margin: 20px auto 28px;
+  color: #2449a4;
 }
 
 .modalidades-cards {
-    max-width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .modalidade-card {
-    min-height: 145px;
-    margin: 10px 0 0;
-    padding: 18px 16px;
-    background: #ffffff;
-    border: 1px solid #2449A4;
-    border-radius: 9px;
+  min-height: 145px;
+  margin: 10px 0 0;
+  padding: 18px 16px;
+  background: #ffffff;
+  border: 1px solid #2449a4;
+  border-radius: 9px;
 }
 
 .modalidade-card h3 {
-    margin-bottom: 12px;
-    font-size: 24px;
-    font-weight: 400;
-    color: #2449A4;
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #2449a4;
 }
 
 .modalidade-card p {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.3;
-    color: #2449A4;
-    text-align: justify;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #2449a4;
+  text-align: justify;
 }
-
 
 /* missão, visão e valores */
 
 .section-sobre {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 46% 54%;
-    align-items: stretch;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 46% 54%;
+  align-items: stretch;
 }
 
 .missao-visao {
-    background: #2449A4;
-    color: #ffffff;
-    padding: 50px 60px 50px 10%;
+  background: #2449a4;
+  color: #ffffff;
+  padding: 50px 60px 50px 10%;
 }
 
 .valores {
-    background: #ffffff;
-    color: #2449A4;
-    padding: 50px 10% 42px 50px;
+  background: #ffffff;
+  color: #2449a4;
+  padding: 50px 10% 42px 50px;
 }
 
 .section-sobre h2 {
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .missao-visao h2 {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .valores h2 {
-    color: #2449A4;
+  color: #2449a4;
 }
 
 .missao-visao h2:not(:first-child) {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 .section-sobre h3 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 3;
-    text-align: justify;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 3;
+  text-align: justify;
 }
 
 .missao-visao p {
-    color: #ffffff;
-        line-height: 1.5;
-
+  color: #ffffff;
+  line-height: 1.5;
 }
 
 .valores p {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 10px;
-    color: #000000;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: #000000;
 }
 
 .valores p::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #2449A4;
-    font-size: 18px;
-    font-weight: 700;
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2449a4;
+  font-size: 18px;
+  font-weight: 700;
 }
-
 
 /* chamada para cadastro */
 
 .section-cadastro {
-    max-width: 1050px;
-    margin: 80px auto 120px;
-    padding: 32px 30px;
-    background: #E33629;
-    color: #ffffff;
-    border-radius: 9px;
-    text-align: center;
+  max-width: 1050px;
+  margin: 80px auto 120px;
+  padding: 32px 30px;
+  background: #e33629;
+  color: #ffffff;
+  border-radius: 9px;
+  text-align: center;
 }
 
 .section-cadastro h2 {
-    margin-bottom: 14px;
-    font-size: 28px;
-    font-weight: 400;
-    color: #ffffff;
+  margin-bottom: 14px;
+  font-size: 28px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .section-cadastro p {
-    max-width: 750px;
-    margin: 0 auto 22px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.3;
-    color: #ffffff;
+  max-width: 750px;
+  margin: 0 auto 22px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+video {
+  position: absolute;
+  right: 0;
 }
 
 .botao-cadastro {
-    display: block;
-    width: 160px;
-    margin: 0 auto;
-    padding: 10px 15px;
-    background: #2449A4;
-    color: #ffffff;
-    border-radius: 8px;
-    font-family: "Momo Trust Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    text-decoration: none;
-    transition: background 0.3s ease;
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  background: #2449a4;
+  color: #ffffff;
+  border-radius: 8px;
+  font-family: "Momo Trust Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
 
 .botao-cadastro:hover {
-    background: #19377F;
+  background: #19377f;
 }
-
 
 /* responsividade */
 
 @media (max-width: 1024px) {
+  video {
+    right: -150px;
+  }
 
-    .section-inicio {
-        padding: 48px 6% 105px;
-    }
+  .section-inicio {
+    padding: 48px 6% 105px;
+  }
 
-    .inicio-conteudo {
-        gap: 35px;
-    }
+  .inicio-conteudo {
+    gap: 35px;
+  }
 
-    .inicio-texto {
-        width: 60%;
-    }
+  .inicio-texto {
+    width: 60%;
+  }
 
-    .inicio-conteudo img {
-        width: 190px;
-    }
+  .inicio-conteudo img {
+    width: 190px;
+  }
 
-    .section-sobre {
-        margin: 0 6%;
-    }
+  .section-sobre {
+    margin: 0 6%;
+  }
 
-    .section-cadastro {
-        margin-left: 6%;
-        margin-right: 6%;
-    }
+  .section-cadastro {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
 }
 
 @media (max-width: 768px) {
+  /* início */
 
-    /* início */
+  .section-inicio {
+    min-height: auto;
+    padding: 45px 7% 105px;
+  }
 
-    .section-inicio {
-        min-height: auto;
-        padding: 45px 7% 105px;
-    }
+  .inicio-conteudo {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
 
-    .inicio-conteudo {
-        flex-direction: column;
-        text-align: center;
-        gap: 25px;
-    }
+  .inicio-texto {
+    width: 100%;
+  }
 
-    .inicio-texto {
-        width: 100%;
-    }
+  .section-inicio h1 {
+    font-size: 42px;
+    text-align: center;
+  }
 
-    .section-inicio h1 {
-        font-size: 42px;
-        text-align: center;
-    }
+  .section-inicio p {
+    font-size: 16px;
+    text-align: center;
+  }
 
-    .section-inicio p {
-        font-size: 16px;
-        text-align: center;
-    }
+  .inicio-conteudo img {
+    width: 170px;
+  }
 
-    .inicio-conteudo img {
-        width: 170px;
-    }
+  /* modalidades de atendimento */
 
+  .section-modalidades {
+    padding: 20px 7% 40px;
+  }
 
-    /* modalidades de atendimento */
+  .section-modalidades h2 {
+    font-size: 32px;
+  }
 
-    .section-modalidades {
-        padding: 20px 7% 40px;
-    }
+  .modalidades-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 
-    .section-modalidades h2 {
-        font-size: 32px;
-    }
+  .modalidade-card {
+    min-height: auto;
+  }
 
-    .modalidades-cards {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
+  /* missão, visão e valores */
 
-    .modalidade-card {
-        min-height: auto;
-    }
+  .section-sobre {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
 
+  .missao-visao,
+  .valores {
+    padding: 35px 7%;
+  }
 
-    /* missão, visão e valores */
+  .section-sobre h2 {
+    font-size: 32px;
+  }
 
-    .section-sobre {
-        grid-template-columns: 1fr;
-        margin: 0;
-    }
+  .section-sobre p {
+    font-size: 16px;
+  }
 
-    .missao-visao,
-    .valores {
-        padding: 35px 7%;
-    }
+  /* chamada para cadastro */
 
-    .section-sobre h2 {
-        font-size: 32px;
-    }
+  .section-cadastro {
+    margin: 35px 7% 50px;
+    padding: 28px 20px;
+  }
 
-    .section-sobre p {
-        font-size: 16px;
-    }
+  .section-cadastro h2 {
+    font-size: 28px;
+  }
 
-
-    /* chamada para cadastro */
-
-    .section-cadastro {
-        margin: 35px 7% 50px;
-        padding: 28px 20px;
-    }
-
-    .section-cadastro h2 {
-        font-size: 28px;
-    }
-
-    .section-cadastro p {
-        font-size: 16px;
-    }
+  .section-cadastro p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
+  /* início */
 
-    /* início */
+  .section-inicio h1 {
+    font-size: 36px;
+  }
 
-    .section-inicio h1 {
-        font-size: 36px;
-    }
+  .section-inicio p {
+    font-size: 15px;
+  }
 
-    .section-inicio p {
-        font-size: 15px;
-    }
+  .inicio-conteudo img {
+    width: 145px;
+  }
 
-    .inicio-conteudo img {
-        width: 145px;
-    }
+  /* modalidades de atendimento */
 
+  .section-modalidades h2 {
+    font-size: 29px;
+  }
 
-    /* modalidades de atendimento */
+  .modalidade-card h4 {
+    font-size: 18px;
+  }
 
-    .section-modalidades h2 {
-        font-size: 29px;
-    }
+  .modalidade-card p {
+    font-size: 14px;
+  }
 
-    .modalidade-card h4 {
-        font-size: 18px;
-    }
+  /* missão, visão e valores */
 
-    .modalidade-card p {
-        font-size: 14px;
-    }
+  .section-sobre h2 {
+    font-size: 30px;
+  }
 
+  .section-sobre p {
+    font-size: 15px;
+  }
 
-    /* missão, visão e valores */
+  /* chamada para cadastro */
 
-    .section-sobre h2 {
-        font-size: 30px;
-    }
+  .section-cadastro h2 {
+    font-size: 24px;
+  }
 
-    .section-sobre p {
-        font-size: 15px;
-    }
+  .section-cadastro p {
+    font-size: 15px;
+  }
 
-
-    /* chamada para cadastro */
-
-    .section-cadastro h2 {
-        font-size: 24px;
-    }
-
-    .section-cadastro p {
-        font-size: 15px;
-    }
-
-    .botao-cadastro {
-        width: 150px;
-        font-size: 15px;
-    }
+  .botao-cadastro {
+    width: 150px;
+    font-size: 15px;
+  }
 }
