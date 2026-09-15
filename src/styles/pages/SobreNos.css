@@ -128,7 +128,7 @@ p {
 
 .section-modalidades {
     background: #ffffff;
-    padding: 0 6% 50px;
+    padding: 25px 6% 80px;
 }
 
 .section-modalidades h2 {
@@ -209,22 +209,24 @@ p {
     margin-top: 24px;
 }
 
-.section-sobre p {
+.section-sobre h3 {
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.35;
+    line-height: 3;
     text-align: justify;
 }
 
 .missao-visao p {
     color: #ffffff;
+        line-height: 1.5;
+
 }
 
 .valores p {
     position: relative;
     padding-left: 20px;
     margin-bottom: 10px;
-    color: #2449A4;
+    color: #000000;
 }
 
 .valores p::before {
@@ -242,7 +244,7 @@ p {
 
 .section-cadastro {
     max-width: 1050px;
-    margin: 45px auto 70px;
+    margin: 80px auto 120px;
     padding: 32px 30px;
     background: #E33629;
     color: #ffffff;
